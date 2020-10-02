@@ -1,6 +1,8 @@
 # MyCloset
 Project for CSCI 3010.
 
+By: Vananh Le & Isha Karki
+
 This project is a website that allows users to essentially have their entirety of 
 their closet all in one place. Based on a user's input of occasion or weather, our program will
 find a relevant outfit for the user from the clothes in their closet. 
