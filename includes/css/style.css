@@ -15,26 +15,7 @@ body{
     font-size:17em;
     line-height:0.9em;
   }
-
-
-  div {
-    position: absolute;
-    top: calc(52% - 155px);
-    left: calc(42% - 155px);
-    width: 325px;
-    height: 325px;
-    border-radius: 50%;
-    box-shadow:
-      inset 0 0 50px #fff,
-      inset 20px 0 80px rgb(233, 188, 229),
-      inset -20px 0 80px #0ff,
-      inset 20px 0 300px rgb(250, 44, 198),
-      inset -20px 0 300px rgb(162, 87, 165),
-      0 0 50px #fff,
-      -10px 0 80px #f0f,
-      10px 0 80px rgb(200, 148, 235);
-  }
-
+  
 .form-signin {
     padding-top: 90px;
     padding-right: 30px;
