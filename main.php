@@ -13,4 +13,6 @@ else
     exit();
     }
 }
+
+include("includes/header.inc.php")
 ?>

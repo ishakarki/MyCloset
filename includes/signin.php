@@ -1,17 +1,17 @@
 <?php
-
+//check if the submit button was clicked
 if(isset($_POST['submit-signin']))
 {
     require 'database_setup.php';
     $user = $_POST['inputUsername'];
     $pwd = $_POST['inputPassword'];
-
+    // if the username is empty or the password is empty
     if(empty($user) || empty($pwd))
     {
         header("Location: ../home.php?found=emptyinput");
         exit();
     }
-
+    //makes prepare statement to send in sql query and check username and password
     else{
         $query = "SELECT * FROM account WHERE username=?";
         $statement = mysqli_stmt_init($conn);

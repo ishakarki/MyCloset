@@ -21,16 +21,16 @@
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <ul class="navbar-nav">
     <li class="nav-item active">
-      <a class="nav-link" href="#">Active</a>
+      <a class="nav-link" href="main.php">Main</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
+    <li class="nav-item active">
+      <a class="nav-link" href="fullcloset.php">Full Closet</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
+    <li class="nav-item active">
+      <a class="nav-link" href="favorite.php">Favorites</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
+    <li class="nav-item active">
+      <a class="nav-link" href="upload.php">Upload</a>
     </li>
   </ul>
 </nav>
