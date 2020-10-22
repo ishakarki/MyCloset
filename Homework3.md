@@ -38,15 +38,15 @@ Next Deadline Plan:
 - Design User Interface with an updated Figma
 - Knowledge: PHP
 - Vananh: Finalize PhP login
-- Isha: 
+- Isha: Better implement classes
 
 11/1-11-7
 - Start implementing the HTML and work on CSS for better User Interface Design
 - Vananh: work on CSS
-- Isha:
+- Isha: create better graphics/interface w/CSS
 
 11/15-12/21
 - Connect Frontend and Backend, publish site
 - Knowledge: Integration Layer, publishing
 - Vananh: Make sure frontend and backend work nicely
-- Isha:
+- Isha: User upload
