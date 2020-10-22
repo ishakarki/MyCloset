@@ -20,3 +20,14 @@ Our plans for this Homework:
 - Vananh: double check connection to database, set up PHP to intake sql statements
 - Isha: Work more on classes set up
 
+Accomplished tasks:
+- Pictures of clothing for basic database
+- Basic graphics
+- SQL database setup (tables, columns, variables)
+- Functioning sign in pages
+  - correct login takes you to dashboard,
+  - incorrect password says not found,
+  - non existing user says user not found
+- Classes & Inheritance around 70%
+- need to test SQL tables in PHP
+  - users table is functional for sign in
