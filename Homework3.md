@@ -31,3 +31,22 @@ Accomplished tasks:
 - Classes & Inheritance around 70%
 - need to test SQL tables in PHP
   - users table is functional for sign in
+
+Next Deadline Plan: 
+10/25 -10/31
+- Start working on the PHP login
+- Design User Interface with an updated Figma
+- Knowledge: PHP
+- Vananh: Finalize PhP login
+- Isha: 
+
+11/1-11-7
+- Start implementing the HTML and work on CSS for better User Interface Design
+- Vananh: work on CSS
+- Isha:
+
+11/15-12/21
+- Connect Frontend and Backend, publish site
+- Knowledge: Integration Layer, publishing
+- Vananh: Make sure frontend and backend work nicely
+- Isha:
