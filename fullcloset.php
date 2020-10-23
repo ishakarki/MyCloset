@@ -1,8 +1,3 @@
-<?php include 'clothing.php';
-
-class Closet {
-    private $bottoms = [];
-    private $shirts = [];
-    private $sweaters = [];
-    private $onepieces = [];
-}
+<?php
+include("includes/session.php")
+?>
