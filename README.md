@@ -21,3 +21,33 @@ On Window 10, you would need to access you Local Disk, find the htdocs folder in
 To see the project in your browser, access your local host port for XAMPP / the foldername (in our case it will be localhost/MyCloset). Note the if you have a different port in your XAMPP you must include that port in the following manner (localhost:portnumber/MyCloset) 
 
 link to download XAMPP: https://www.apachefriends.org/index.html
+
+
+To set up the database:
+
+Make sure XAMPP is started!
+
+Create a database call mycloset.
+Execute the following MySQL queries:
+
+Execute the following SQL queries:
+
+>CREATE TABLE IF NOT EXISTS account(
+>    id INT(11) AUTO_INCREMENT, 
+>    firstname TINYTEXT,
+>    lastname TINYTEXT,
+>    username TINYTEXT,
+>    pwd LONGTEXT,
+>    PRIMARY KEY(id)
+);
+
+INSERT INTO account
+   (firstname,lastname,username,pwd)
+VALUES
+    ('firstname','lastname','yourusername',’yourpassword’);
+
+CREATE TABLE IF NOT EXISTS clothing( idclothing INT NOT NULL AUTO_INCREMENT, typeofclothing TINYTEXT, color TINYTEXT, temp INT, pattern TINYTEXT, occasion INT, file_title LONGTEXT, PRIMARY KEY(idclothing) );
+
+CREATE TABLE IF NOT EXISTS outfits( idOutfit INT NOT NULL AUTO_INCREMENT, name TINYTEXT, bottoms INT, shirts INT, sweaters INT, onepieces INT, temperature INT, occasion INT, PRIMARY KEY(idOutfit) );
+
+
