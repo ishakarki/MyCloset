@@ -31,7 +31,7 @@ On Window 10, you would need to access you Local Disk, find the htdocs folder in
 
 On Linux, check the location of your htdocs. It should be in opt/lampp, make sure your MyClass project is save in the htdocs folder. To run the project, please have XAMPP started and running in the background (APACHE and MySQL started).
 
-To see the project in your browser, access your local host port for XAMPP / the foldername (in our case it will be localhost/MyCloset). Note the if you have a different port in your XAMPP you must include that port in the following manner (localhost:portnumber/MyCloset) 
+To see the project in your browser, access your local host port for XAMPP / the foldername (in our case it will be localhost/MyCloset). Note the if you have a different port in your XAMPP (check in the XAMPP Control Panel for the port listed for the Apachen file) you must include that port in the following manner (localhost:portnumber/MyCloset) 
 
 To start XAMPP: Look for the XAMPP Control Panel on your computer and open it, and start Module Apache and Module MySQL
 
