@@ -27,7 +27,7 @@ Accomplished tasks:
   - currently have 9 clothing images: 3 bottoms, 4 tops, 1 dress, 1 jacket
 - Basic graphics
   - added logo (logo stored in includes/img folder)
-  - pink theme (based on our FIGMA we implemented a pick background)
+  - pink theme (based on our FIGMA we implemented a pink background)
 - SQL database setup (tables, columns, variables):
   - account table structure 
   -![screenshot of account table](screenshots/account_pic.PNG)
@@ -37,7 +37,7 @@ Accomplished tasks:
       - lastname: last name of the user
       - username: the username of the user
       - pwd: the password of the user
-    - currently have two users within account page ![screenshot of account table](screenshots/account_pic2.png)
+    - currently have two users within account page ![screenshot of account table](screenshots/account_pic2.PNG)
   - clothing table structure 
   - ![screenshot of clothing table](screenshots/clothing_pic.PNG)
     - The purpose of the clothing table structure is to store all of the information of a piece of clothing.
