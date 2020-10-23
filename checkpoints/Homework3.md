@@ -77,6 +77,7 @@ Accomplished tasks:
   - Classes we have done so far:
     - Clothing Class: has get method to return information (type, color, temp, pattern, occasion, file tile) ![screenshot of clothing class](screenshots/clothingclass.png)
     - Clothing Subclasses: Bottoms, Tops, Onepieces, Sweaters 
+    
     ![screenshot of clothing subclasses](screenshots/clothingsubclasses.png)
     - In order to (potentially) implement Prototype design pattern, need to include some sort of Clone method
     - Closet Class: holds private variables of arrays of each subclass of Clothing (bottoms, shirts, sweaters, onepieces) ![screenshot of closet class](screenshots/closetclass.png)
