@@ -33,7 +33,10 @@ On Linux, check the location of your htdocs. It should be in opt/lampp, make sur
 
 To see the project in your browser, access your local host port for XAMPP / the foldername (in our case it will be localhost/MyCloset). Note the if you have a different port in your XAMPP (check in the XAMPP Control Panel for the port listed for the Apache file) you must include that port in the following manner (localhost:portnumber/MyCloset) 
 
-To start XAMPP: Look for the XAMPP Control Panel on your computer and open it, and start Module Apache and Module MySQL
+To start XAMPP:
+Windows: Look for the XAMPP Control Panel on your computer and open it, and start Module Apache and Module MySQL.
+Mac: Navigate to "Manage Servers", click "MySQL Database" and hit "Start", and click "Apache Web Server" and hit "Start".
+Linux: Similar to Mac.
 
 To set up the database:
 
