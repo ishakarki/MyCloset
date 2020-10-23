@@ -13,18 +13,18 @@ use HTML/CSS for the front-end from PHP, as well as use SQL for the database.
 To run this project, you must have XAMPP downloaded to your computer. XAMPP is a web server solution stack package developed by Apache Friends. Upon downloading, 
 please be sure to start the MySQL Database server as well as the Apache Web Server. This will allow us to view the project in your browser.
 
+Link to download XAMPP: https://www.apachefriends.org/index.html
+
+Instruction for downloading XAMPP on Mac: https://www.youtube.com/watch?v=L2X6fDiqOC4
+
+Instruction for dowloading XAMPP on Window 10: https://www.youtube.com/watch?v=N6ENnaRotmo
+
 On Mac, you need to access your Applications folder where you'll see the folder containing the XAMPP files. In there, we currently store our MyCloset project. 
 You might have to access the base directory of your Mac to see the XAMPP folder under Applications.
 
 On Window 10, you would need to access you Local Disk, find the htdocs folder in the XAMPP folder. You must store your MyCloset project within the htdocs folder. To run the application, you need to have XAMPP in the background (APACHE and MySQL started). 
 
 To see the project in your browser, access your local host port for XAMPP / the foldername (in our case it will be localhost/MyCloset). Note the if you have a different port in your XAMPP you must include that port in the following manner (localhost:portnumber/MyCloset) 
-
-Link to download XAMPP: https://www.apachefriends.org/index.html
-
-Instruction for downloading XAMPP on Mac: https://www.youtube.com/watch?v=L2X6fDiqOC4
-
-Instruction for dowloading XAMPP on Window 10: https://www.youtube.com/watch?v=N6ENnaRotmo
 
 To start XAMPP: Look for the XAMPP Control Panel on your computer and open it, and start Module Apache and Module MySQL
 
