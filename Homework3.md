@@ -28,9 +28,9 @@ Accomplished tasks:
   - pink theme
 - SQL database setup (tables, columns, variables)
 - Functioning sign in pages ![screenshot of login page](screenshots/loginpage.png)
-  - correct login takes you to dashboard, ![screenshot of home page](https://github.com/ishakarki/MyCloset/tree/week3/screenshots/homepage.png)
-  - incorrect password says incorrect password, ![screenshot of incorrect password](https://github.com/ishakarki/MyCloset/tree/week3/screenshots/incorrectlogin.png)
-  - non existing user says user not found ![screenshot of user not found](https://github.com/ishakarki/MyCloset/tree/week3/screenshots/usernotfound.png)
+  - correct login takes you to dashboard, ![screenshot of home page](screenshots/homepage.png)
+  - incorrect password says incorrect password, ![screenshot of incorrect password](screenshots/incorrectlogin.png)
+  - non existing user says user not found ![screenshot of user not found](screenshots/usernotfound.png)
   - after 30 minutes of inactivity, the site will return to login in page
   - After learning more about the login system, we managed to get ahead and implement our login right away (instead of waiting for the next homework deadline).
 - Classes & Inheritance around 70% done
