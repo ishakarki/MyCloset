@@ -30,10 +30,10 @@ Accomplished tasks:
   - pink theme (based on our FIGMA we implemented a pick background)
 - SQL database setup (tables, columns, variables):
   - account table:
-- Functioning sign in pages ![screenshot of login page](checkpoints/screenshots/loginpage.png)
-  - correct login takes you to dashboard, ![screenshot of home page](checkpoints/screenshots/homepage.png)
-  - incorrect password says incorrect password, ![screenshot of incorrect password](checkpoints/screenshots/incorrectlogin.png)
-  - non existing user says user not found ![screenshot of user not found](checkpoints/screenshots/usernotfound.png)
+- Functioning sign in pages ![screenshot of login page](screenshots/loginpage.png)
+  - correct login takes you to dashboard, ![screenshot of home page](screenshots/homepage.png)
+  - incorrect password says incorrect password, ![screenshot of incorrect password](screenshots/incorrectlogin.png)
+  - non existing user says user not found ![screenshot of user not found](screenshots/usernotfound.png)
   - after 30 minutes of inactivity, the site will return to login in page
   - After learning more about the login system, we managed to get ahead and implement our login right away (instead of waiting for the next homework deadline).
   - database connection works for signing in. 
