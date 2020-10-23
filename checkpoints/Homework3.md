@@ -29,7 +29,38 @@ Accomplished tasks:
   - added logo (logo stored in includes/img folder)
   - pink theme (based on our FIGMA we implemented a pick background)
 - SQL database setup (tables, columns, variables):
-  - account table:
+  - account table structure ![screenshot of account table](screenshots/account_pic.png)
+    - The purpose of the account table is to store the users who are able to login to the website, it stores in needed credential to log in
+      - id: primary key
+      - firstname: first name of the user
+      - lastname: last name of the user
+      - username: the username of the user
+      - pwd: the password of the user
+    - currently have two users within account page ![screenshot of account table](screenshots/account_pic2.png)
+  - clothing table structure ![screenshot of clothing table](screenshots/clothing_pic.png)
+    - The purpose of the clothing table structure is to store all of the information of a piece of clothing.
+      - idclothing: primary key
+      - typeofclothing: the type of clothing it is such as skirt, tanktop, dress etc.
+      - color: the main color of the piece of clothing
+      - temp: the amount of heat/warmth the piece will provide
+      - pattern: whether or not the piece of clothing has pattern
+      - occasion: where the piece of clothing is most suitable
+          - 1: very casual
+          - 2: casual hangout
+          - 3: business
+          - 4: fancy party
+      - file_title: the name of the picture file
+    - currently do not have any row in the clothing table
+  - outfit table structure ![screenshot of outfit table](screenshots/outfit_pic.png)
+    - The purpose of the outfit table is to store the outfits that the user particularly love
+      - idOutfit: primary key
+      - name: name of the outfit
+      - bottoms: the outfit's bottom if any
+      - shirts: the outfit's top if any
+      - sweaters: the outfit's sweater if any
+      - onepieces: the outfit's onepiece if any
+      - temperature: the amount of heat the outfit will provide
+      - occasion: where the outfit will be most suitable
 - Functioning sign in pages ![screenshot of login page](screenshots/loginpage.png)
   - correct login takes you to dashboard, ![screenshot of home page](screenshots/homepage.png)
   - incorrect password says incorrect password, ![screenshot of incorrect password](screenshots/incorrectlogin.png)
