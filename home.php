@@ -16,6 +16,28 @@
     <meta http-equiv="imagetoolbar" content="no" />
   
 </head>
+
+<?php
+
+    if(isset($_GET['found']))
+    {
+        if($_GET['found']=="error")
+        {
+            echo '<script type="text/javascript">';
+            echo 'alert("incorrect username/password")';  //not showing an alert box.
+            echo '</script>';
+        }
+        else if($_GET['found']=="incorrectuser")
+        {
+            echo '<script type="text/javascript">';
+            echo 'alert("username not found")';  //not showing an alert box.
+            echo '</script>';
+        }
+    }
+
+
+?>
+
 <body class="text-center">
 
     <img src="includes/images/closetlogo.png" alt="closet logo" style="width:400px;height:400px;">

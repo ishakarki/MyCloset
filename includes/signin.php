@@ -18,7 +18,7 @@ if(isset($_POST['submit-signin']))
 
         if(!mysqli_stmt_prepare($statement, $query))
 		{
-			header("Location: ../home.php?found=error");
+            header("Location: ../home.php?found=error");
 			exit();
         }
         else{
@@ -29,7 +29,7 @@ if(isset($_POST['submit-signin']))
             if ($row = mysqli_fetch_assoc($result))
             {
                 if($row['pwd'] != $pwd)
-                {
+                {   
                     header("Location: ../home.php?found=error");
 			        exit();
                 }
