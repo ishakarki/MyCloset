@@ -42,8 +42,6 @@ Accomplished tasks:
     - In order to (potentially) implement Prototype design pattern, need to include some sort of Clone method
     - Closet Class: holds private variables of arrays of each subclass of Clothing (bottoms, shirts, sweaters, onepieces)
     - things to implement: how the saved outfits will be stored, where the outfit generator function will belong (class of its own or Closet function?)
-- need to test SQL tables in PHP
-  - users table is functional for sign in
 
 Next Deadline Plan: 
 
