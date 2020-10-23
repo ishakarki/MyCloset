@@ -24,12 +24,16 @@ Our plans for this Homework:
 Accomplished tasks:
 - Pictures of clothing for basic database
 - Basic graphics
+  - added logo
+  - pink theme
 - SQL database setup (tables, columns, variables)
 - Functioning sign in pages ![screenshot of login page](https://github.com/ishakarki/MyCloset/tree/week3/screenshots/loginpage.png)
   - correct login takes you to dashboard, ![screenshot of home page](https://github.com/ishakarki/MyCloset/tree/week3/screenshots/homepage.png)
   - incorrect password says incorrect password, ![screenshot of incorrect password](https://github.com/ishakarki/MyCloset/tree/week3/screenshots/incorrectlogin.png)
   - non existing user says user not found ![screenshot of user not found](https://github.com/ishakarki/MyCloset/tree/week3/screenshots/usernotfound.png)
+  - After learning more about the login system, we managed to get ahead and implement our login right away (instead of waiting for the next homework deadline).
 - Classes & Inheritance around 70% done
+  - We said that we would set this up however, we found some errors with our previous plans for the classes. This led us to slow down a bit on the implementation. However, now that we have understood all of the design pattern, we have concluded to use prototyping.
 - need to test SQL tables in PHP
   - users table is functional for sign in
 
