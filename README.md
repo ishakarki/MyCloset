@@ -51,4 +51,4 @@ Execute the following SQL queries:
 
 >CREATE TABLE IF NOT EXISTS outfits( idOutfit INT NOT NULL AUTO_INCREMENT, name TINYTEXT, bottoms INT, shirts INT, sweaters INT, onepieces INT, temperature INT, occasion INT, >PRIMARY KEY(idOutfit) );
 
-
+To check if your database connection is correct, go to the database_setup.php file to modify the username and password as needed. 
