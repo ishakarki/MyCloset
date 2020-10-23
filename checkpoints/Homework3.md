@@ -91,7 +91,7 @@ Accomplished tasks:
     - Home Page: page where the user can request a generated outfit based on their inputs
     - Upload Page: page where the user can upload article of clothing to include in data base
   - Currently there is no difference in these pages although the navigation bar do take the user to the correct page when the buttons are clicked on the navigation bar
-  ![screenshot of navigation](screenshots/nav_pic.PNG)
+  ![screenshot of navigation](screenshots/nav_pic.png)
   
 Next Deadline Plan: 
 
