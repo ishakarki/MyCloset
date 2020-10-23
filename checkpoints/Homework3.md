@@ -70,7 +70,7 @@ Accomplished tasks:
   - non existing user says user not found ![screenshot of user not found](screenshots/usernotfound.png)
   - after 30 minutes of inactivity, the site will return to login in page
   - After learning more about the login system, we managed to get ahead and implement our login right away (instead of waiting for the next homework deadline).
-  - database connection works for signing in. 
+  - database connection works for signing in (also show that our backend connection work)
   - account table is set up in phpMyAdmin, containing the user informations (firstname, lastname, username, and password)
 - Classes & Inheritance around 70% done
   - There were a few modification with our classes, outside of the clothing, closet, and generator classes, we concluded that we needed to implemented a few child classes that inherit from the clothing classes, that is a bottom class, top class, onepiece class, and sweater class. We decided this was necessary because having these classes will help us differentiate between different type of clothing. For this reason there was a bit of a delay in finishing our writing up our classes, as a result we are delayed in finalizing our classes.
@@ -80,9 +80,16 @@ Accomplished tasks:
     
     ![screenshot of clothing subclasses](screenshots/clothingsubclasses.png)
     - In order to (potentially) implement Prototype design pattern, need to include some sort of Clone method
+    - This is where we are using inheritance (child class inheritant parent class)
     - Closet Class: holds private variables of arrays of each subclass of Clothing (bottoms, shirts, sweaters, onepieces) ![screenshot of closet class](screenshots/closetclass.png)
     - things to implement: how the saved outfits will be stored, where the outfit generator function will belong (class of its own or Closet function?)
-
+- Navigation Bar:
+  - Although this was not included in our original plan, the implementation of the navigation bar was necessary for the user to jump around pages, rather than have it all in on single page:
+    - Favorite Page: favorite page will display the user's favorite outfits
+    - Full Closet Page: page will display every piece of clothing in the user's closet
+    - Home Page: page where the user can request a generated outfit based on their inputs
+    - Upload Page: page where the user can upload article of clothing to include in data base
+  - Currently there is no difference in these pages although the navigation bar do take the user to the correct page when the buttons are clicked on the navigation bar
 Next Deadline Plan: 
 
 10/25 -10/31
