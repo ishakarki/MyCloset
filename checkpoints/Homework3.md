@@ -29,7 +29,7 @@ Accomplished tasks:
   - added logo (logo stored in includes/img folder)
   - pink theme (based on our FIGMA we implemented a pick background)
 - SQL database setup (tables, columns, variables):
-  - account table structure ![screenshot of account table](screenshots/account_pic.png)
+  - account table structure ![screenshot of account table](screenshots/account_pic.PNG)
     - The purpose of the account table is to store the users who are able to login to the website, it stores in needed credential to log in
       - id: primary key
       - firstname: first name of the user
