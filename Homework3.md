@@ -27,7 +27,7 @@ Accomplished tasks:
   - added logo
   - pink theme
 - SQL database setup (tables, columns, variables)
-- Functioning sign in pages ![screenshot of login page](https://github.com/ishakarki/MyCloset/tree/week3/screenshots/loginpage.png)
+- Functioning sign in pages ![screenshot of login page](MyCloset/tree/week3/screenshots/loginpage.png)
   - correct login takes you to dashboard, ![screenshot of home page](https://github.com/ishakarki/MyCloset/tree/week3/screenshots/homepage.png)
   - incorrect password says incorrect password, ![screenshot of incorrect password](https://github.com/ishakarki/MyCloset/tree/week3/screenshots/incorrectlogin.png)
   - non existing user says user not found ![screenshot of user not found](https://github.com/ishakarki/MyCloset/tree/week3/screenshots/usernotfound.png)
