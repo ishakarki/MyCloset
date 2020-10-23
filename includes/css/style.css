@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(248, 171, 186);
+}
+
+* {
+    margin:0;
+    padding:0;
+  }
+  h1 {
+    font-size:27em;
+    line-height:0.6em;
+  }
+
+  h2 {
+    font-size:17em;
+    line-height:0.9em;
+  }
+  
+.form-signin {
+    padding-top: 90px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    display: inline-block;
+    margin: 2 auto;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.btn.btn-lg.btn-primary.btn-block{
+  background-color:  rgb(185, 113, 127);
+  border-color:  rgb(185, 113, 127);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
