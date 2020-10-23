@@ -27,13 +27,14 @@ Accomplished tasks:
 - SQL database setup (tables, columns, variables)
 - Functioning sign in pages
   - correct login takes you to dashboard,
-  - incorrect password says not found in url,
-  - non existing user says user not found in url,
+  - incorrect password says not found,
+  - non existing user says user not found,
 - Classes & Inheritance around 70% done
 - need to test SQL tables in PHP
   - users table is functional for sign in
 
 Next Deadline Plan: 
+
 10/25 -10/31
 - Start working on the PHP login (CHANGE: PHP login already implemented, so now we only need to include a logout button)
 - Design User Interface with an updated Figma
