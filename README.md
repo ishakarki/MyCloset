@@ -24,14 +24,14 @@ Instruction for dowloading XAMPP on Window 10: https://www.youtube.com/watch?v=N
 Instruction for dowloanding XAMPP on Linux: https://www.youtube.com/watch?v=R5CUn5wGQGg
 - Current version for Linux: 7.4.11
 
-On Mac, you need to access your Applications folder where you'll see the folder containing the XAMPP files. In there, we would need store the MyCloset project. 
+On Mac, you need to access your Applications folder where you'll see the folder containing the XAMPP files. In there, access your htdocs folder. Then, we would need to store the MyCloset folder. 
 You might have to access the base directory of your Mac to see the XAMPP folder under Applications. To run the project, you need to have XAMPP in the background (APACHE and MySQL started).
 
 On Window 10, you would need to access you Local Disk, find the htdocs folder in the XAMPP folder. You must store your MyCloset project within the htdocs folder. To run the project, you need to have XAMPP in the background (APACHE and MySQL started).
 
 On Linux, check the location of your htdocs. It should be in opt/lampp, make sure your MyClass project is save in the htdocs folder. To run the project, please have XAMPP started and running in the background (APACHE and MySQL started).
 
-To see the project in your browser, access your local host port for XAMPP / the foldername (in our case it will be localhost/MyCloset). Note the if you have a different port in your XAMPP (check in the XAMPP Control Panel for the port listed for the Apachen file) you must include that port in the following manner (localhost:portnumber/MyCloset) 
+To see the project in your browser, access your local host port for XAMPP / the foldername (in our case it will be localhost/MyCloset). Note the if you have a different port in your XAMPP (check in the XAMPP Control Panel for the port listed for the Apache file) you must include that port in the following manner (localhost:portnumber/MyCloset) 
 
 To start XAMPP: Look for the XAMPP Control Panel on your computer and open it, and start Module Apache and Module MySQL
 
