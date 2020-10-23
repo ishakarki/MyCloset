@@ -16,13 +16,20 @@ please be sure to start the MySQL Database server as well as the Apache Web Serv
 Link to download XAMPP: https://www.apachefriends.org/index.html
 
 Instruction for downloading XAMPP on Mac: https://www.youtube.com/watch?v=L2X6fDiqOC4
+- Current version for Mac: 7.4.11
 
 Instruction for dowloading XAMPP on Window 10: https://www.youtube.com/watch?v=N6ENnaRotmo
+- Current version for Window 10: 7.4.11
+
+Instruction for dowloanding XAMPP on Linux: https://www.youtube.com/watch?v=R5CUn5wGQGg
+- Current version for Linux: 7.4.11
 
 On Mac, you need to access your Applications folder where you'll see the folder containing the XAMPP files. In there, we would need store the MyCloset project. 
-You might have to access the base directory of your Mac to see the XAMPP folder under Applications.
+You might have to access the base directory of your Mac to see the XAMPP folder under Applications. To run the project, you need to have XAMPP in the background (APACHE and MySQL started).
 
-On Window 10, you would need to access you Local Disk, find the htdocs folder in the XAMPP folder. You must store your MyCloset project within the htdocs folder. To run the application, you need to have XAMPP in the background (APACHE and MySQL started). 
+On Window 10, you would need to access you Local Disk, find the htdocs folder in the XAMPP folder. You must store your MyCloset project within the htdocs folder. To run the project, you need to have XAMPP in the background (APACHE and MySQL started).
+
+On Linux, check the location of your htdocs. It should be in opt/lampp, make sure your MyClass project is save in the htdocs folder. To run the project, please have XAMPP started and running in the background (APACHE and MySQL started).
 
 To see the project in your browser, access your local host port for XAMPP / the foldername (in our case it will be localhost/MyCloset). Note the if you have a different port in your XAMPP you must include that port in the following manner (localhost:portnumber/MyCloset) 
 
