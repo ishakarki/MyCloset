@@ -76,7 +76,8 @@ Accomplished tasks:
   - There were a few modification with our classes, outside of the clothing, closet, and generator classes, we concluded that we needed to implemented a few child classes that inherit from the clothing classes, that is a bottom class, top class, onepiece class, and sweater class. We decided this was necessary because having these classes will help us differentiate between different type of clothing. For this reason there was a bit of a delay in finishing our writing up our classes, as a result we are delayed in finalizing our classes.
   - Classes we have done so far:
     - Clothing Class: has get method to return information (type, color, temp, pattern, occasion, file tile) ![screenshot of clothing class](screenshots/clothingclass.png)
-    - Clothing Subclasses: Bottoms, Tops, Onepieces, Sweaters ![screenshot of clothing subclasses](screenshots/clothingsubclasses.png)
+    - Clothing Subclasses: Bottoms, Tops, Onepieces, Sweaters 
+    ![screenshot of clothing subclasses](screenshots/clothingsubclasses.png)
     - In order to (potentially) implement Prototype design pattern, need to include some sort of Clone method
     - Closet Class: holds private variables of arrays of each subclass of Clothing (bottoms, shirts, sweaters, onepieces) ![screenshot of closet class](screenshots/closetclass.png)
     - things to implement: how the saved outfits will be stored, where the outfit generator function will belong (class of its own or Closet function?)
