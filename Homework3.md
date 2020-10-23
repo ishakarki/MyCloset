@@ -33,6 +33,8 @@ Accomplished tasks:
   - non existing user says user not found ![screenshot of user not found](screenshots/usernotfound.png)
   - after 30 minutes of inactivity, the site will return to login in page
   - After learning more about the login system, we managed to get ahead and implement our login right away (instead of waiting for the next homework deadline).
+  - database connection works for signing in. 
+  - account table is set up in phpMyAdmin, containing the user informations (firstname, lastname, username, and password)
 - Classes & Inheritance around 70% done
   - There were a few modification with our classes, outside of the clothing, closet, and generator classes, we concluded that we needed to implemented a few child classes that inherit from the clothing classes, that is a bottom class, top class, onepiece class, and sweater class. We decided this was necessary because having these classes will help us differentiate between different type of clothing.
   - Classes we have done so far:
