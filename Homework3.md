@@ -25,7 +25,7 @@ Accomplished tasks:
 - Pictures of clothing for basic database
 - Basic graphics
 - SQL database setup (tables, columns, variables)
-- Functioning sign in pages ![screenshot of loginpage](/week3/screenshots/loginpage?raw=true)
+- Functioning sign in pages ![screenshot of loginpage](/week3/screenshots/loginpage.png?raw=true)
   - correct login takes you to dashboard,
   - incorrect password says incorrect password,
   - non existing user says user not found
