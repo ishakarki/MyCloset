@@ -56,4 +56,15 @@ Execute the following SQL queries:
 
 >CREATE TABLE IF NOT EXISTS outfits( idOutfit INT NOT NULL AUTO_INCREMENT, name TINYTEXT, bottoms INT, shirts INT, sweaters INT, onepieces INT, temperature INT, occasion INT, >PRIMARY KEY(idOutfit) );
 
-To check if your database connection is correct, go to the database_setup.php file to modify the username, password, and port as needed. 
+Getting the database working really depend on how you set up your XAMPP. To check if your database connection is correct, go to the database_setup.php file to modify the username, password, and port as needed. 
+![data_setup](screenshots/database_instruction.png)
+$dbServername="localhost:portnumber"; <= in replacement of portnumber, include the port where MySQL is running. To check this go to your XAMPP Control Panel, then check the port listed for MySQL
+
+$dbUsername ="username"; <= in replacement of username, check your username for MySQL by going to "\xampp\phpMyAdmin\config.inc.php" and look at the line $cfg['Servers'][$i]['user'] = 'username'; and adjust the  database_setup.php accordingly
+
+$dbPassword ="password"; <= in replacement of password, check your username for MySQL by going to "\xampp\phpMyAdmin\config.inc.php" and look at the line $cfg['Servers'][$i]['password'] = 'password'; and adjust the  database_setup.php accordingly
+
+$dbName = "mycloset"; <= make sure your database for this project is named "mycloset"
+
+
+
