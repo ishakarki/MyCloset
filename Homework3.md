@@ -1,6 +1,7 @@
 #My Closet
 
 Our plans for this Homework:
+
 10/4 - 10/10
 - Research about PHP login
 - Set up the classes and the necessary functions needed for the backend
