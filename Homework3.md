@@ -34,7 +34,9 @@ Accomplished tasks:
   - after 30 minutes of inactivity, the site will return to login in page
   - After learning more about the login system, we managed to get ahead and implement our login right away (instead of waiting for the next homework deadline).
 - Classes & Inheritance around 70% done
-  - We said that we would set this up however, we found some errors with our previous plans for the classes. This led us to slow down a bit on the implementation. However, now that we have understood all of the design pattern, we have concluded to use prototyping.
+  - There were a few modification with our classes, outside of the clothing, closet, and generator classes, we concluded that we needed to implemented a few child classes that inherit from the clothing classes, that is a bottom class, top class, onepiece class, and sweater class. We decided this was necessary because having these classes will help us differentiate between different type of clothing.
+  - Classes we have done so far:
+    - Clothing Class: has get method to return information (type, color, temp, pattern, occasion, file tile)
 - need to test SQL tables in PHP
   - users table is functional for sign in
 
