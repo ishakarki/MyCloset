@@ -25,7 +25,7 @@ link to download XAMPP: https://www.apachefriends.org/index.html
 
 To set up the database:
 
-Make sure XAMPP is started!
+Make sure XAMPP is started! Go to your browser and access phpMyAdmin (localhost/phpMyAdmin or localhost:portnumber/phpMyAdmin)
 
 Create a database call mycloset.
 
