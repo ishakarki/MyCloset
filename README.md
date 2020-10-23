@@ -66,5 +66,6 @@ $dbPassword ="password"; <= in replacement of password, check your username for 
 
 $dbName = "mycloset"; <= make sure your database for this project is named "mycloset"
 
-
+To login to the site, go to localhost/MyCloset or localhost:portnumber/MyCloset. Then input the username and password that was set up in your mycloset database under the account table.
+. 
 
