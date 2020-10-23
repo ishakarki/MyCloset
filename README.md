@@ -28,7 +28,6 @@ To set up the database:
 Make sure XAMPP is started!
 
 Create a database call mycloset.
-Execute the following MySQL queries:
 
 Execute the following SQL queries:
 
