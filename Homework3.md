@@ -31,6 +31,7 @@ Accomplished tasks:
   - correct login takes you to dashboard, ![screenshot of home page](https://github.com/ishakarki/MyCloset/tree/week3/screenshots/homepage.png)
   - incorrect password says incorrect password, ![screenshot of incorrect password](https://github.com/ishakarki/MyCloset/tree/week3/screenshots/incorrectlogin.png)
   - non existing user says user not found ![screenshot of user not found](https://github.com/ishakarki/MyCloset/tree/week3/screenshots/usernotfound.png)
+  - after 30 minutes of inactivity, the site will return to login in page
   - After learning more about the login system, we managed to get ahead and implement our login right away (instead of waiting for the next homework deadline).
 - Classes & Inheritance around 70% done
   - We said that we would set this up however, we found some errors with our previous plans for the classes. This led us to slow down a bit on the implementation. However, now that we have understood all of the design pattern, we have concluded to use prototyping.
