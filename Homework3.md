@@ -42,7 +42,7 @@ Next Deadline Plan:
 - Vananh: Finalize PhP login 
 - Isha: Finalize classes
 
-11/1-11-7
+11/1-11/7
 - Start implementing the HTML and work on CSS for better User Interface Design
 - Present clothing onto webpage (CHANGE: added task to test out if pictures are presented well onto our page, before we start implementing the generation of outfits)
 - Vananh: work on CSS
