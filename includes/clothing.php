@@ -28,8 +28,6 @@ class Bottom extends Clothing {
     // type can be: pants, shorts, skirt
 }
 
-// $blackskirt = new Bottom('skirt')
-
 class Shirt extends Clothing {
     // tshirt, long shirt, tanktop, blouse
 }

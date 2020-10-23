@@ -1,6 +1,6 @@
 <?php
 session_start();
-#Log in if the the login was successful
+#if the login was not successful go back to sigin.php
 if(!isset($_SESSION['userId']))
 {
     header("Location:signin.php");

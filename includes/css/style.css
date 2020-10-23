@@ -33,3 +33,10 @@ body{
   background-color:  rgb(185, 113, 127);
   border-color:  rgb(185, 113, 127);
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
