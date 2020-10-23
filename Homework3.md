@@ -25,10 +25,10 @@ Accomplished tasks:
 - Pictures of clothing for basic database
 - Basic graphics
 - SQL database setup (tables, columns, variables)
-- Functioning sign in pages ![screenshot of loginpage](https://github.com/ishakarki/MyCloset/tree/week3/screenshots/loginpage.png)
-  - correct login takes you to dashboard,
-  - incorrect password says incorrect password,
-  - non existing user says user not found
+- Functioning sign in pages ![screenshot of login page](https://github.com/ishakarki/MyCloset/tree/week3/screenshots/loginpage.png)
+  - correct login takes you to dashboard, ![screenshot of home page](https://github.com/ishakarki/MyCloset/tree/week3/screenshots/homepage.png)
+  - incorrect password says incorrect password, ![screenshot of incorrect password](https://github.com/ishakarki/MyCloset/tree/week3/screenshots/incorrectlogin.png)
+  - non existing user says user not found ![screenshot of user not found](https://github.com/ishakarki/MyCloset/tree/week3/screenshots/usernotfound.png)
 - Classes & Inheritance around 70% done
 - need to test SQL tables in PHP
   - users table is functional for sign in
