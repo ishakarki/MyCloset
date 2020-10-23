@@ -71,9 +71,10 @@ Accomplished tasks:
   - after 30 minutes of inactivity, the site will return to login in page
   - After learning more about the login system, we managed to get ahead and implement our login right away (instead of waiting for the next homework deadline).
   - database connection works for signing in (also show that our backend connection work)
+  - if the user try to access the main page without logging in, it will take the user back to login
   - account table is set up in phpMyAdmin, containing the user informations (firstname, lastname, username, and password)
 - Classes & Inheritance around 70% done
-  - There were a few modification with our classes, outside of the clothing, closet, and generator classes, we concluded that we needed to implemented a few child classes that inherit from the clothing classes, that is a bottom class, top class, onepiece class, and sweater class. We decided this was necessary because having these classes will help us differentiate between different type of clothing. For this reason there was a bit of a delay in finishing our writing up our classes, as a result we are delayed in finalizing our classes.
+  - There were a few modification with our classes, outside of the clothing, closet, and generator classes, we concluded that we needed to implemented a few child classes that inherit from the clothing classes, that is a bottom class, top class, onepiece class, and sweater class. We decided this was necessary because having these classes will help us differentiate between different type of clothing. For this reason there was a bit of a delay in finishing our writing up our classes.
   - Classes we have done so far:
     - Clothing Class: has get method to return information (type, color, temp, pattern, occasion, file tile) ![screenshot of clothing class](screenshots/clothingclass.png)
     - Clothing Subclasses: Bottoms, Tops, Onepieces, Sweaters 
@@ -90,6 +91,8 @@ Accomplished tasks:
     - Home Page: page where the user can request a generated outfit based on their inputs
     - Upload Page: page where the user can upload article of clothing to include in data base
   - Currently there is no difference in these pages although the navigation bar do take the user to the correct page when the buttons are clicked on the navigation bar
+  ![screenshot of navigation](screenshots/nav_pic.PNG)
+  
 Next Deadline Plan: 
 
 10/25 -10/31
