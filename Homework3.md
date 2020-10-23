@@ -22,11 +22,14 @@ Our plans for this Homework:
 - Isha: Work more on classes set up
 
 Accomplished tasks:
-- Pictures of clothing for basic database
+- Pictures of clothing
+  - stored in includes/img folder
+  - currently have 9 clothing images: 3 bottoms, 4 tops, 1 dress, 1 jacket
 - Basic graphics
-  - added logo
-  - pink theme
-- SQL database setup (tables, columns, variables)
+  - added logo (logo stored in includes/img folder)
+  - pink theme (based on our FIGMA we implemented a pick background)
+- SQL database setup (tables, columns, variables):
+  - account table:
 - Functioning sign in pages ![screenshot of login page](screenshots/loginpage.png)
   - correct login takes you to dashboard, ![screenshot of home page](screenshots/homepage.png)
   - incorrect password says incorrect password, ![screenshot of incorrect password](screenshots/incorrectlogin.png)
