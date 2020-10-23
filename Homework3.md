@@ -37,6 +37,9 @@ Accomplished tasks:
   - There were a few modification with our classes, outside of the clothing, closet, and generator classes, we concluded that we needed to implemented a few child classes that inherit from the clothing classes, that is a bottom class, top class, onepiece class, and sweater class. We decided this was necessary because having these classes will help us differentiate between different type of clothing.
   - Classes we have done so far:
     - Clothing Class: has get method to return information (type, color, temp, pattern, occasion, file tile)
+    - In order to (potentially) implement Prototype design pattern, need to include some sort of Clone method
+    - Closet Class: holds private variables of arrays of each subclass of Clothing (bottoms, shirts, sweaters, onepieces)
+    - things to implement: how the saved outfits will be stored, where the outfit generator function will belong (class of its own or Closet function?)
 - need to test SQL tables in PHP
   - users table is functional for sign in
 
@@ -46,18 +49,27 @@ Next Deadline Plan:
 - Start working on the PHP login (CHANGE: PHP login already implemented, so now we only need to include a logout button)
 - Design User Interface with an updated Figma
 - Knowledge: PHP
-- Vananh: Finalize PhP login 
-- Isha: Finalize classes
+- Vananh: Finalize PhP login
+  - mostly satisfied with current features - logs in properly, outputs correct error messages, returns user back to login page
+    after 30 minutes of inactivity
+  - things to add: log in vs log out feature
+- Isha: Finalize classes 
+  - currently have a rough draft of the classes
+  - need to implement mentioned features: how the saved outfits will be stored, where the outfit generator function will belong (class of its own or Closet function?)
+  - also find out the design pattern if Prototype doesn't work out
 
 11/1-11/7
 - Start implementing the HTML and work on CSS for better User Interface Design
 - Present clothing onto webpage (CHANGE: added task to test out if pictures are presented well onto our page, before we start implementing the generation of outfits)
 - Vananh: work on CSS
-- Isha: create better graphics/interface w/CSS
+- Isha: create better graphics/interface w/CSS - create a nicer logo, possibly animated?
+- to work on for both: try and "modernize" the UI using something similar to Bootstrap, test how the site looks from a mobile view (i.e. making the window size smaller), test pictures' display
 
 11/15-12/21
 - Connect Frontend and Backend, publish site
 - Knowledge: Integration Layer, publishing
 - Test our classes with our actual clothing pictures (CHANGE: added task, we want to get this done earlier to make sure we have enough time to work around errors)
 - Vananh: Make sure frontend and backend work nicely
+  - do the correct images come out? do the buttons link to right pages?
 - Isha: User upload
+  - implement user upload, where user can upload their own images to add to the database
