@@ -27,8 +27,8 @@ Accomplished tasks:
 - SQL database setup (tables, columns, variables)
 - Functioning sign in pages
   - correct login takes you to dashboard,
-  - incorrect password says not found,
-  - non existing user says user not found,
+  - incorrect password says incorrect password,
+  - non existing user says user not found
 - Classes & Inheritance around 70% done
 - need to test SQL tables in PHP
   - users table is functional for sign in
