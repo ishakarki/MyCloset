@@ -16,12 +16,17 @@ please be sure to start the MySQL Database server as well as the Apache Web Serv
 On Mac, you need to access your Applications folder where you'll see the folder containing the XAMPP files. In there, we currently store our MyCloset project. 
 You might have to access the base directory of your Mac to see the XAMPP folder under Applications.
 
-On Window 10, you would need to access you Local Disk, find the htdocs folder in the XAMPP folder. You must store your MyCloset project within the htdocs folder. To run the application, you need to have XAMPP running in the background (APACHE and MySQL started). 
+On Window 10, you would need to access you Local Disk, find the htdocs folder in the XAMPP folder. You must store your MyCloset project within the htdocs folder. To run the application, you need to have XAMPP in the background (APACHE and MySQL started). 
 
 To see the project in your browser, access your local host port for XAMPP / the foldername (in our case it will be localhost/MyCloset). Note the if you have a different port in your XAMPP you must include that port in the following manner (localhost:portnumber/MyCloset) 
 
-link to download XAMPP: https://www.apachefriends.org/index.html
+Link to download XAMPP: https://www.apachefriends.org/index.html
 
+Instruction for downloading XAMPP on Mac: https://www.youtube.com/watch?v=L2X6fDiqOC4
+
+Instruction for dowloading XAMPP on Window 10: https://www.youtube.com/watch?v=N6ENnaRotmo
+
+To start XAMPP: Look for the XAMPP Control Panel on your computer and open it, and start Module Apache and Module MySQL
 
 To set up the database:
 
@@ -51,4 +56,4 @@ Execute the following SQL queries:
 
 >CREATE TABLE IF NOT EXISTS outfits( idOutfit INT NOT NULL AUTO_INCREMENT, name TINYTEXT, bottoms INT, shirts INT, sweaters INT, onepieces INT, temperature INT, occasion INT, >PRIMARY KEY(idOutfit) );
 
-To check if your database connection is correct, go to the database_setup.php file to modify the username and password as needed. 
+To check if your database connection is correct, go to the database_setup.php file to modify the username, password, and port as needed. 
