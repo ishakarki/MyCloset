@@ -26,27 +26,29 @@ Accomplished tasks:
 - SQL database setup (tables, columns, variables)
 - Functioning sign in pages
   - correct login takes you to dashboard,
-  - incorrect password says not found,
-  - non existing user says user not found
-- Classes & Inheritance around 70%
+  - incorrect password says not found in url,
+  - non existing user says user not found in url,
+- Classes & Inheritance around 70% done
 - need to test SQL tables in PHP
   - users table is functional for sign in
 
 Next Deadline Plan: 
 10/25 -10/31
-- Start working on the PHP login
+- Start working on the PHP login (CHANGE: PHP login already implemented, so now we only need to include a logout button)
 - Design User Interface with an updated Figma
 - Knowledge: PHP
-- Vananh: Finalize PhP login
-- Isha: Better implement classes
+- Vananh: Finalize PhP login 
+- Isha: Finalize classes
 
 11/1-11-7
 - Start implementing the HTML and work on CSS for better User Interface Design
+- Present clothing onto webpage (CHANGE: added task as we realized that this is the core of our project)
 - Vananh: work on CSS
 - Isha: create better graphics/interface w/CSS
 
 11/15-12/21
 - Connect Frontend and Backend, publish site
 - Knowledge: Integration Layer, publishing
+- Test our classes with our actual clothing pictures (CHANGE: added task, we want to get this done earlier to make sure we have enough time to work around errors)
 - Vananh: Make sure frontend and backend work nicely
 - Isha: User upload
