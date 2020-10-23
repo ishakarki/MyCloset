@@ -73,7 +73,7 @@ Accomplished tasks:
   - database connection works for signing in. 
   - account table is set up in phpMyAdmin, containing the user informations (firstname, lastname, username, and password)
 - Classes & Inheritance around 70% done
-  - There were a few modification with our classes, outside of the clothing, closet, and generator classes, we concluded that we needed to implemented a few child classes that inherit from the clothing classes, that is a bottom class, top class, onepiece class, and sweater class. We decided this was necessary because having these classes will help us differentiate between different type of clothing.
+  - There were a few modification with our classes, outside of the clothing, closet, and generator classes, we concluded that we needed to implemented a few child classes that inherit from the clothing classes, that is a bottom class, top class, onepiece class, and sweater class. We decided this was necessary because having these classes will help us differentiate between different type of clothing. For this reason there was a bit of a delay in finishing our writing up our classes, as a result we are delayed in finalizing our classes.
   - Classes we have done so far:
     - Clothing Class: has get method to return information (type, color, temp, pattern, occasion, file tile)
     - In order to (potentially) implement Prototype design pattern, need to include some sort of Clone method
@@ -85,11 +85,13 @@ Next Deadline Plan:
 10/25 -10/31
 - Start working on the PHP login (CHANGE: PHP login already implemented, so now we only need to include a logout button)
 - Design User Interface with an updated Figma
+  - If needed, we will see if the current Figma fits the way we want the website to be presented and we will update the Figma as necessary
 - Knowledge: PHP
+  - learn how to use the php classes to present it onto the website
 - Vananh: Finalize PhP login
   - mostly satisfied with current features - logs in properly, outputs correct error messages, returns user back to login page
     after 30 minutes of inactivity
-  - things to add: log in vs log out feature
+  - things to add: log out feature
 - Isha: Finalize classes 
   - currently have a rough draft of the classes
   - need to implement mentioned features: how the saved outfits will be stored, where the outfit generator function will belong (class of its own or Closet function?)
@@ -98,15 +100,22 @@ Next Deadline Plan:
 11/1-11/7
 - Start implementing the HTML and work on CSS for better User Interface Design
 - Present clothing onto webpage (CHANGE: added task to test out if pictures are presented well onto our page, before we start implementing the generation of outfits)
-- Vananh: work on CSS
+- Vananh: work on CSS:
+  - Figure out how the outfits will be displayed onto the website
+  - Figure out how to display the full closet
 - Isha: create better graphics/interface w/CSS - create a nicer logo, possibly animated?
-- to work on for both: try and "modernize" the UI using something similar to Bootstrap, test how the site looks from a mobile view (i.e. making the window size smaller), test pictures' display
+  - to work on for both: try and "modernize" the UI using something similar to Bootstrap, test how the site looks from a mobile view (i.e. making the window size smaller), test  pictures' display
 
 11/15-12/21
 - Connect Frontend and Backend, publish site
+  - Make sure that backend is responding well to the frontend request
+  - if have time, use github.io to publish
 - Knowledge: Integration Layer, publishing
+  - Learning more about sending in user request to display information
+  - Figuring out ways we can publish the website
 - Test our classes with our actual clothing pictures (CHANGE: added task, we want to get this done earlier to make sure we have enough time to work around errors)
-- Vananh: Make sure frontend and backend work nicely
+- Vananh: Make sure frontend and backend work nicely and CSS
   - do the correct images come out? do the buttons link to right pages?
+   - Figure out how the user will interact with the website: buttons request
 - Isha: User upload
   - implement user upload, where user can upload their own images to add to the database
