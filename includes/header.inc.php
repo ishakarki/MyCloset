@@ -32,5 +32,9 @@
     <li class="nav-item active">
       <a class="nav-link" href="upload.php">Upload</a>
     </li>
+    <li class="nav-item active">
+    <a class="nav-link" name = "logout" href="includes/logout.php">Logout</a>
+  </li>
   </ul>
+  
 </nav>
