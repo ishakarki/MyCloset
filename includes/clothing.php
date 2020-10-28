@@ -7,7 +7,7 @@ class Clothing{
     protected $pattern;
     protected $occasion;
     protected $file_title;
-    function __contruct($ty, $co, $te, $pa, $oc, $ft)
+    function __construct($ty, $co, $te, $pa, $oc, $ft)
     {
         echo "this is inside the constructor";
         $this->type = $ty; // string 
