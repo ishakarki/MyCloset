@@ -7,14 +7,15 @@ class Clothing{
     protected $pattern;
     protected $occasion;
     protected $file_title;
-    function __contruct($type, $color, $temp, $pattern, $occasion, $file_title)
+    function __contruct($ty, $co, $te, $pa, $oc, $ft)
     {
-        $this->type = $type; // string 
-        $this->color = $color; // string
-        $this->temp = $temp; // int
-        $this->pattern = $pattern; // bool
-        $this->occasion = $occasion; // int level
-        $this->file_title = $file_tile; // string
+        echo "this is inside the constructor";
+        $this->type = $ty; // string 
+        $this->color = $co; // string
+        $this->temp = $te; // int
+        $this->pattern = $pa; // bool
+        $this->occasion = $oc; // int level
+        $this->file_title = $ft; // string
     }
     function get_type(){return $this->type;}
     function get_color(){return $this->color;}
@@ -22,6 +23,10 @@ class Clothing{
     function get_pattern(){return $this->pattern;}
     function get_occasion(){return $this->occasion;}
     function get_file_title(){return $this->file_title;}
+
+    function set_color($color){
+        $this->color = $color;
+    }
 }
 
 class Bottom extends Clothing {
