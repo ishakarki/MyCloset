@@ -1,6 +1,9 @@
 <?php include 'clothing.php';
 include 'closet.php';
 
+//60 above temp 30F and below
+//30-60 temp 30F-60F
+
 class Generator{
     // do we store outfits here or in Closet?
 
