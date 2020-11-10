@@ -24,7 +24,7 @@ Our Plans for this HW
 - Isha: create better graphics/interface w/CSS - create a nicer logo, possibly animated?
   - to work on for both: try and "modernize" the UI using something similar to Bootstrap, test how the site looks from a mobile view (i.e. making the window size smaller), test  pictures' display
 
-11/15-12/21
+11/15-11/21
 - Connect Frontend and Backend, publish site
   - Make sure that backend is responding well to the frontend request
   - if have time, use github.io to publish
@@ -43,3 +43,15 @@ Acomplishment
 - Added logout button, placed on the navigation bar
     - When clicked logout, it will take the user back to the sign in page
 - Slideshow
+- Some changes in the table structure:
+  - CLOTHING table: 
+    - attribute idclothing, nameofclothing, typeofclothing, color, temp, occasion, and file_title are all NOT NULL
+    - data type for idclothing changed from INT(11) to INT
+  - OUTFIT table:
+    - attribute bottom, sweater, top, sweater, and onepiece are FOREIGN KEYS from the CLOTHING table
+    - attribute bottom, sweater, top, sweater, and onepiece are now of INT, not INT(11)
+
+NEW SQL STATEMENTS:
+>CREATE TABLE IF NOT EXISTS clothing( idclothing INT NOT NULL AUTO_INCREMENT, nameofclothing TINYTEXT NOT NULL, typeofclothing TINYTEXT NOT NULL, color TINYTEXT NOT NULL, temp TINYTEXT NOT NULL, pattern TINYTEXT, occasion INT(11) NOT NULL, file_title TINYTEXT NOT NULL, PRIMARY KEY(idclothing) );
+
+>CREATE TABLE IF NOT EXISTS outfit( idoutfit INT NOT NULL AUTO_INCREMENT, name TINYTEXT NOT NULL, bottom INT, top INT, sweater INT, onepiece INT, temperature INT, occasion INT, PRIMARY KEY(idoutfit), FOREIGN KEY(bottom) REFERENCES clothing(idclothing), FOREIGN KEY(top) REFERENCES clothing(idclothing), FOREIGN KEY(sweater) REFERENCES clothing(idclothing), FOREIGN KEY(onepiece) REFERENCES clothing(idclothing) );

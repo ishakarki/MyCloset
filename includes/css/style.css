@@ -25,6 +25,12 @@ body{
     margin: 2 auto;
 }
 
+.navbar .navbar-expand-sm .bg-dark .navbar-dark
+{
+  padding-bottom: 2rem;
+}
+
+
 .text-center {
     text-align: center!important;
 }
