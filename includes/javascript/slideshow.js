@@ -34,3 +34,10 @@ function updatingslide(index) {
   // dots[current-1].className += " active";
   // captionText.innerHTML = dots[current-1].alt;
 }
+
+function showHide(value) {
+  if (value=='')
+      document.getElementById('divShow').style.display = 'none';
+  else
+      document.getElementById('divShow').style.display = 'block';
+}

@@ -1,7 +1,6 @@
 <?php
 include("includes/session.php")
 ?>
-<script src = "includes/javascript/slideshow.js"></script>
 <div class="container">
     <div class="slideshow">
         <img src= "includes/images/dress.png" alt= "dress" class="center">

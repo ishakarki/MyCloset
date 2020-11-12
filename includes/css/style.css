@@ -84,3 +84,19 @@ body{
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 } */
+
+#bottomtype{
+  display: none;
+}
+
+#toptype{
+  display: none;
+} 
+#onepiecetype{
+  display: none;
+} 
+
+#sweatertype{
+  display: none;
+} 
+

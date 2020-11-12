@@ -1,68 +1,67 @@
 <?php
 include("includes/session.php")
 ?>
-<!-- <div class="card">
-  <div class="card-body">
-<div class="mt-5 col-md-12">
-<form action = "includes/uploadclothes.php" method = "post">
-  <div class="d-flex justify-content-center">
-    <div class="col-auto">
-      <label class="sr-only" for="inlineFormInput">Name</label>
-      <input type="text" class="form-control mb-2" name= "clothes_name" placeholder="Title">
-    </div>
-    <div class="col-auto">
-      <label class="sr-only" for="inlineFormInputGroup">Username</label>
-      <div class="input-group mb-2">
-        <div class="input-group-prepend">
-          <div class="input-group-text">@</div>
-        </div>
-        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
-      </div>
-    </div>
-    <div class="col-auto">
-      <div class="form-check mb-2">
-        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-        <label class="form-check-label" for="autoSizingCheck">
-          Remember me
-        </label>
-      </div>
-    </div>
-    <div class="col-auto">
-      <button type="submit" class="btn btn-primary mb-2">Submit</button>
-    </div>
-  </div>
-</form>
-</div>
-</div></div> -->
 <div class="mt-5 col-md-12">
 
-<div class="card text-center">
-  <div class="card-header">
+  <div class="card text-center">
+    <div class="card-header">
   </div>
   <div class="card-body">
     <h5 class="card-title">UPLOAD</h5>
     <div class="d-flex justify-content-center">
-    <form>
+    <form action = "includes/uploadclothes.php" method = "post">
+    <div class="form-group">
+      <input type="file" name="file">
+  </div>
   <div class="form-group">
     <!-- <label for="cloth-title">Title</label> -->
-    <input type="email" class="form-control" id="cloth-title" name="title" placeholder="Title">
+    <input type="text" class="form-control" id="cloth-title" name="title" placeholder="Title">
     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
   </div>
   <div class="form-group">
-    <!-- <label for="exampleInputPassword1">Password</label> -->
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-group">
-      <select id="inputState" class="form-control">
-        <option selected>Type</option>
-        <option>Bottom</option>
-        <option>Top</option>
-        <option>Sweater</option>
-        <option>One Piece</option>
+      <select class="form-control" name = "type" id = "type_" onchange="showHide(this.value);"> 
+        <option selected value = ''>Type</option>
+        <option value = "Bottom">Bottom</option>
+        <option value= "Top">Top</option>
+        <option value = "Sweater">Sweater</option>
+        <option value = "One Piece">One Piece</option>
+      </select>
+</div>
+<div class="form-group" id="bottomtype">
+      <select class="form-control" name = "type_of">
+        <option selected>Bottom</option>
+        <option>Pant</option>
+        <option>Skirt</option>
+        <option>Shorts</option>
+      </select>
+</div>
+<div class="form-group" id="toptype">
+      <select class="form-control" name = "type_of">
+        <option selected>Top</option>
+        <option>Tank Top</option>
+        <option>T-Shirt</option>
+        <option>Long Sleeve</option>
+      </select>
+</div>
+<div class="form-group" id="sweatertype">
+      <select class="form-control" name = "type_of">
+        <option selected>Sweater</option>
+        <option>Cardigan</option>
+        <option>Pullover</option>
+        <option>Jacket</option>
+      </select>
+</div>
+<div class="form-group" id="onepiecetype">
+      <select class="form-control" name = "type_of">
+        <option selected>One Piece</option>
+        <option>Short Dress</option>
+        <option>Romper</option>
+        <option>Jump Suit</option>
+        <option>Dress</option>
       </select>
 </div>
 <div class="form-group">
-      <select id="inputState" class="form-control" placeholder="Occasion">
+      <select class="form-control" name="occasion">
         <option selected>Occasion</option>
         <option>Fancy</option>
         <option>Business</option>
@@ -70,24 +69,33 @@ include("includes/session.php")
         <option>A Walk in the Park Type of Casual</option>
       </select>
 </div>
+
+<div class="form-group">
+      <select class="form-control" name="color">
+        <option selected>Color</option>
+        <option>Red</option>
+        <option>Green</option>
+        <option>Blue</option>
+        <option>Purple</option>
+        <option>White</option>
+        <option>Black</option>
+        <option>Green</option>
+        <option>Orange</option>
+        <option>Multi-Colored</option>
+      </select>
+</div>
+
   </div>
   <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Red">
-  <label class="form-check-label" for="inlineRadio1">Red</label>
+  <input class="form-check-input" type="radio" name = "Pattern" value="haspattern">
+  <label class="form-check-label">Pattern</label>
 </div>
 <div class="form-check form-check-inline">
-<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Blue">
-  <label class="form-check-label" for="inlineRadio2">Blue</label>
+<input class="form-check-input" type="radio" name = "Pattern" value="nopattern">
+  <label class="form-check-label">No Pattern</label>
 </div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Purple">
-  <label class="form-check-label" for="inlineRadio3">Purple</label>
-</div>
+
   <button type="submit" class="btn btn-primary">Submit</button>
-  <div class="form-group">
-    <!-- <label for="exampleInputPassword1">Password</label> -->
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Temperature">
-  </div>
 </form>
     </div>
     <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
@@ -97,3 +105,10 @@ include("includes/session.php")
   </div>
 </div>
 </div>
+
+<script type="text/javascript"  src = "includes/javascript/formdisplay.js">
+</script>
+
+<?php
+include("includes/footer.php") 
+?>
