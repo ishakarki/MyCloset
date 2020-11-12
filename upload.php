@@ -15,7 +15,7 @@ include("includes/session.php")
   </div>
   <div class="form-group">
     <!-- <label for="cloth-title">Title</label> -->
-    <input type="text" class="form-control" id="cloth-title" name="title" placeholder="Title">
+    <input type="text" class="form-control" id="cloth-title" name="title" placeholder="Title" required="">
     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
   </div>
   <div class="form-group">
@@ -29,7 +29,7 @@ include("includes/session.php")
 </div>
 <div class="form-group" id="bottomtype">
       <select class="form-control" name = "type_of">
-        <option selected>Bottom</option>
+        <option selected>Category</option>
         <option>Pant</option>
         <option>Skirt</option>
         <option>Shorts</option>
@@ -37,7 +37,7 @@ include("includes/session.php")
 </div>
 <div class="form-group" id="toptype">
       <select class="form-control" name = "type_of">
-        <option selected>Top</option>
+        <option selected>Category</option>
         <option>Tank Top</option>
         <option>T-Shirt</option>
         <option>Long Sleeve</option>
@@ -45,7 +45,7 @@ include("includes/session.php")
 </div>
 <div class="form-group" id="sweatertype">
       <select class="form-control" name = "type_of">
-        <option selected>Sweater</option>
+        <option selected>Category</option>
         <option>Cardigan</option>
         <option>Pullover</option>
         <option>Jacket</option>
@@ -53,7 +53,7 @@ include("includes/session.php")
 </div>
 <div class="form-group" id="onepiecetype">
       <select class="form-control" name = "type_of">
-        <option selected>One Piece</option>
+        <option selected>Category</option>
         <option>Short Dress</option>
         <option>Romper</option>
         <option>Jump Suit</option>
@@ -63,15 +63,15 @@ include("includes/session.php")
 <div class="form-group">
       <select class="form-control" name="occasion">
         <option selected>Occasion</option>
-        <option>Fancy</option>
-        <option>Business</option>
-        <option>Casual</option>
-        <option>A Walk in the Park Type of Casual</option>
+        <option value = "Fancy">Fancy</option>
+        <option value = "Business">Business</option>
+        <option value = "Casual">Casual</option>
+        <option value = "A Walk in the Park Type of Casual">A Walk in the Park Type of Casual</option>
       </select>
 </div>
 
 <div class="form-group">
-      <select class="form-control" name="color">
+      <select class="form-control" name="color" required=""> 
         <option selected>Color</option>
         <option>Red</option>
         <option>Green</option>
@@ -95,7 +95,7 @@ include("includes/session.php")
   <label class="form-check-label">No Pattern</label>
 </div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary" name="upload-submit">Submit</button>
 </form>
     </div>
     <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
@@ -105,9 +105,6 @@ include("includes/session.php")
   </div>
 </div>
 </div>
-
-<script type="text/javascript"  src = "includes/javascript/formdisplay.js">
-</script>
 
 <?php
 include("includes/footer.php") 
