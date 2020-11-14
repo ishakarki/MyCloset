@@ -9,7 +9,7 @@ include("includes/session.php")
   <div class="card-body">
     <h5 class="card-title">UPLOAD</h5>
     <div class="d-flex justify-content-center">
-    <form action = "includes/uploadclothes.php" method = "post">
+    <form action = "includes/uploadclothes.php" method = "post" enctype="multipart/form-data">
     <div class="form-group">
       <input type="file" name="file">
   </div>
@@ -28,71 +28,72 @@ include("includes/session.php")
       </select>
 </div>
 <div class="form-group" id="bottomtype">
-      <select class="form-control" name = "type_of">
+      <select class="form-control" name = "type_of_bottom">
         <option selected>Category</option>
-        <option>Pant</option>
-        <option>Skirt</option>
-        <option>Shorts</option>
+        <option value = "Pant">Pant</option>
+        <option value = "Skirt">Skirt</option>
+        <option value = "Short">Short</option>
       </select>
 </div>
 <div class="form-group" id="toptype">
-      <select class="form-control" name = "type_of">
+      <select class="form-control" name = "type_of_top">
         <option selected>Category</option>
-        <option>Tank Top</option>
-        <option>T-Shirt</option>
-        <option>Long Sleeve</option>
+        <option value = "Tank Top">Tank Top</option>
+        <option value = "T-Shirt">T-Shirt</option>
+        <option value = "Long Sleeve">Long Sleeve</option>
       </select>
 </div>
 <div class="form-group" id="sweatertype">
-      <select class="form-control" name = "type_of">
+      <select class="form-control" name = "type_of_sweater">
         <option selected>Category</option>
-        <option>Cardigan</option>
-        <option>Pullover</option>
-        <option>Jacket</option>
+        <option value = "Cardigan">Cardigan</option>
+        <option value = "Pullover">Pullover</option>
+        <option value = "Jacket">Jacket</option>
       </select>
 </div>
 <div class="form-group" id="onepiecetype">
-      <select class="form-control" name = "type_of">
+      <select class="form-control" name = "type_of_one_piece">
         <option selected>Category</option>
-        <option>Short Dress</option>
-        <option>Romper</option>
-        <option>Jump Suit</option>
-        <option>Dress</option>
+        <option value = "Short Dress">Short Dress</option>
+        <option value = "Romper">Romper</option>
+        <option value = "Jump Suit">Jump Suit</option>
+        <option value = "Long Dress">Long Dress</option>
       </select>
 </div>
 <div class="form-group">
       <select class="form-control" name="occasion">
         <option selected>Occasion</option>
-        <option value = "Fancy">Fancy</option>
-        <option value = "Business">Business</option>
-        <option value = "Casual">Casual</option>
-        <option value = "A Walk in the Park Type of Casual">A Walk in the Park Type of Casual</option>
+        <option value = 4>Fancy</option>
+        <option value = 3>Business</option>
+        <option value = 2>Casual</option>
+        <option value = 1>A Walk in the Park Type of Casual</option>
       </select>
 </div>
 
 <div class="form-group">
       <select class="form-control" name="color" required=""> 
         <option selected>Color</option>
-        <option>Red</option>
-        <option>Green</option>
-        <option>Blue</option>
-        <option>Purple</option>
-        <option>White</option>
-        <option>Black</option>
-        <option>Green</option>
-        <option>Orange</option>
-        <option>Multi-Colored</option>
+        <option value = "Red">Red</option>
+        <option value = "Green">Green</option>
+        <option value = "Blue">Blue</option>
+        <option value = "Purple">Purple</option>
+        <option value = "White">White</option>
+        <option value = "Black">Black</option>
+        <option value = "Green">Green</option>
+        <option value = "Orange">Orange</option>
+        <option value = "Gray">Gray</option>
+        <option value = "Tan">Tan</option>
+        <option value = "Brown">Tan</option>
+        <option value = "Multi-Color">Multi-Color</option>
       </select>
 </div>
 
-  </div>
-  <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name = "Pattern" value="haspattern">
-  <label class="form-check-label">Pattern</label>
-</div>
-<div class="form-check form-check-inline">
-<input class="form-check-input" type="radio" name = "Pattern" value="nopattern">
-  <label class="form-check-label">No Pattern</label>
+<div class="form-group">
+      <select class="form-control" name="pattern" required=""> 
+        <option selected>Pattern</option>
+        <option value = "true">Yes</option>
+        <option value = "false">No</option>
+      </select>
 </div>
 
   <button type="submit" class="btn btn-primary" name="upload-submit">Submit</button>
