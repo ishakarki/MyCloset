@@ -5,7 +5,7 @@
 */
 if(isset($_POST['upload-submit'])) 
 {
-    //these varaible are grabbing the information sent for the form
+    //these variable are grabbing the information sent for the form
     $name = $_POST['title'];
     $type = $_POST['type'];
     $occasion = $_POST['occasion'];
@@ -155,9 +155,14 @@ if(isset($_POST['upload-submit']))
                             move_uploaded_file($ftemp,$filedir); // upload into respective folder (image/)
                             header("Location: ../upload.php?upload=success");
                         }
+                        
                     }
                 }
             }
+
+               //for security purposes, close off connection
+                mysqli_stmt_close($stmt);
+                mysqli_close($conn);
         }
         //if there was an error to the file, return to main page
         else{

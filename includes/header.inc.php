@@ -18,17 +18,22 @@
 </head>
 
 <body>
+<!-- Navigation Bar-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <ul class="navbar-nav">
+    <!-- Main Page Link -->
     <li class="nav-item active">
-      <a class="nav-link" href="main.php">Main</a>
+      <a class="nav-link" href="main.php">Main</a> 
     </li>
+    <!-- Full closet link -->
     <li class="nav-item active">
       <a class="nav-link" href="fullcloset.php">Full Closet</a>
     </li>
+    <!-- Favorite link -->
     <li class="nav-item active">
       <a class="nav-link" href="favorite.php">Favorites</a>
     </li>
+    <!-- upload link -->
     <li class="nav-item active">
       <a class="nav-link" href="upload.php">Upload</a>
     </li>
