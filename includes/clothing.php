@@ -9,7 +9,7 @@ class Clothing{
     protected $file_title;
     function __construct($ty, $co, $pa, $oc, $ft)
     {
-        echo "this is inside the constructor";
+        // echo "this is inside the constructor";
         $this->type = $ty; // string 
         $this->color = $co; // string
         //$this->temp = $te; // int
@@ -32,7 +32,7 @@ class Bottom extends Clothing {
     // type can be: pants, shorts, skirt
 
     //pants: 15
-    //shorts and skirt: 10
+    //shorts and skirt: 6
 
     function set_temp($ty)
     {
@@ -40,9 +40,9 @@ class Bottom extends Clothing {
         {
             $this->temp = 15;
         }
-        else if ($ty == 'shorts' || 'skirt')
+        else if ($ty == 'shorts' || $ty == 'skirt')
         {
-            $this->temp = 10;
+            $this->temp = 6;
         }
     }
 }
@@ -50,8 +50,8 @@ class Bottom extends Clothing {
 class Shirt extends Clothing {
     // tshirt, long shirt, tanktop, blouse
 
-    //tshirt, blouse : 10
-    //longshirt: 15
+    // longshirt: 15
+    //tshirt, blouse: 8
     //tank top: 5
 
     function set_temp($ty)
@@ -60,9 +60,9 @@ class Shirt extends Clothing {
         {
             $this->temp = 15;
         }
-        else if ($ty == 'tshirt' || 'blouse')
+        else if ($ty == 'tshirt' || $ty == 'blouse')
         {
-            $this->temp = 10;
+            $this->temp = 8;
         }
         else if ($ty == 'tank top')
         {
@@ -75,16 +75,22 @@ class Sweater extends Clothing {
     // jacket, pullover
 
     //jacket: 40
-    //pullover: 30
+    //pullover: 20
+    //cardigan: 6
+
     function set_temp($ty)
     {
         if($ty == 'jacket')
         {
             $this->temp = 40;
         }
-        else if ($ty == 'pullover')
+        else if($ty == 'pullover')
         {
-            $this->temp = 30;
+            $this->temp = 20;
+        }
+        else if($ty == 'cardigan')
+        {
+            $this->temp = 6;
         }
     }
 
@@ -93,16 +99,16 @@ class Sweater extends Clothing {
 class Onepiece extends Clothing {
     // long dress, jumpsuit, short dress
 
-    //long dress, jumpsuit: 30
-    //shortdress: 20
+    //long dress, jumpsuit: 20
+    //shortdress: 5
 
     function set_temp($ty)
     {
         if($ty == 'short dress')
         {
-            $this->temp = 20;
+            $this->temp = 5;
         }
-        else if ($ty == 'long dress' || 'jumpsuit')
+        else if ($ty == 'long dress' || $ty == 'jumpsuit')
         {
             $this->temp = 30;
         }
