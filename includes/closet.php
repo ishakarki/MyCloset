@@ -18,6 +18,14 @@ class Closet {
     function insert_sweater($input){ array_push($this->sweaters,$input); }
     function insert_onepiece($input){ array_push($this->onepieces,$input); }
 
+    function print_bottoms()
+    {
+        for($i = 0; $i < count($this->bottoms); $i++)
+        {
+            echo $this->bottoms[$i]->get_type();
+        }
+    }
+
     // template for returning arrays based on a condition
     function get_bottoms($occasion)
     {
@@ -87,17 +95,17 @@ echo 'Hello! from closet <br/>';
 
 // $mycloset = new Closet();
 // $pant = new Bottom('pant','white',False,2,'pants.png');
-// echo $pant->get_temp();
-// $skirt = new Bottom('skirt','black',5,False,3,'skirt.png');
-// $jean = new Bottom('jean','blue',5,False,2,'jean.png');
+// // echo $pant->get_temp();
+// $skirt = new Bottom('skirt','black',False,3,'skirt.png');
+// $jean = new Bottom('shorts','blue',False,2,'jean.png');
 
 // $mycloset->insert_bottom($pant);
 // $mycloset->insert_bottom($skirt);
 // $mycloset->insert_bottom($jean);
 
-// // $result = $mycloset->get_bottoms(2);
+// $result = $mycloset->get_bottoms(2);
 
-// // echo '<pre>'; print_r($result); echo '</pre>';
+// echo '<pre>'; print_r($result); echo '</pre>';
 
 // $test = array();
 // array_push($test,$pant,$skirt,$jean);
@@ -123,9 +131,9 @@ echo 'Hello! from closet <br/>';
 // $foo = array();
 // print_r($foo);
 
-//  $plainshirt = new Shirt('shirt','white',10,False,2,'pants.png');
-//  $shirt = new Shirt('t-shirt','black',5,False,3,'skirt.png');
-//  $whiteshirt = new Shirt('blouse','blue',5,True,2,'jean.png');
+//  $plainshirt = new Shirt('tshirt','white',False,2,'pants.png');
+//  $shirt = new Shirt('tshirt','black',False,3,'skirt.png');
+//  $whiteshirt = new Shirt('blouse','blue',True,2,'jean.png');
  
 // $mycloset->insert_shirt($plainshirt);
 // $mycloset->insert_shirt($shirt);

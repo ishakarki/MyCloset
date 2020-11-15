@@ -37,6 +37,7 @@ class OutfitCreator{
                 if($tempbottoms[$i]->get_temp()<=8)
                 {
                     array_push($this->closet->filterbottoms,$tempbottoms[$i]);
+                    echo $tempbottoms[$i]->get_type();
                 }
             }
 
@@ -171,10 +172,9 @@ class OutfitCreator{
 
         // filling the filter arrays from mycloset with those that match the occasion
         $this->closet->filterbottoms = $this->closet->get_bottoms($occasion);
-        // for($i = 0; $i < count($arraybottoms); $i++)
+        // for($i = 0; $i < count($this->closet->filterbottoms); $i++)
         // {
-        //     echo $arraybottoms[$i]->get_type();
-        //     echo "<br>";
+        //     echo $this->closet->filterbottoms[$i]->get_type();
         // }
         $this->closet->filtershirts = $this->closet->get_shirts($occasion);
         $this->closet->filtersweaters = $this->closet->get_sweaters($occasion);
@@ -193,12 +193,19 @@ echo 'hello FROM GENERATOR???';
 $mycloset = new Closet();
 $pant = new Bottom('pant','white',False,2,'pants.png');
 // echo $pant->get_temp();
-$skirt = new Bottom('skirt','black',5,False,3,'skirt.png');
-$jean = new Bottom('jean','blue',5,False,2,'jean.png');
+$skirt = new Bottom('skirt','black',False,3,'skirt.png');
+$jean = new Bottom('shorts','blue',False,2,'jean.png');
 
 $mycloset->insert_bottom($pant);
 $mycloset->insert_bottom($skirt);
 $mycloset->insert_bottom($jean);
 
+$mycloset->print_bottoms();
+
+echo '<br>';
+
+$a = $mycloset->get_bottoms(2);
+print_r($a);
+
 $g = new OutfitCreator($mycloset);
-// $g->searchForOptions(70,2,$mycloset);
+$g->searchForOptions(70,2);
