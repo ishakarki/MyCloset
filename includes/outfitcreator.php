@@ -188,17 +188,17 @@ class OutfitCreator{
 
 // this doesn't work???? error ????????
 
-echo 'hello FROM GENERATOR???';
+// echo 'hello FROM GENERATOR???';
 
-$mycloset = new Closet();
-$pant = new Bottom('pant','white',False,2,'pants.png');
-// echo $pant->get_temp();
-$skirt = new Bottom('skirt','black',5,False,3,'skirt.png');
-$jean = new Bottom('jean','blue',5,False,2,'jean.png');
+// $mycloset = new Closet();
+// $pant = new Bottom('pant','white',False,2,'pants.png');
+// // echo $pant->get_temp();
+// $skirt = new Bottom('skirt','black',5,False,3,'skirt.png');
+// $jean = new Bottom('jean','blue',5,False,2,'jean.png');
 
-$mycloset->insert_bottom($pant);
-$mycloset->insert_bottom($skirt);
-$mycloset->insert_bottom($jean);
+// $mycloset->insert_bottom($pant);
+// $mycloset->insert_bottom($skirt);
+// $mycloset->insert_bottom($jean);
 
-$g = new OutfitCreator($mycloset);
-// $g->searchForOptions(70,2,$mycloset);
+// $g = new OutfitCreator($mycloset);
+// // $g->searchForOptions(70,2,$mycloset);

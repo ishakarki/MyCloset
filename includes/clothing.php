@@ -36,11 +36,11 @@ class Bottom extends Clothing {
 
     function set_temp($ty)
     {
-        if($ty == 'pant')
+        if($ty == 'Pant')
         {
             $this->temp = 15;
         }
-        else if ($ty == 'shorts' || $ty == 'skirt')
+        else if ($ty == 'Short' || $ty == 'Skirt')
         {
             $this->temp = 6;
         }
@@ -56,15 +56,15 @@ class Shirt extends Clothing {
 
     function set_temp($ty)
     {
-        if($ty == 'longshirt')
+        if($ty == 'Long Sleeve')
         {
             $this->temp = 15;
         }
-        else if ($ty == 'tshirt' || $ty == 'blouse')
+        else if ($ty == 'T-Shirt' || $ty == 'Blouse')
         {
             $this->temp = 8;
         }
-        else if ($ty == 'tank top')
+        else if ($ty == 'Tank Top')
         {
             $this->temp = 5;
         }
@@ -80,15 +80,15 @@ class Sweater extends Clothing {
 
     function set_temp($ty)
     {
-        if($ty == 'jacket')
+        if($ty == 'Jacket')
         {
             $this->temp = 40;
         }
-        else if($ty == 'pullover')
+        else if($ty == 'Pullover')
         {
             $this->temp = 20;
         }
-        else if($ty == 'cardigan')
+        else if($ty == 'Cardigan')
         {
             $this->temp = 6;
         }
@@ -104,11 +104,11 @@ class Onepiece extends Clothing {
 
     function set_temp($ty)
     {
-        if($ty == 'short dress')
+        if($ty == 'Short Dress' || $ty == 'Romper')
         {
             $this->temp = 5;
         }
-        else if ($ty == 'long dress' || $ty == 'jumpsuit')
+        else if ($ty == 'Long Dress' || $ty == 'Jump Suit')
         {
             $this->temp = 30;
         }

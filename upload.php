@@ -48,6 +48,8 @@ include("includes/session.php")
         <option value = "Tank Top">Tank Top</option>
         <option value = "T-Shirt">T-Shirt</option>
         <option value = "Long Sleeve">Long Sleeve</option>
+        <option value = "Blouse">Blouse</option>
+
       </select>
 </div>
 <!-- CATEGORY FOR SWEATER -->
@@ -102,8 +104,8 @@ include("includes/session.php")
 <div class="form-group">
       <select class="form-control" name="pattern" required=""> 
         <option selected>Pattern</option>
-        <option value = "true">Yes</option>
-        <option value = "false">No</option>
+        <option value = True>Yes</option>
+        <option value = False>No</option>
       </select>
 </div>
 <!-- SUBMIT BUTTON -->

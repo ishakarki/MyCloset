@@ -25,13 +25,11 @@ if(isset($_POST['upload-submit']))
             break;
         case "Top":
             $type_of = $_POST['type_of_top'];
-            echo $type_of;
-
             break;
         case "Sweater":
             $type_of = $_POST['type_of_sweater'];
             break;
-        case "One Piece":
+        case "Onepiece":
             $type_of = $_POST['type_of_one_piece'];
             break;
         default: 
@@ -81,66 +79,66 @@ if(isset($_POST['upload-submit']))
                 }
                 else{
                     //prepare and bind
-                    $sql = "INSERT INTO clothing (nameofclothing, typeofclothing,color,temp,pattern,occasion,file_title, type_) VALUES (?,?,?,?,?,?,?,?);";
+                    $sql = "INSERT INTO clothing (nameofclothing, typeofclothing,color,pattern,occasion,file_title, type_) VALUES (?,?,?,?,?,?,?);";
                     if(!mysqli_stmt_prepare($stmt, $sql))
                     {
                         header("Location: ../upload.php?found=error");
                         exit();
                     }
                     else{
-                        $temp = -1;
-                        //must evaluate, depending on what category the piece of clothing belong to, that we assign the correct temperature, that will fit which weather the piece of clothing can be worn
-                        if($type == "Bottom") 
-                        {
-                            if($type_of == "Pant")
-                            {
-                                $temp = 15;
-                            }
-                            elseif ($type_of == "Short" || $type_of == "Skirt"){
-                                $temp = 6;
-                            }
-                        }
-                        elseif($type == "Top")
-                        {
-                            if($type_of == "Long Sleeve")
-                            {
-                                $temp = 15;
-                            }
-                            elseif ($type_of == "T-Shirt")
-                            {
-                                $temp = 8;
-                            }
-                            elseif ($type_of == "Tank Top")
-                            {
-                                $temp = 5;
-                            }
-                        }
-                        elseif ($type == "Sweater")
-                        {
-                            if($type_of == "Jacket")
-                            {
-                                $temp = 40;
-                            }
-                            elseif($type_of == "Cardigan")
-                            {
-                                $temp = 6;
-                            }
-                            elseif ($type_of == "Pullover")
-                            {
-                                $temp = 20;
-                            }
-                        }
-                        elseif ($type == "One Piece")
-                        {
-                            if($type_of == "Short Dress" || $type_of == "Romper")
-                            {
-                                $temp = 5;
-                            }
-                            elseif ($type_of == "Long Dress" || $type_of == "Jump Suit")
-                            {
-                                $temp = 20;
-                            }
-                        }
+                        // $temp = -1;
+                        // //must evaluate, depending on what category the piece of clothing belong to, that we assign the correct temperature, that will fit which weather the piece of clothing can be worn
+                        // if($type == "Bottom") 
+                        // {
+                        //     if($type_of == "Pant")
+                        //     {
+                        //         $temp = 15;
+                        //     }
+                        //     elseif ($type_of == "Short" || $type_of == "Skirt"){
+                        //         $temp = 6;
+                        //     }
+                        // }
+                        // elseif($type == "Top")
+                        // {
+                        //     if($type_of == "Long Sleeve")
+                        //     {
+                        //         $temp = 15;
+                        //     }
+                        //     elseif ($type_of == "T-Shirt")
+                        //     {
+                        //         $temp = 8;
+                        //     }
+                        //     elseif ($type_of == "Tank Top")
+                        //     {
+                        //         $temp = 5;
+                        //     }
+                        // }
+                        // elseif ($type == "Sweater")
+                        // {
+                        //     if($type_of == "Jacket")
+                        //     {
+                        //         $temp = 40;
+                        //     }
+                        //     elseif($type_of == "Cardigan")
+                        //     {
+                        //         $temp = 6;
+                        //     }
+                        //     elseif ($type_of == "Pullover")
+                        //     {
+                        //         $temp = 20;
+                        //     }
+                        // }
+                        // elseif ($type == "One Piece")
+                        // {
+                        //     if($type_of == "Short Dress" || $type_of == "Romper")
+                        //     {
+                        //         $temp = 5;
+                        //     }
+                        //     elseif ($type_of == "Long Dress" || $type_of == "Jump Suit")
+                        //     {
+                        //         $temp = 20;
+                        //     }
+                        // }
 
                         //checking the prepare statement again before we insert
                         if(!mysqli_stmt_prepare($stmt, $sql))
@@ -149,7 +147,7 @@ if(isset($_POST['upload-submit']))
                         }
                         else{
                             //insert the information to our database
-                            mysqli_stmt_bind_param($stmt, "ssssssss", $name, $type_of, $color, $temp, $pattern, $occasion, $fileName, $type);
+                            mysqli_stmt_bind_param($stmt, "sssssss", $name, $type_of, $color, $pattern, $occasion, $fileName, $type);
                             mysqli_stmt_execute($stmt);
                             //move the file to the respective folder
                             move_uploaded_file($ftemp,$filedir); // upload into respective folder (image/)
@@ -174,7 +172,7 @@ if(isset($_POST['upload-submit']))
 
 
 }
-//if there was an error with the submit buttm, return to main page
+//if there was an error with the submit button, return to main page
 else{
     header("Location: ../upload.php?found=error");
 }
