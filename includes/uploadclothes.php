@@ -121,11 +121,11 @@ if(isset($_POST['upload-submit']))
                             {
                                 $temp = 40;
                             }
-                            else if($type_of == "Cardigan")
+                            elseif($type_of == "Cardigan")
                             {
                                 $temp = 6;
                             }
-                            else if ($type_of == "Pullover")
+                            elseif ($type_of == "Pullover")
                             {
                                 $temp = 20;
                             }

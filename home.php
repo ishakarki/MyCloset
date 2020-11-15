@@ -18,19 +18,19 @@
 </head>
 
 <?php
-
+    //check if there has been an error with the input
     if(isset($_GET['found']))
     {
         if($_GET['found']=="error")
         {
             echo '<script type="text/javascript">';
-            echo 'alert("incorrect username/password")';  //not showing an alert box.
+            echo 'alert("incorrect username/password")';  //not showing an alert box. (incorrect user/password)
             echo '</script>';
         }
         else if($_GET['found']=="incorrectuser")
         {
             echo '<script type="text/javascript">';
-            echo 'alert("username not found")';  //not showing an alert box.
+            echo 'alert("username not found")';  //not showing an alert box. (username is not found)
             echo '</script>';
         }
     }
@@ -41,9 +41,9 @@
 <body class="text-center">
 
     <img src="includes/images/closetlogo.png" alt="closet logo" style="width:400px;height:400px;">
-
+    <!-- WELCOME MESSAGE -->
     <h4> Welcome to My Closet! Please sign in. <h4>
-
+    <!-- SIGN IN FORM -->
     <form class="form-signin" action = "includes/signin.php" method="post">
     <input type="username" name="inputUsername" class="form-control" placeholder="Username" required="" autofocus="">
     <input type="password" name="inputPassword" class="form-control" placeholder="Password" required="">
