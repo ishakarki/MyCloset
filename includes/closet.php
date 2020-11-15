@@ -18,6 +18,14 @@ class Closet {
     function insert_sweater($input){ array_push($this->sweaters,$input); }
     function insert_onepiece($input){ array_push($this->onepieces,$input); }
 
+    function print_bottoms()
+    {
+        for($i = 0; $i < count($this->bottoms); $i++)
+        {
+            echo $this->bottoms[$i]->get_type();
+        }
+    }
+
     // template for returning arrays based on a condition
     function get_bottoms($occasion)
     {
@@ -85,29 +93,29 @@ class Closet {
 
 echo 'Hello! from closet <br/>';
 
-$mycloset = new Closet();
-$pant = new Bottom('pant','white',False,2,'pants.png');
-echo $pant->get_temp();
-$skirt = new Bottom('skirt','black',5,False,3,'skirt.png');
-$jean = new Bottom('jean','blue',5,False,2,'jean.png');
+// $mycloset = new Closet();
+// $pant = new Bottom('pant','white',False,2,'pants.png');
+// // echo $pant->get_temp();
+// $skirt = new Bottom('Skirt','black',False,3,'skirt.png');
+// $jean = new Bottom('Short','blue',False,2,'jean.png');
 
-$mycloset->insert_bottom($pant);
-$mycloset->insert_bottom($skirt);
-$mycloset->insert_bottom($jean);
+// $mycloset->insert_bottom($pant);
+// $mycloset->insert_bottom($skirt);
+// $mycloset->insert_bottom($jean);
 
 // $result = $mycloset->get_bottoms(2);
 
 // echo '<pre>'; print_r($result); echo '</pre>';
 
-$test = array();
-array_push($test,$pant,$skirt,$jean);
-echo "<br>";
-// echo print_r($test);
-for ($i = 0; $i < count($test); $i++)
-{
-    echo "test at ",$i ,$test[$i]->get_type();
-    echo "<br>";
-}
+// $test = array();
+// array_push($test,$pant,$skirt,$jean);
+// echo "<br>";
+// // echo print_r($test);
+// for ($i = 0; $i < count($test); $i++)
+// {
+//     echo "test at ",$i ,$test[$i]->get_type();
+//     echo "<br>";
+// }
 
 echo "<br>";
 
@@ -123,9 +131,9 @@ echo "<br>";
 $foo = array();
 print_r($foo);
 
- $plainshirt = new Shirt('shirt','white',False,2,'pants.png');
- $shirt = new Shirt('t-shirt','black',False,3,'skirt.png');
- $whiteshirt = new Shirt('blouse','blue',True,2,'jean.png');
+//  $plainshirt = new Shirt('tshirt','white',False,2,'pants.png');
+//  $shirt = new Shirt('tshirt','black',False,3,'skirt.png');
+//  $whiteshirt = new Shirt('blouse','blue',True,2,'jean.png');
  
 $mycloset->insert_shirt($plainshirt);
 $mycloset->insert_shirt($shirt);
