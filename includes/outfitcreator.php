@@ -37,7 +37,6 @@ class OutfitCreator{
                 if($tempbottoms[$i]->get_temp()<=8)
                 {
                     array_push($this->closet->filterbottoms,$tempbottoms[$i]);
-                    echo $tempbottoms[$i]->get_type();
                 }
             }
 
@@ -159,6 +158,38 @@ class OutfitCreator{
                 }
             }
         }
+
+        echo 'filtered bottoms array has: <br>';
+        for($i = 0; $i < count($this->closet->filterbottoms); $i++)
+        {
+            echo $this->closet->filterbottoms[$i]->get_type(),' ',$this->closet->filterbottoms[$i]->get_color(),'<br>';
+        }
+        echo '<br>';
+
+        echo 'filtered shirts array has: <br>';
+        for($i = 0; $i < count($this->closet->filtershirts); $i++)
+        {
+            echo $this->closet->filtershirts[$i]->get_type(),' ',$this->closet->filtershirts[$i]->get_color(),'<br>';
+        }
+        echo '<br>';
+
+        if(!empty($this->closet->filtersweaters))
+        {
+            echo 'filtered sweaters array has: <br>';
+            for($i = 0; $i < count($this->closet->filtersweaters); $i++)
+            {
+                echo $this->closet->filtersweaters[$i]->get_type(),' ',$this->closet->filtersweaters[$i]->get_color(),'<br>';
+            }
+            echo '<br>';
+        }
+
+        echo 'filtered onepieces array has: <br>';
+        for($i = 0; $i < count($this->closet->filteronepieces); $i++)
+        {
+            echo $this->closet->filteronepieces[$i]->get_type(),' ',$this->closet->filteronepieces[$i]->get_color(),'<br>';
+        }
+        echo '<br>';
+
     }
 
     // passes in temperature value, occasion type
@@ -182,30 +213,81 @@ class OutfitCreator{
 
         $this->pick_out($temperature,$this->closet);
     }
-    function color_match(){echo 'colormatch';}
+    function color_match()
+    {
+        
+    }
+    function random_outfit()
+    {
+        // array_rand returns the key/index of the array's random choice
+        $b = array_rand($this->closet->filterbottoms);
+        echo $b,' index: random bottom is ',$this->closet->filterbottoms[$b]->get_type(),' ',$this->closet->filterbottoms[$b]->get_color(),'<br>';
+        $sh = array_rand($this->closet->filtershirts);
+        echo $sh,' index: random shirt is ',$this->closet->filtershirts[$sh]->get_type(),' ',$this->closet->filtershirts[$sh]->get_color(),'<br>';
+        if(!empty($this->closet->filtersweaters))
+        {
+            $sw = array_rand($this->closet->filtersweaters);
+            echo $sw,' index: random sweater is ',$this->closet->filtersweaters[$sw]->get_type(),' ',$this->closet->filtersweaters[$sw]->get_color(),'<br>';
+        }
+        $o = array_rand($this->closet->filteronepieces);
+        echo $o,' index: random onepiece is ',$this->closet->filteronepieces[$o]->get_type(),' ',$this->closet->filteronepieces[$o]->get_color(),'<br>';
+    }
     // function save_outfit(){echo 'outfit';} // if we have an outfit array in closet,, set_outfit?
 }
-
-// this doesn't work???? error ????????
-
-// echo 'hello FROM GENERATOR???';
+/////////////// testing ////////////////
 
 $mycloset = new Closet();
-$pant = new Bottom('Pant','white',False,2,'pants.png');
-// echo $pant->get_temp();
-$skirt = new Bottom('Skirt','black',False,3,'skirt.png');
-$jean = new Bottom('Short','blue',False,2,'jean.png');
+$b1 = new Bottom('pant','white',False,2,'pants.png');
+$b2 = new Bottom('skirt','black',False,3,'skirt.png');
+$b3 = new Bottom('shorts','blue',False,2,'jean.png');
+$b4 = new Bottom('shorts','black',False,2,'s1.png');
+$b5 = new Bottom('skirt','pink',False,2,'s2.png');
 
-// $mycloset->insert_bottom($pant);
-// $mycloset->insert_bottom($skirt);
-// $mycloset->insert_bottom($jean);
+$sh1 = new Shirt('longshirt','white',False,2,'sh1.png');
+$sh2 = new Shirt('tshirt','blue',False,3,'sh2.png');
+$sh3 = new Shirt('blouse','pink',False,2,'sh2.png');
+$sh4 = new Shirt('tshirt','black',False,3,'sh4.png');
+$sh5 = new Shirt('tank top','yellow',False,2,'sh5.png');
+
+$sw1 = new Sweater('jacket','black',False,2,'sw1.png');
+$sw2 = new Sweater('pullover','brown',False,2,'sw2.png');
+$sw3 = new Sweater('cardigan','white',False,3,'sw3.png');
+$sw4 = new Sweater('pullover','pink',False,3,'sw4.png');
+
+$o1 = new Onepiece('short dress','red',False,3,'o1.png');
+$o2 = new Onepiece('long dress','black',False,3,'o2.png');
+$o3 = new Onepiece('jumpsuit','yellow',False,2,'o3.png');
+$o4 = new Onepiece('short dress','yellow',False,2,'o4.png');
+$o5 = new Onepiece('long dress','pink',False,2,'o5.png');
+
+$mycloset->insert_bottom($b1);
+$mycloset->insert_bottom($b2);
+$mycloset->insert_bottom($b3);
+$mycloset->insert_bottom($b4);
+$mycloset->insert_bottom($b5);
+
+$mycloset->insert_shirt($sh1);
+$mycloset->insert_shirt($sh2);
+$mycloset->insert_shirt($sh3);
+$mycloset->insert_shirt($sh4);
+$mycloset->insert_shirt($sh5);
+
+$mycloset->insert_sweater($sw1);
+$mycloset->insert_sweater($sw2);
+$mycloset->insert_sweater($sw3);
+$mycloset->insert_sweater($sw4);
+
+$mycloset->insert_onepiece($o1);
+$mycloset->insert_onepiece($o2);
+$mycloset->insert_onepiece($o3);
+$mycloset->insert_onepiece($o4);
+$mycloset->insert_onepiece($o5);
 
 $mycloset->print_bottoms();
-
-echo '<br>';
-
-$a = $mycloset->get_bottoms(2);
-print_r($a);
+$mycloset->print_shirts();
+$mycloset->print_sweaters();
+$mycloset->print_onepieces();
 
 $g = new OutfitCreator($mycloset);
 $g->searchForOptions(70,2);
+$g->random_outfit();
