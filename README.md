@@ -56,9 +56,9 @@ Execute the following SQL queries:
 );
 
 >INSERT INTO account
->   (firstname,lastname,username,pwd)
->VALUES
->    ('firstname','lastname','yourusername',’yourpassword’
+   (firstname,lastname,username,pwd)
+VALUES
+    ('firstname','lastname','yourusername',’yourpassword’
 );
 
 >CREATE TABLE IF NOT EXISTS clothing( idclothing INT NOT NULL AUTO_INCREMENT, typeofclothing TINYTEXT, color TINYTEXT, temp INT, pattern TINYTEXT, occasion INT, file_title LONGTEXT, PRIMARY KEY(idclothing) 

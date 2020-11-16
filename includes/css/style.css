@@ -25,6 +25,12 @@ body{
     margin: 2 auto;
 }
 
+.navbar .navbar-expand-sm .bg-dark .navbar-dark
+{
+  padding-bottom: 2rem;
+}
+
+
 .text-center {
     text-align: center!important;
 }
@@ -40,3 +46,57 @@ body{
   margin-right: auto;
   width: 40%;
 }
+
+.container{
+  position: relative;
+}
+
+.slideshow{
+  display:none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  /* position: absolute; */
+  top: 50%;
+  width: auto;
+  margin-top: -290px;
+  font-weight: bold;
+  /* font-size: 30px; */
+  /* border-radius: 30 5px 15px 20; */
+
+}
+
+/* Position the "next button" to the right*/
+/* .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}  */
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+} */
+
+#bottomtype{
+  display: none;
+}
+
+#toptype{
+  display: none;
+} 
+#onepiecetype{
+  display: none;
+} 
+
+#sweatertype{
+  display: none;
+} 
+
