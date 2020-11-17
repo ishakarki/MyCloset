@@ -70,3 +70,5 @@ Next Deadline Plan:
 - NEW: Implement better UI
 
 #Goals for the next deadline
+
+For the next deadline, Isha and Vananh plan to successfully display the results (the images for the outfit) to our website, in order to do that we will have to check if the object return from the outfitcreator function is working successfully. We will have to work on the CSS to make sure that the frontend is displaying the images nicely. Our frontend still need a bit of work, since it looks a bit plain right now. We plan to have the full closet be an interactive page, where if the user hover on the the image of a closet. it will display what is inside the closet. We will also update on navigation bar so that  Our main focus by the next deadline will be the UI. 
