@@ -6,8 +6,7 @@ include("includes/session.php")
 <div class="mt-5 col-md-12"> 
 <!-- PLACING THE FORM IN A CARD -->
   <div class="card text-center">
-    <div class="card-header">
-  </div>
+
   <div class="card-body">
     <h4 class="card-title">UPLOAD</h4>
     <div class="d-flex justify-content-center">

@@ -38,7 +38,7 @@ Our Plans for this HW
 - Isha: User upload
   - implement user upload, where user can upload their own images to add to the database
 
-Acomplishment
+Acomplishments:
 
 - Added logout button, placed on the navigation bar
     - When clicked logout, it will take the user back to the sign in page
@@ -52,6 +52,6 @@ Acomplishment
     - attribute bottom, sweater, top, sweater, and onepiece are now of INT, not INT(11)
 
 NEW SQL STATEMENTS:
->CREATE TABLE IF NOT EXISTS clothing( idclothing INT NOT NULL AUTO_INCREMENT, nameofclothing TINYTEXT NOT NULL, typeofclothing TINYTEXT NOT NULL, color TINYTEXT NOT NULL, temp TINYTEXT NOT NULL, pattern TINYTEXT, occasion INT(11) NOT NULL, file_title TINYTEXT NOT NULL, PRIMARY KEY(idclothing) );
+>CREATE TABLE IF NOT EXISTS clothing( idclothing INT NOT NULL AUTO_INCREMENT, nameofclothing TINYTEXT NOT NULL, typeofclothing TINYTEXT NOT NULL, color TINYTEXT NOT NULL, pattern TINYTEXT, occasion INT(11) NOT NULL, file_title TINYTEXT NOT NULL, PRIMARY KEY(idclothing) );
 
 >CREATE TABLE IF NOT EXISTS outfit( idoutfit INT NOT NULL AUTO_INCREMENT, name TINYTEXT NOT NULL, bottom INT, top INT, sweater INT, onepiece INT, temperature INT, occasion INT, PRIMARY KEY(idoutfit), FOREIGN KEY(bottom) REFERENCES clothing(idclothing), FOREIGN KEY(top) REFERENCES clothing(idclothing), FOREIGN KEY(sweater) REFERENCES clothing(idclothing), FOREIGN KEY(onepiece) REFERENCES clothing(idclothing) );

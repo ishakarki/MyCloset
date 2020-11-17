@@ -46,10 +46,10 @@ else{
             $mycloset->insert_onepiece($one_piece);
         }
     }
-    $mycloset->print_bottoms();
-    $mycloset->print_shirts();
-    $mycloset->print_sweaters();
-    $mycloset->print_onepieces();
+    // $mycloset->print_bottoms();
+    // $mycloset->print_shirts();
+    // $mycloset->print_sweaters();
+    // $mycloset->print_onepieces();
 }
 
 
