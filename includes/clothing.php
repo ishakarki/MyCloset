@@ -1,15 +1,17 @@
 <?php
 
 class Clothing{
+    protected $name;
     protected $type;
     protected $color;
     protected $temp;
     protected $pattern;
     protected $occasion;
     protected $file_title;
-    function __construct($ty, $co, $pa, $oc, $ft)
+    function __construct($na, $ty, $co, $pa, $oc, $ft)
     {
         // echo "this is inside the constructor";
+        $this->name = $na; // string
         $this->type = $ty; // string 
         $this->color = $co; // string
         //$this->temp = $te; // int
@@ -18,6 +20,7 @@ class Clothing{
         $this->file_title = $ft; // string
         $this->set_temp($ty);
     }
+    function get_name(){ return $this->name; }
     function get_type(){return $this->type;}
     function get_color(){return $this->color;}
     function get_temp(){return $this->temp;}

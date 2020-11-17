@@ -23,7 +23,7 @@ class Closet {
         echo 'bottoms array has: <br>';
         for($i = 0; $i < count($this->bottoms); $i++)
         {
-            echo $this->bottoms[$i]->get_type(),' ',$this->bottoms[$i]->get_color(),'<br>';
+            echo $this->bottoms[$i]->get_name(),' ',$this->bottoms[$i]->get_color(),' ',$this->bottoms[$i]->get_type(),'<br>';
         }
         echo '<br>';
     }
@@ -33,7 +33,7 @@ class Closet {
         echo 'shirts array has: <br>';
         for($i = 0; $i < count($this->shirts); $i++)
         {
-            echo $this->shirts[$i]->get_type(),' ',$this->shirts[$i]->get_color(),'<br>';
+            echo $this->shirts[$i]->get_name(),' ',$this->shirts[$i]->get_color(),' ',$this->shirts[$i]->get_type(),'<br>';
         }
         echo '<br>';
     }
@@ -43,7 +43,7 @@ class Closet {
         echo 'sweaters array has: <br>';
         for($i = 0; $i < count($this->sweaters); $i++)
         {
-            echo $this->sweaters[$i]->get_type(),' ',$this->sweaters[$i]->get_color(),'<br>';
+            echo $this->sweaters[$i]->get_name(),' ',$this->sweaters[$i]->get_color(),' ',$this->sweaters[$i]->get_type(),'<br>';
         }
         echo '<br>';
     }
@@ -53,7 +53,7 @@ class Closet {
         echo 'onepieces array has: <br>';
         for($i = 0; $i < count($this->onepieces); $i++)
         {
-            echo $this->onepieces[$i]->get_type(),' ',$this->onepieces[$i]->get_color(),'<br>';
+            echo $this->onepieces[$i]->get_name(),' ',$this->onepieces[$i]->get_color(),' ',$this->onepieces[$i]->get_type(),'<br>';
         }
         echo '<br>';
     }

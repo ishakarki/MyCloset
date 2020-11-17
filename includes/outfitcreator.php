@@ -242,58 +242,58 @@ class OutfitCreator{
 }
 /////////////// testing ////////////////
 
-$mycloset = new Closet();
-$b1 = new Bottom('Pant','white',False,2,'pants.png');
-$b2 = new Bottom('Skirt','black',False,3,'skirt.png');
-$b3 = new Bottom('Short','blue',False,2,'jean.png');
-$b4 = new Bottom('Short','black',False,2,'s1.png');
-$b5 = new Bottom('Skirt','pink',False,2,'s2.png');
+// $mycloset = new Closet();
+// $b1 = new Bottom('Pant','white',False,2,'pants.png');
+// $b2 = new Bottom('Skirt','black',False,3,'skirt.png');
+// $b3 = new Bottom('Short','blue',False,2,'jean.png');
+// $b4 = new Bottom('Short','black',False,2,'s1.png');
+// $b5 = new Bottom('Skirt','pink',False,2,'s2.png');
 
-$sh1 = new Shirt('Long Sleeve','white',False,2,'sh1.png');
-$sh2 = new Shirt('T-Shirt','blue',False,3,'sh2.png');
-$sh3 = new Shirt('Blouse','pink',False,2,'sh2.png');
-$sh4 = new Shirt('T-Shirt','black',False,3,'sh4.png');
-$sh5 = new Shirt('Tank Top','yellow',False,2,'sh5.png');
+// $sh1 = new Shirt('Long Sleeve','white',False,2,'sh1.png');
+// $sh2 = new Shirt('T-Shirt','blue',False,3,'sh2.png');
+// $sh3 = new Shirt('Blouse','pink',False,2,'sh2.png');
+// $sh4 = new Shirt('T-Shirt','black',False,3,'sh4.png');
+// $sh5 = new Shirt('Tank Top','yellow',False,2,'sh5.png');
 
-$sw1 = new Sweater('Jacket','black',False,2,'sw1.png');
-$sw2 = new Sweater('Pullover','brown',False,2,'sw2.png');
-$sw3 = new Sweater('Cardigan','white',False,3,'sw3.png');
-$sw4 = new Sweater('Pullover','pink',False,3,'sw4.png');
+// $sw1 = new Sweater('Jacket','black',False,2,'sw1.png');
+// $sw2 = new Sweater('Pullover','brown',False,2,'sw2.png');
+// $sw3 = new Sweater('Cardigan','white',False,3,'sw3.png');
+// $sw4 = new Sweater('Pullover','pink',False,3,'sw4.png');
 
-$o1 = new Onepiece('Short Dress','red',False,3,'o1.png');
-$o2 = new Onepiece('Long Dress','black',False,3,'o2.png');
-$o3 = new Onepiece('Jump Suit','yellow',False,2,'o3.png');
-$o4 = new Onepiece('Romper','yellow',False,2,'o4.png');
-$o5 = new Onepiece('Long Dress','pink',False,2,'o5.png');
+// $o1 = new Onepiece('Short Dress','red',False,3,'o1.png');
+// $o2 = new Onepiece('Long Dress','black',False,3,'o2.png');
+// $o3 = new Onepiece('Jump Suit','yellow',False,2,'o3.png');
+// $o4 = new Onepiece('Romper','yellow',False,2,'o4.png');
+// $o5 = new Onepiece('Long Dress','pink',False,2,'o5.png');
 
-$mycloset->insert_bottom($b1);
-$mycloset->insert_bottom($b2);
-$mycloset->insert_bottom($b3);
-$mycloset->insert_bottom($b4);
-$mycloset->insert_bottom($b5);
+// $mycloset->insert_bottom($b1);
+// $mycloset->insert_bottom($b2);
+// $mycloset->insert_bottom($b3);
+// $mycloset->insert_bottom($b4);
+// $mycloset->insert_bottom($b5);
 
-$mycloset->insert_shirt($sh1);
-$mycloset->insert_shirt($sh2);
-$mycloset->insert_shirt($sh3);
-$mycloset->insert_shirt($sh4);
-$mycloset->insert_shirt($sh5);
+// $mycloset->insert_shirt($sh1);
+// $mycloset->insert_shirt($sh2);
+// $mycloset->insert_shirt($sh3);
+// $mycloset->insert_shirt($sh4);
+// $mycloset->insert_shirt($sh5);
 
-$mycloset->insert_sweater($sw1);
-$mycloset->insert_sweater($sw2);
-$mycloset->insert_sweater($sw3);
-$mycloset->insert_sweater($sw4);
+// $mycloset->insert_sweater($sw1);
+// $mycloset->insert_sweater($sw2);
+// $mycloset->insert_sweater($sw3);
+// $mycloset->insert_sweater($sw4);
 
-$mycloset->insert_onepiece($o1);
-$mycloset->insert_onepiece($o2);
-$mycloset->insert_onepiece($o3);
-$mycloset->insert_onepiece($o4);
-$mycloset->insert_onepiece($o5);
+// $mycloset->insert_onepiece($o1);
+// $mycloset->insert_onepiece($o2);
+// $mycloset->insert_onepiece($o3);
+// $mycloset->insert_onepiece($o4);
+// $mycloset->insert_onepiece($o5);
 
-$mycloset->print_bottoms();
-$mycloset->print_shirts();
-$mycloset->print_sweaters();
-$mycloset->print_onepieces();
+// $mycloset->print_bottoms();
+// $mycloset->print_shirts();
+// $mycloset->print_sweaters();
+// $mycloset->print_onepieces();
 
-$g = new OutfitCreator($mycloset);
-$g->searchForOptions(45,2);
-$g->random_outfit();
+// $g = new OutfitCreator($mycloset);
+// $g->searchForOptions(45,2);
+// $g->random_outfit();
