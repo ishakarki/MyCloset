@@ -9,7 +9,7 @@ include("includes/session.php")
     <div class="card-header">
   </div>
   <div class="card-body">
-    <h5 class="card-title">UPLOAD</h5>
+    <h4 class="card-title">UPLOAD</h4>
     <div class="d-flex justify-content-center">
     <form action = "includes/uploadclothes.php" method = "post" enctype="multipart/form-data">
     <!-- UPLOAD FILE -->
@@ -27,9 +27,9 @@ include("includes/session.php")
       <select class="form-control" name = "type" id = "type_"> 
         <option selected value = ''>Type</option>
         <option value = "Bottom">Bottom</option>
-        <option value= "Top">Top</option>
+        <option value= "Shirt">Top</option>
         <option value = "Sweater">Sweater</option>
-        <option value = "One Piece">One Piece</option>
+        <option value = "Onepiece">One Piece</option>
       </select>
 </div>
 <!-- CATEGORY FOR BOTTOMS -->

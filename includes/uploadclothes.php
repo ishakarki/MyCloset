@@ -23,7 +23,7 @@ if(isset($_POST['upload-submit']))
         case "Bottom":
             $type_of = $_POST['type_of_bottom'];
             break;
-        case "Top":
+        case "Shirt":
             $type_of = $_POST['type_of_top'];
             break;
         case "Sweater":

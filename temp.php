@@ -109,3 +109,58 @@ include("includes/session.php")
 <?php
 include("includes/footer.php") 
 ?>
+
+
+<?php
+include("includes/session.php")
+?>
+<div class="container">
+    <h1>top</h1>
+    <div class="slideshow_top">
+    <img src= "includes/images/yellow_dress.png" alt= "dress" class="center">
+    </div>
+    <div class="slideshow_top">
+    <img src= "includes/images/blue_jacket.png" alt= "dress" class="center"> 
+    </div>
+    <a class="prev" onclick="nav_top(-1)">&#10094;</a>
+    <a class="next" onclick="nav_top(1)">&#10095;</a>
+</div>
+
+<div class="container">
+    <h2>sweater</h2>
+    <div class="slideshow_bottom">
+    <img src= "includes/images/black_pant_big.png" alt= "dress" class="center">
+    </div>
+    <div class="slideshow_bottom">
+    <img src= "includes/images/blue_jacket.png" alt= "dress" class="center"> 
+    </div>
+    <a class="prev" onclick="nav_bottom(-1)">&#10094;</a>
+    <a class="next" onclick="nav_bottom(1)">&#10095;</a>
+</div>
+
+<div class="container">
+    <h2>bottom</h2>
+    <div class="slideshow_onepiece">
+    <img src= "includes/images/yellow_dress.png" alt= "dress" class="center">
+    </div>
+    <div class="slideshow_onepiece">
+    <img src= "includes/images/blue_jacket.png" alt= "dress" class="center"> 
+    </div>
+    <a class="prev" onclick="nav_onepiece(-1)">&#10094;</a>
+    <a class="next" onclick="nav_onepiece(1)">&#10095;</a>
+</div>
+
+<div class="container">
+    <h2>one piece</h2>
+    <div class="slideshow_sweater">
+    <img src= "includes/images/black_cardigan.png" alt= "dress" class="center">
+    </div>
+    <div class="slideshow_sweater">
+    <img src= "includes/images/blue_jacket.png" alt= "dress" class="center"> 
+    </div>
+    <a class="prev" onclick="nav_sweater(-1)">&#10094;</a>
+    <a class="next" onclick="nav_sweater(1)">&#10095;</a>
+</div>
+<?php
+include("includes/footer.php") 
+?> 

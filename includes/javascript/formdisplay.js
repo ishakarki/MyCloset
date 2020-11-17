@@ -7,7 +7,7 @@ $("#type_").change(function(){
         $("#onepiecetype").hide();
         $("#bottomtype").show();
     }
-    else if ((this.options[this.selectedIndex].value) == "Top")
+    else if ((this.options[this.selectedIndex].value) == "Shirt")
     {
         //if the type chosen is top, then the top category will show and hide the rest
         $("#bottomtype").hide();
@@ -24,7 +24,7 @@ $("#type_").change(function(){
       $("#toptype").hide();
 
     }
-    else if ((this.options[this.selectedIndex].value) == "One Piece")
+    else if ((this.options[this.selectedIndex].value) == "Onepiece")
     {
       //if the type chosen is sweater, then the sweater category will show and hide the rest
       $("#toptype").hide();
