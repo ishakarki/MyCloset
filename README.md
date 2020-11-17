@@ -61,7 +61,7 @@ VALUES
     ('firstname','lastname','yourusername',’yourpassword’
 );
 
->CREATE TABLE IF NOT EXISTS clothing( idclothing INT NOT NULL AUTO_INCREMENT, typeofclothing TINYTEXT, color TINYTEXT, temp INT, pattern TINYTEXT, occasion INT, file_title LONGTEXT, PRIMARY KEY(idclothing) 
+>CREATE TABLE IF NOT EXISTS clothing( idclothing INT NOT NULL AUTO_INCREMENT, typeofclothing TINYTEXT, color TINYTEXT, pattern TINYTEXT, occasion INT, file_title LONGTEXT, PRIMARY KEY(idclothing) 
 );
 
 >CREATE TABLE IF NOT EXISTS outfits( idOutfit INT NOT NULL AUTO_INCREMENT, name TINYTEXT, bottoms INT, shirts INT, sweaters INT, onepieces INT, temperature INT, occasion INT, PRIMARY KEY(idOutfit) );
