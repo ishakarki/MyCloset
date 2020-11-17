@@ -110,7 +110,7 @@ class Onepiece extends Clothing {
         }
         else if ($ty == 'Long Dress' || $ty == 'Jump Suit')
         {
-            $this->temp = 30;
+            $this->temp = 20;
         }
     }
     

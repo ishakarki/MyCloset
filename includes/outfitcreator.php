@@ -111,6 +111,7 @@ class OutfitCreator{
         else 
         {
             // spring/fall clothes, pick items with temp between 6 and 20
+            echo 'inside spring/fall area <br>'; 
             $tempbottoms = $this->closet->filterbottoms;
             $tempshirts = $this->closet->filtershirts;
             $tempsweaters = $this->closet->filtersweaters;
@@ -203,10 +204,6 @@ class OutfitCreator{
 
         // filling the filter arrays from mycloset with those that match the occasion
         $this->closet->filterbottoms = $this->closet->get_bottoms($occasion);
-        // for($i = 0; $i < count($this->closet->filterbottoms); $i++)
-        // {
-        //     echo $this->closet->filterbottoms[$i]->get_type();
-        // }
         $this->closet->filtershirts = $this->closet->get_shirts($occasion);
         $this->closet->filtersweaters = $this->closet->get_sweaters($occasion);
         $this->closet->filteronepieces = $this->closet->get_onepieces($occasion);
@@ -246,28 +243,28 @@ class OutfitCreator{
 /////////////// testing ////////////////
 
 $mycloset = new Closet();
-$b1 = new Bottom('pant','white',False,2,'pants.png');
-$b2 = new Bottom('skirt','black',False,3,'skirt.png');
-$b3 = new Bottom('shorts','blue',False,2,'jean.png');
-$b4 = new Bottom('shorts','black',False,2,'s1.png');
-$b5 = new Bottom('skirt','pink',False,2,'s2.png');
+$b1 = new Bottom('Pant','white',False,2,'pants.png');
+$b2 = new Bottom('Skirt','black',False,3,'skirt.png');
+$b3 = new Bottom('Short','blue',False,2,'jean.png');
+$b4 = new Bottom('Short','black',False,2,'s1.png');
+$b5 = new Bottom('Skirt','pink',False,2,'s2.png');
 
-$sh1 = new Shirt('longshirt','white',False,2,'sh1.png');
-$sh2 = new Shirt('tshirt','blue',False,3,'sh2.png');
-$sh3 = new Shirt('blouse','pink',False,2,'sh2.png');
-$sh4 = new Shirt('tshirt','black',False,3,'sh4.png');
-$sh5 = new Shirt('tank top','yellow',False,2,'sh5.png');
+$sh1 = new Shirt('Long Sleeve','white',False,2,'sh1.png');
+$sh2 = new Shirt('T-Shirt','blue',False,3,'sh2.png');
+$sh3 = new Shirt('Blouse','pink',False,2,'sh2.png');
+$sh4 = new Shirt('T-Shirt','black',False,3,'sh4.png');
+$sh5 = new Shirt('Tank Top','yellow',False,2,'sh5.png');
 
-$sw1 = new Sweater('jacket','black',False,2,'sw1.png');
-$sw2 = new Sweater('pullover','brown',False,2,'sw2.png');
-$sw3 = new Sweater('cardigan','white',False,3,'sw3.png');
-$sw4 = new Sweater('pullover','pink',False,3,'sw4.png');
+$sw1 = new Sweater('Jacket','black',False,2,'sw1.png');
+$sw2 = new Sweater('Pullover','brown',False,2,'sw2.png');
+$sw3 = new Sweater('Cardigan','white',False,3,'sw3.png');
+$sw4 = new Sweater('Pullover','pink',False,3,'sw4.png');
 
-$o1 = new Onepiece('short dress','red',False,3,'o1.png');
-$o2 = new Onepiece('long dress','black',False,3,'o2.png');
-$o3 = new Onepiece('jumpsuit','yellow',False,2,'o3.png');
-$o4 = new Onepiece('short dress','yellow',False,2,'o4.png');
-$o5 = new Onepiece('long dress','pink',False,2,'o5.png');
+$o1 = new Onepiece('Short Dress','red',False,3,'o1.png');
+$o2 = new Onepiece('Long Dress','black',False,3,'o2.png');
+$o3 = new Onepiece('Jump Suit','yellow',False,2,'o3.png');
+$o4 = new Onepiece('Romper','yellow',False,2,'o4.png');
+$o5 = new Onepiece('Long Dress','pink',False,2,'o5.png');
 
 $mycloset->insert_bottom($b1);
 $mycloset->insert_bottom($b2);
@@ -298,5 +295,5 @@ $mycloset->print_sweaters();
 $mycloset->print_onepieces();
 
 $g = new OutfitCreator($mycloset);
-$g->searchForOptions(70,2);
+$g->searchForOptions(45,2);
 $g->random_outfit();

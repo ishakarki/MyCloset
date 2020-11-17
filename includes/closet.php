@@ -62,13 +62,6 @@ class Closet {
     function get_bottoms($occasion)
     {
         $matches = array(); // array of matched clothes
-        // foreach($this->bottoms as $key=>$val) // https://www.dyn-web.com/php/arrays/iterate/
-        // {
-        //     if($val->get_occasion()==$occasion)
-        //     {
-        //         $matches[] = $val;
-        //     }
-        // }
         for($i = 0; $i < count($this->bottoms); $i++)
         {
             if($this->bottoms[$i]->get_occasion()==$occasion)
