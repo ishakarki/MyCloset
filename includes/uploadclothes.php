@@ -1,7 +1,6 @@
 <?php
 /*
     This is in charge of uploading newly added piece of clothing to the data base
-
 */
 if(isset($_POST['upload-submit'])) 
 {
@@ -86,59 +85,6 @@ if(isset($_POST['upload-submit']))
                         exit();
                     }
                     else{
-                        // $temp = -1;
-                        // //must evaluate, depending on what category the piece of clothing belong to, that we assign the correct temperature, that will fit which weather the piece of clothing can be worn
-                        // if($type == "Bottom") 
-                        // {
-                        //     if($type_of == "Pant")
-                        //     {
-                        //         $temp = 15;
-                        //     }
-                        //     elseif ($type_of == "Short" || $type_of == "Skirt"){
-                        //         $temp = 6;
-                        //     }
-                        // }
-                        // elseif($type == "Top")
-                        // {
-                        //     if($type_of == "Long Sleeve")
-                        //     {
-                        //         $temp = 15;
-                        //     }
-                        //     elseif ($type_of == "T-Shirt")
-                        //     {
-                        //         $temp = 8;
-                        //     }
-                        //     elseif ($type_of == "Tank Top")
-                        //     {
-                        //         $temp = 5;
-                        //     }
-                        // }
-                        // elseif ($type == "Sweater")
-                        // {
-                        //     if($type_of == "Jacket")
-                        //     {
-                        //         $temp = 40;
-                        //     }
-                        //     elseif($type_of == "Cardigan")
-                        //     {
-                        //         $temp = 6;
-                        //     }
-                        //     elseif ($type_of == "Pullover")
-                        //     {
-                        //         $temp = 20;
-                        //     }
-                        // }
-                        // elseif ($type == "One Piece")
-                        // {
-                        //     if($type_of == "Short Dress" || $type_of == "Romper")
-                        //     {
-                        //         $temp = 5;
-                        //     }
-                        //     elseif ($type_of == "Long Dress" || $type_of == "Jump Suit")
-                        //     {
-                        //         $temp = 20;
-                        //     }
-                        // }
 
                         //checking the prepare statement again before we insert
                         if(!mysqli_stmt_prepare($stmt, $sql))

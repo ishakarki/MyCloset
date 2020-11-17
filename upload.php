@@ -6,9 +6,10 @@ include("includes/session.php")
 <div class="mt-5 col-md-12"> 
 <!-- PLACING THE FORM IN A CARD -->
   <div class="card text-center">
-
+    <div class="card-header">
+  </div>
   <div class="card-body">
-    <h4 class="card-title">UPLOAD</h4>
+    <h5 class="card-title">UPLOAD</h5>
     <div class="d-flex justify-content-center">
     <form action = "includes/uploadclothes.php" method = "post" enctype="multipart/form-data">
     <!-- UPLOAD FILE -->
@@ -40,7 +41,7 @@ include("includes/session.php")
         <option value = "Short">Short</option>
       </select>
 </div>
-<!-- CATEGORY FOR TOP -->
+<!-- CATEGORY FOR SHIRT -->
 <div class="form-group" id="toptype">
       <select class="form-control" name = "type_of_top">
         <option selected>Category</option>
