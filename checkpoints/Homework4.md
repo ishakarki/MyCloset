@@ -68,3 +68,5 @@ Next Deadline Plan:
 - User upload: user can upload their own images to add to the database (CHANGE: already done!)
 - Make sure frontend and backend work nicely and CSS
 - NEW: Implement better UI
+
+#Goals for the next deadline
