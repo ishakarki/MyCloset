@@ -97,7 +97,7 @@ if(isset($_POST['upload-submit']))
                             mysqli_stmt_execute($stmt);
                             //move the file to the respective folder
                             move_uploaded_file($ftemp,$filedir); // upload into respective folder (image/)
-                            header("Location: ../upload.php?upload=success");
+                            header("Location: ../upload.php?found=success");
                         }
                         
                     }

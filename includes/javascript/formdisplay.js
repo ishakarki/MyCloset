@@ -19,9 +19,10 @@ $("#type_").change(function(){
   {
     //if the type chosen is sweater, then the sweater category will show and hide the rest
     $("#toptype").hide();
-    $("#sweatertype").show();
     $("#onepiecetype").hide();
-    $("#toptype").hide();
+    $("#bottomtype").hide();
+    $("#sweatertype").show();
+
 
   }
   else if ((this.options[this.selectedIndex].value) == "Onepiece")
@@ -29,8 +30,9 @@ $("#type_").change(function(){
     //if the type chosen is sweater, then the sweater category will show and hide the rest
     $("#toptype").hide();
     $("#sweatertype").hide();
-    $("#onepiecetype").show();
     $("#bottomtype").hide();
+    $("#onepiecetype").show();
+
 
   }
   else{
@@ -38,6 +40,6 @@ $("#type_").change(function(){
     $("#toptype").hide();
     $("#sweatertype").hide();
     $("#onepiecetype").hide();
-    $("#toptype").hide();
+    $("#bottomtype").hide();
   }
 });

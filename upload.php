@@ -9,10 +9,36 @@ include("includes/session.php")
     <div class="card-header">
   </div>
   <div class="card-body">
-    <h5 class="card-title">UPLOAD</h5>
+    <h4 class="card-title">UPLOAD</h4>
     <div class="d-flex justify-content-center">
     <form action = "includes/uploadclothes.php" method = "post" enctype="multipart/form-data">
     <!-- UPLOAD FILE -->
+    <?php
+				if(isset($_GET['found']))
+				{
+
+					if($_GET['found']=="emptyfields")
+					{
+						echo '<h7>*Please fill in all fields*</h7>';
+					}
+
+					else if($_GET['found']=="error")
+					{
+						echo '<h7>*Connection Error*</h7>';
+          }
+          
+          else if($_GET['found']=="duplicatefilename")
+          {
+            echo '<h7>*Filename already exists*</h7>';
+
+          }
+          else if($_GET['found']=="success")
+          {
+            echo '<h8>*Upload Success*</h8>';
+
+          }
+				}
+			?>
     <div class="form-group">
       <input type="file" name="file">
   </div>
@@ -20,7 +46,6 @@ include("includes/session.php")
   <div class="form-group">
     <!-- <label for="cloth-title">Title</label> -->
     <input type="text" class="form-control" id="cloth-title" name="title" placeholder="Title" required="">
-    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
   </div>
   <!-- SPECIFY THE TYPE OF CLOTHING [BASE ON INPUT IT WILL SHOW THE CATEGORY RELATED TO THAT TYPE]--> 
   <div class="form-group">

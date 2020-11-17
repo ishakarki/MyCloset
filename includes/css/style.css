@@ -20,6 +20,14 @@ body{
     font-size:10em;
     line-height:0.9em;
   }
+
+  h7{
+    color: red;
+  }
+
+  h8{
+    color: green;
+  }
   
 .form-signin {
     padding-top: 90px;
@@ -115,4 +123,5 @@ img{
   height:500px; 
   object-fit: contain;
 }
+
 
