@@ -46,9 +46,14 @@ Accomplished tasks:
     - bottoms: pants/shorts/skirts, shirts: t-shirt/longshirt/blouse/tanktop, sweaters: jackets/cardigans/pullovers, onepieces: shortdresses/longdresses/jumpsuits/rompers
   - user also gives input of clothing color, type of occasion, and if it is patterned
 - slideshow of full closet
-  - separated by tops, bottoms ,onepieces, and sweaters
+  - separated by tops, bottoms, onepieces, and sweaters
   - displays the images of the clothes
   - switch between different images using the previous and next buttons
+  
+Differences from Original Plan:
+
+- better UI (for mobile-friendly view/modernization) was not implemented
+  - the random outfit generator/classes took more time and effort than expected
   
 Next Deadline Plan: 
 
@@ -59,9 +64,7 @@ Next Deadline Plan:
 - Knowledge: Integration Layer, publishing
   - Learning more about sending in user request to display information
   - Figuring out ways we can publish the website
-- Test our classes with our actual clothing pictures (CHANGE: added task, we want to get this done earlier to make sure we have enough time to work around errors)
-- Vananh: Make sure frontend and backend work nicely and CSS
-  - do the correct images come out? do the buttons link to right pages?
-   - Figure out how the user will interact with the website: buttons request
-- Isha: User upload
-  - implement user upload, where user can upload their own images to add to the database
+- Test our classes with our actual clothing pictures (CHANGE: already done!)
+- User upload: user can upload their own images to add to the database (CHANGE: already done!)
+- Make sure frontend and backend work nicely and CSS
+- NEW: Implement better UI
