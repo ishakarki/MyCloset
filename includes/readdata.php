@@ -2,7 +2,7 @@
 require 'database_setup.php';
 include 'clothing.php';
 //sql statement to select the following columns in order to create clothing object
-$sql = "SELECT nameofclothing, typeofclothing, color, pattern, occasion, file_title FROM clothing;";
+$sql = "SELECT nameofclothing, typeofclothing, color, pattern, occasion, file_title, type_ FROM clothing;";
 $stmt = mysqli_stmt_init($conn);
 
 //check for connection error
@@ -20,22 +20,22 @@ else{
     {
         echo $row["nameofclothing"] .$row["typeofclothing"] .$row["color"] .$row["pattern"] .$row["occasion"] .$row["file_title"];
         //adding bottom 
-        if ($row["typeofclothing"] == "Bottom")
+        if ($row["type_"] == "Bottom")
         {
             $bottom_piece = new Bottom($row["nameofclothing"], $row["typeofclothing"], $row["color"], $row["pattern"], $row["occasion"], $row["file_title"]);
         }
         //adding top
-        elseif ($row["typeofclothing"] == "Top")
+        elseif ($row["type_"] == "Top")
         {
             $top_piece = new Top($row["nameofclothing"], $row["typeofclothing"], $row["color"], $row["pattern"], $row["occasion"], $row["file_title"]);
         }
         //adding sweater
-        elseif($row["typeofclothing"] == "Sweater")
+        elseif($row["type_"] == "Sweater")
         {
             $sweater_piece = new Sweater($row["nameofclothing"], $row["typeofclothing"], $row["color"], $row["pattern"], $row["occasion"], $row["file_title"]);
         }
         //adding onepiece
-        elseif($row["typeofclothing"] == "Onepiece")
+        elseif($row["type_"] == "Onepiece")
         {
             $one_piece = new Onepiece($row["nameofclothing"], $row["typeofclothing"], $row["color"], $row["pattern"], $row["occasion"], $row["file_title"]);
         }

@@ -41,17 +41,22 @@ body{
 }
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+  display: flex;
+  justify-content: center;
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 100%;
 }
 
 .container{
   position: relative;
 }
 
-.slideshow{
+.slideshow_top{
+  display:none;
+}
+
+.slideshow_bottom{
   display:none;
 }
 
@@ -60,30 +65,30 @@ body{
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
+/* .prev,
+.next { */
+  /* cursor: pointer; */
   /* position: absolute; */
-  top: 50%;
+  /* top: 50%;
   width: auto;
   margin-top: -290px;
-  font-weight: bold;
+  font-weight: bold; */
   /* font-size: 30px; */
   /* border-radius: 30 5px 15px 20; */
 
-}
+/* } */
 
 /* Position the "next button" to the right*/
-/* .next {
+.next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}  */
+} 
 
 /* On hover, add a black background color with a little bit see-through */
-/* .prev:hover,
+ .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-} */
+}
 
 #bottomtype{
   display: none;
@@ -100,3 +105,8 @@ body{
   display: none;
 } 
 
+img{
+  width: 500px;
+  height:500px; 
+  object-fit: contain;
+}
