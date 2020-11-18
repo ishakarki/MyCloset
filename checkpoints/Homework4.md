@@ -20,6 +20,10 @@ Here's a list of the different Types and the Categories within each one:
 
 For the next and final deadline, we need to work on saving the outfits that the user likes on a separate page. We also need to work on our UI so that it looks cleaner and potentially mobile-friendly. The UI will be our main focus for this next deadline. Since most of our features are already implemented, we will come up with new features to add to our project as we see fit. 
 
+# Video Runthrough
+
+- ![link to youtube video](https://youtu.be/38RlSerEYxg)
+
 # Screenshots
 - accounts table in our database: 
 - ![screenshot of account table](screenshots/account_pic.PNG)
@@ -31,7 +35,3 @@ For the next and final deadline, we need to work on saving the outfits that the 
 - ![screenshot of clothing table data](screenshots/clothing_data.png)
 - outfit table: 
 - ![screenshot of outfit table](screenshots/outfit_table.png)
-
-# Video Runthrough
-
-- ![link to youtube video](https://youtu.be/38RlSerEYxg)
