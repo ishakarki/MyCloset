@@ -32,4 +32,6 @@ For the next and final deadline, we need to work on saving the outfits that the 
 - outfit table: 
 - ![screenshot of outfit table](screenshots/outfit_table.png)
 
-[![link to youtube video](https://youtu.be/38RlSerEYxg)](https://youtu.be/38RlSerEYxg)
+# Video Runthrough
+
+- ![link to youtube video](https://youtu.be/38RlSerEYxg)
