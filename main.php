@@ -8,7 +8,7 @@ include("includes/session.php")
   <div class="card text-center">
 
   <div class="card-body">
-    <h4 class="card-title">UPLOAD</h4>
+    <h4 class="card-title">CREATE NEW OUTFIT</h4>
     <div class="d-flex justify-content-center">
     <form action = <?=$_SERVER['PHP_SELF']?> method = "post">
   <!-- UPLOAD NAME OF THE PIECE OF CLOTHING -->
@@ -28,7 +28,7 @@ include("includes/session.php")
       </select>
 </div>
 <!-- SUBMIT BUTTON -->
-  <button type="submit" class="btn btn-primary" name="request-submit">Submit</button>
+  <button type="submit" class="btn btn-primary" name="request-submit">Generate!</button>
 </form>
     </div>
     <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
