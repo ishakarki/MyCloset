@@ -66,6 +66,7 @@ Execute the following SQL queries:
 
 >CREATE TABLE IF NOT EXISTS outfits( idOutfit INT NOT NULL AUTO_INCREMENT, name TINYTEXT, bottoms INT, shirts INT, sweaters INT, onepieces INT, temperature INT, occasion INT, PRIMARY KEY(idOutfit) );
 
+For the user reference if do not want to manual upload the clothing:
 >INSERT INTO clothing(
     nameofclothing,typeofclothing,color,pattern,occasion,file_title,type_)
 VALUES
