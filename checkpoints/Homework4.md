@@ -21,8 +21,13 @@ Here's a list of the different Types and the Categories within each one:
 For the next and final deadline, we need to work on saving the outfits that the user likes on a separate page. We also need to work on our UI so that it looks cleaner and potentially mobile-friendly. The UI will be our main focus for this next deadline. Since most of our features are already implemented, we will come up with new features to add to our project as we see fit. 
 
 # Screenshots
-- accounts table in our database: ![screenshot of account table](screenshots/account_pic.PNG | width=100)
-- actual accounts in our database (user & pwd): ![screenshot of account table data](screenshots/account_pic2.PNG | width = 100)
-- clothing table: ![screenshot of clothing table](screenshots/clothing_table.png | width = 100)
-- first ~20 rows of clothing data (total around 50+): ![screenshot of clothing table data](screenshots/clothing_data.png | width = 100)
-- outfit table: ![screenshot of outfit table](screenshots/outfit_table.png | width = 100)
+- accounts table in our database: 
+- ![screenshot of account table](screenshots/account_pic.PNG)
+- actual accounts in our database (user & pwd): 
+- ![screenshot of account table data](screenshots/account_pic2.PNG)
+- clothing table: 
+- ![screenshot of clothing table](screenshots/clothing_table.png)
+- first ~20 rows of clothing data (total around 50+): 
+- ![screenshot of clothing table data](screenshots/clothing_data.png)
+- outfit table: 
+- ![screenshot of outfit table](screenshots/outfit_table.png)
