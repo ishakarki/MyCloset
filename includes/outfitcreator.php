@@ -111,7 +111,7 @@ class OutfitCreator{
         else 
         {
             // spring/fall clothes, pick items with temp between 6 and 20
-            echo 'inside spring/fall area <br>'; 
+            // echo 'inside spring/fall area <br>'; 
             $tempbottoms = $this->closet->filterbottoms;
             $tempshirts = $this->closet->filtershirts;
             $tempsweaters = $this->closet->filtersweaters;
@@ -160,36 +160,36 @@ class OutfitCreator{
             }
         }
 
-        echo 'filtered bottoms array has: <br>';
-        for($i = 0; $i < count($this->closet->filterbottoms); $i++)
-        {
-            echo $this->closet->filterbottoms[$i]->get_type(),' ',$this->closet->filterbottoms[$i]->get_color(),'<br>';
-        }
-        echo '<br>';
+        // // echo 'filtered bottoms array has: <br>';
+        // for($i = 0; $i < count($this->closet->filterbottoms); $i++)
+        // {
+        //     echo $this->closet->filterbottoms[$i]->get_type(),' ',$this->closet->filterbottoms[$i]->get_color(),'<br>';
+        // }
+        // // echo '<br>';
 
-        echo 'filtered shirts array has: <br>';
-        for($i = 0; $i < count($this->closet->filtershirts); $i++)
-        {
-            echo $this->closet->filtershirts[$i]->get_type(),' ',$this->closet->filtershirts[$i]->get_color(),'<br>';
-        }
-        echo '<br>';
+        // echo 'filtered shirts array has: <br>';
+        // for($i = 0; $i < count($this->closet->filtershirts); $i++)
+        // {
+        //     echo $this->closet->filtershirts[$i]->get_type(),' ',$this->closet->filtershirts[$i]->get_color(),'<br>';
+        // }
+        // echo '<br>';
 
-        if(!empty($this->closet->filtersweaters))
-        {
-            echo 'filtered sweaters array has: <br>';
-            for($i = 0; $i < count($this->closet->filtersweaters); $i++)
-            {
-                echo $this->closet->filtersweaters[$i]->get_type(),' ',$this->closet->filtersweaters[$i]->get_color(),'<br>';
-            }
-            echo '<br>';
-        }
+        // if(!empty($this->closet->filtersweaters))
+        // {
+        //     echo 'filtered sweaters array has: <br>';
+        //     for($i = 0; $i < count($this->closet->filtersweaters); $i++)
+        //     {
+        //         echo $this->closet->filtersweaters[$i]->get_type(),' ',$this->closet->filtersweaters[$i]->get_color(),'<br>';
+        //     }
+        //     echo '<br>';
+        // }
 
-        echo 'filtered onepieces array has: <br>';
-        for($i = 0; $i < count($this->closet->filteronepieces); $i++)
-        {
-            echo $this->closet->filteronepieces[$i]->get_type(),' ',$this->closet->filteronepieces[$i]->get_color(),'<br>';
-        }
-        echo '<br>';
+        // echo 'filtered onepieces array has: <br>';
+        // for($i = 0; $i < count($this->closet->filteronepieces); $i++)
+        // {
+        //     echo $this->closet->filteronepieces[$i]->get_type(),' ',$this->closet->filteronepieces[$i]->get_color(),'<br>';
+        // }
+        // echo '<br>';
 
     }
 
@@ -227,8 +227,8 @@ class OutfitCreator{
             // echo $b,' index: random bottom is ',$this->closet->filterbottoms[$b]->get_type(),' ',$this->closet->filterbottoms[$b]->get_color(),'<br>';
             $sh = array_rand($this->closet->filtershirts);
             // echo $sh,' index: random shirt is ',$this->closet->filtershirts[$sh]->get_type(),' ',$this->closet->filtershirts[$sh]->get_color(),'<br>';
-            array_push($outfit,$this->closet->filterbottoms[$b]);
             array_push($outfit,$this->closet->filtershirts[$sh]);
+            array_push($outfit,$this->closet->filterbottoms[$b]);
         }
         else
         // if 1, choose onepiece

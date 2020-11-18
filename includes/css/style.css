@@ -1,3 +1,6 @@
+/* css */
+
+/* HANDLE BACKGROUND COLOR */
 body{
     background-color: rgb(248, 171, 186);
 }
@@ -6,6 +9,7 @@ body{
     margin:0;
     padding:0;
   }
+  /* TEXT SIZE AND COLOR */
   h1 {
     font-size:27em;
     line-height:0.6em;
@@ -28,6 +32,8 @@ body{
   h8{
     color: green;
   }
+
+  /* SIGN IN FORM DISPLAYED IN MAIN PAGE */
   
 .form-signin {
     padding-top: 90px;
@@ -38,21 +44,24 @@ body{
     margin: 2 auto;
 }
 
+/* NAVIGATION BAR */
 .navbar .navbar-expand-sm .bg-dark .navbar-dark
 {
   padding-bottom: 2rem;
 }
 
-
+/* ALIGN TEXT AT THE CENTER NO MATTER WHAT */
 .text-center {
     text-align: center!important;
 }
 
+/* BUTTON COLOR */
 .btn.btn-lg.btn-primary.btn-block{
   background-color:  rgb(185, 113, 127);
   border-color:  rgb(185, 113, 127);
 }
 
+/* CENTERING  */
 .center {
   display: flex;
   justify-content: center;
@@ -65,10 +74,12 @@ body{
   position: relative;
 }
 
+/* TOP SLIDE SHOW */
 .slideshow_top{
   display:none;
 }
 
+/* BOTTOM SLIDE SHOW */
 .slideshow_bottom{
   display:none;
 }
@@ -103,6 +114,7 @@ body{
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* FORM DISPLAY ON ONE DEPENDING ON THE USER INPUT */
 #bottomtype{
   display: none;
 }
@@ -118,6 +130,7 @@ body{
   display: none;
 } 
 
+/* SIZING IMAGES */
 img{
   width: 500px;
   height:500px; 

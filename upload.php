@@ -13,25 +13,28 @@ include("includes/session.php")
     <div class="d-flex justify-content-center">
     <form action = "includes/uploadclothes.php" method = "post" enctype="multipart/form-data">
     <!-- UPLOAD FILE -->
+  
     <?php
+        //check the url return to display notification
 				if(isset($_GET['found']))
 				{
-
+          //if there is any empty field
 					if($_GET['found']=="emptyfields")
 					{
 						echo '<h7>*Please fill in all fields*</h7>';
 					}
-
+          //if there is anything wrong with the connection
 					else if($_GET['found']=="error")
 					{
 						echo '<h7>*Connection Error*</h7>';
           }
-          
+          //if there is a duplicate file name
           else if($_GET['found']=="duplicatefilename")
           {
             echo '<h7>*Filename already exists*</h7>';
 
           }
+          //if everything is successful uploaded to the database
           else if($_GET['found']=="success")
           {
             echo '<h8>*Upload Success*</h8>';

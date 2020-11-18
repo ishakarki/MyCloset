@@ -1,4 +1,6 @@
    <?php
+
+   //this is purely for database connection
     $dbServername="localhost:3307";
     $dbUsername ="root";
     $dbPassword ="secret";

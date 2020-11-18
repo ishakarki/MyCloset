@@ -20,6 +20,7 @@ class Clothing{
         $this->file_title = $ft; // string
         $this->set_temp($ty);
     }
+    //get functions
     function get_name(){ return $this->name; }
     function get_type(){return $this->type;}
     function get_color(){return $this->color;}
