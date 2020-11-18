@@ -22,7 +22,7 @@ For the next and final deadline, we need to work on saving the outfits that the 
 
 # Video Runthrough
 
-- [![link to youtube video](https://img.youtube.com/vi/https://youtu.be/38RlSerEYxg/0.jpg)](https://www.youtube.com/watch?v=https://youtu.be/38RlSerEYxg)
+- [![link to youtube video](https://img.youtube.com/vi/https://youtu.be/38RlSerEYxg/0.jpg)](https://youtu.be/38RlSerEYxg)
 
 # Screenshots
 - accounts table in our database: 
