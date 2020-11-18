@@ -20,4 +20,11 @@ Here's a list of the different Types and the Categories within each one:
 
 For the next and final deadline, we need to work on saving the outfits that the user likes on a separate page. We also need to work on our UI so that it looks cleaner and potentially mobile-friendly. The UI will be our main focus for this next deadline. Since most of our features are already implemented, we will come up with new features to add to our project as we see fit. 
 
-# Screen Shot
+# Screenshots
+![screenshot of account table](screenshots/account_pic.PNG)
+accounts table in our database
+
+![screenshot of account table](screenshots/account_pic2.PNG)
+actual accounts in our database (user & pwd)
+
+
