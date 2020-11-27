@@ -8,7 +8,7 @@ include("includes/session.php")
   <div class="card text-center">
 
   <div class="card-body">
-    <h4 class="card-title">CREATE NEW OUTFIT</h4>
+    <h4 class="card-title">UPLOAD</h4>
     <div class="d-flex justify-content-center">
     <form action = <?=$_SERVER['PHP_SELF']?> method = "post">
   <!-- UPLOAD NAME OF THE PIECE OF CLOTHING -->
@@ -19,7 +19,7 @@ include("includes/session.php")
 
 <!-- CATEGORY FOR OCCASION -->
 <div class="form-group">
-      <select class="form-control" name="occasion_request">
+      <select class="form-control" name="occasion_request" required="">
         <option selected>Occasion</option>
         <option value = 4>Fancy</option>
         <option value = 3>Business</option>
@@ -28,7 +28,7 @@ include("includes/session.php")
       </select>
 </div>
 <!-- SUBMIT BUTTON -->
-  <button type="submit" class="btn btn-primary" name="request-submit">Generate!</button>
+  <button type="submit" class="btn btn-primary" name="request-submit">Submit</button>
 </form>
     </div>
     <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
@@ -65,19 +65,11 @@ if(isset($_POST['request-submit']))
         header("Location: ../main.php?found=emptyfields");
     }
 
-    // creating new generator object
     $creator = new OutfitCreator($mycloset);
 
-    // filtering based on input temp and occasion
     $creator->searchForOptions($temperature, $occasion_);
-
-    // array of random clothing objects (generated from creator)
     $ar = $creator->random_outfit();
 
-    if(empty($ar))
-    {
-      echo 'No outfit available for given conditions.';
-    }
     for($i = 0; $i < count($ar); $i++)
     {
         $file = $ar[$i]->get_file_title();
@@ -87,7 +79,20 @@ if(isset($_POST['request-submit']))
         </div>';
     }
 
-   
+    // if (array_key_exists('button1', $_POST))
+    // {
+    //   button1();
+    // }
+
+    // function button1() { 
+    //   echo "This is Button1 that is selected"; 
+    // } 
+
+    // echo '
+    // <form method = "post">
+    // <input type = "submit" name = "button1" class="button" value="Button1"/>
+    // </form>';
+    
 }
 ?>
 

@@ -42,9 +42,40 @@ include("includes/session.php")
           }
 				}
 			?>
-    <div class="form-group">
-      <input type="file" name="file">
+  <div class="form-group">
+      <input type="file" name="file" id="file_">
+      <div class="show_img" id="image_box">
+          <img src="" alt="" class="view-image">
+          <span class= "img_box_text">Cloth</span>
+      </div>
   </div>
+  <script>
+      const file_ = document.getElementById("file_");
+      const preview_box = document.getElementById("image_box");
+      const preview_img = preview_box.querySelector(".view-image");
+      const image_text = preview_box.querySelector(".img_box_text");
+      
+      file_.addEventListener("change", function()
+      {
+          const file = this.files[0];
+
+          if(file)
+          {
+            const file_show = new FileReader();
+            image_text.style.display = "none";
+
+            preview_img.style.display = "block";
+            preview_box.style.display="block";
+
+            file_show.addEventListener("load", function(){
+              console.log(this);
+              preview_img.setAttribute("src", this.result);
+            });
+
+            file_show.readAsDataURL(file);
+          }
+      });
+  </script>
   <!-- UPLOAD NAME OF THE PIECE OF CLOTHING -->
   <div class="form-group">
     <!-- <label for="cloth-title">Title</label> -->
