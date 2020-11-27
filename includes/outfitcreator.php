@@ -12,7 +12,8 @@ class OutfitCreator{
     {
         $this->closet = $cl;
     }
-
+    
+    // called in searchForOptions to filter by temperature
     function pick_out($temp)
     {
         if ($temp>=70) 
@@ -223,25 +224,34 @@ class OutfitCreator{
         if(rand(0,1)==0) // randomly picking 0 or 1
         // if 0, then choose shirt/bottom combo
         {
-            $b = array_rand($this->closet->filterbottoms);
-            // echo $b,' index: random bottom is ',$this->closet->filterbottoms[$b]->get_type(),' ',$this->closet->filterbottoms[$b]->get_color(),'<br>';
-            $sh = array_rand($this->closet->filtershirts);
-            // echo $sh,' index: random shirt is ',$this->closet->filtershirts[$sh]->get_type(),' ',$this->closet->filtershirts[$sh]->get_color(),'<br>';
-            array_push($outfit,$this->closet->filtershirts[$sh]);
-            array_push($outfit,$this->closet->filterbottoms[$b]);
+            if(!empty($this->closet->filterbottoms) && !empty($this->closet->filtershirts))
+            {
+                $b = array_rand($this->closet->filterbottoms);
+                // echo $b,' index: random bottom is ',$this->closet->filterbottoms[$b]->get_type(),' ',$this->closet->filterbottoms[$b]->get_color(),'<br>';
+                $sh = array_rand($this->closet->filtershirts);
+                // echo $sh,' index: random shirt is ',$this->closet->filtershirts[$sh]->get_type(),' ',$this->closet->filtershirts[$sh]->get_color(),'<br>';
+                array_push($outfit,$this->closet->filtershirts[$sh]);
+                array_push($outfit,$this->closet->filterbottoms[$b]);
+            }
         }
         else
         // if 1, choose onepiece
         {
-            $o = array_rand($this->closet->filteronepieces);
-            // echo $o,' index: random onepiece is ',$this->closet->filteronepieces[$o]->get_type(),' ',$this->closet->filteronepieces[$o]->get_color(),'<br>';
-            array_push($outfit,$this->closet->filteronepieces[$o]);
+            if(!empty($this->closet->filteronepieces))
+            {
+                $o = array_rand($this->closet->filteronepieces);
+                // echo $o,' index: random onepiece is ',$this->closet->filteronepieces[$o]->get_type(),' ',$this->closet->filteronepieces[$o]->get_color(),'<br>';
+                array_push($outfit,$this->closet->filteronepieces[$o]);
+            }
         }
         if(!empty($this->closet->filtersweaters))
         {
-            $sw = array_rand($this->closet->filtersweaters);
-            // echo $sw,' index: random sweater is ',$this->closet->filtersweaters[$sw]->get_type(),' ',$this->closet->filtersweaters[$sw]->get_color(),'<br>';
-            array_push($outfit,$this->closet->filtersweaters[$sw]);
+            if(!empty($outfit))
+            {
+                $sw = array_rand($this->closet->filtersweaters);
+                // echo $sw,' index: random sweater is ',$this->closet->filtersweaters[$sw]->get_type(),' ',$this->closet->filtersweaters[$sw]->get_color(),'<br>';
+                array_push($outfit,$this->closet->filtersweaters[$sw]);
+            }
         }
         return $outfit;
     }

@@ -65,11 +65,19 @@ if(isset($_POST['request-submit']))
         header("Location: ../main.php?found=emptyfields");
     }
 
+    // creating new generator object
     $creator = new OutfitCreator($mycloset);
 
+    // filtering based on input temp and occasion
     $creator->searchForOptions($temperature, $occasion_);
+
+    // array of random clothing objects (generated from creator)
     $ar = $creator->random_outfit();
 
+    if(empty($ar))
+    {
+      echo 'No outfit available for given conditions.';
+    }
     for($i = 0; $i < count($ar); $i++)
     {
         $file = $ar[$i]->get_file_title();
