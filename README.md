@@ -58,11 +58,11 @@ Execute the following SQL queries:
 >INSERT INTO account
    (firstname,lastname,username,pwd)
 VALUES
-    ('firstname','lastname','yourusername',’yourpassword’
+    ('firstname','lastname','yourusername','yourpassword'
 );
 
 
->CREATE TABLE IF NOT EXISTS clothing( idclothing INT NOT NULL AUTO_INCREMENT, nameofclothing TINYTEXT, typeofclothing TINYTEXT, color TINYTEXT, pattern TINYTEXT, occasion INT, file_title LONGTEXT, type_ TINY TEXT, PRIMARY KEY(idclothing)
+>CREATE TABLE IF NOT EXISTS clothing( idclothing INT NOT NULL AUTO_INCREMENT, nameofclothing TINYTEXT, typeofclothing TINYTEXT, color TINYTEXT, pattern TINYTEXT, occasion INT, file_title LONGTEXT, type_ TINYTEXT, PRIMARY KEY(idclothing)
 );
 
 >CREATE TABLE IF NOT EXISTS outfits( idOutfit INT NOT NULL AUTO_INCREMENT, name TINYTEXT, bottoms INT, shirts INT, sweaters INT, onepieces INT, temperature INT, occasion INT, PRIMARY KEY(idOutfit) );
