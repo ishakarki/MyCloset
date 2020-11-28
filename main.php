@@ -50,6 +50,7 @@ include("includes/session.php")
 </div> -->
 
 <div class="mt-5 col-md-12">
+<!-- <input type="button" name="test" id="test" value="RUN" /><br/> -->
 
 <?php
 include('includes/readdata.php');
@@ -66,9 +67,14 @@ if(isset($_POST['request-submit']))
     }
 
     $creator = new OutfitCreator($mycloset);
+    
 
     $creator->searchForOptions($temperature, $occasion_);
     $ar = $creator->random_outfit();
+    if(empty($ar))
+    {
+      echo 'No outfit available for given conditions.';
+    }
 
     for($i = 0; $i < count($ar); $i++)
     {
@@ -79,19 +85,37 @@ if(isset($_POST['request-submit']))
         </div>';
     }
 
-    // if (array_key_exists('button1', $_POST))
-    // {
-    //   button1();
-    // }
+    if(!empty($ar))
+    {
+      // 3 max pieces in an outfit
+      $p1 = "NULL";
+      $p2 = "NULL";
+      $p3 = "NULL";
 
-    // function button1() { 
-    //   echo "This is Button1 that is selected"; 
-    // } 
+  
+      for($i = 0; $i < count($ar); $i++)
+      {
+        if($i==0)
+        {
+          $p1 = $ar[$i]->get_file_title();
+        }
+        if($i==1)
+        {
+          $p2 = $ar[$i]->get_file_title();
+        }
+        if($i==2)
+        {
+          $p3 = $ar[$i]->get_file_title();
+        }
+      }
 
-    // echo '
-    // <form method = "post">
-    // <input type = "submit" name = "button1" class="button" value="Button1"/>
-    // </form>';
+      echo '<form method = "post" action = "includes/favorite_insert.php">
+      <input type="text" name="piece1" value=' .$p1. ' style="display:none;"/>
+      <input type="text" name="piece2" value=' .$p2. ' style="display:none;"/>
+      <input type="text" name="piece3" value=' .$p3. ' style="display:none;"/>
+      <input type="submit" name="test" id="test" value="RUN" />
+      </form>';
+    }
     
 }
 ?>

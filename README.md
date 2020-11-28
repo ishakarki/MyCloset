@@ -1,4 +1,4 @@
-# MyCloset
+3# MyCloset
 Project for CSCI 3010.
 
 By: Vananh Le & Isha Karki
@@ -130,7 +130,19 @@ VALUES
     ('Striped Carnival Top', 'Tank Top', 'Multi-Color', True, 2, 'stripe_tank.PNG', 'Shirt'),
     ('Striped Shirt', 'Long Sleeve', 'Multi-Color', True, 3, 'stripe_shirt.PNG', 'Shirt'),
     ('Striped Jump Suit', 'Jump Suit', 'Multi-Color', True, 4, 'stripedjumpsuit.PNG', 'Onepiece'),
-    ('Grey Turtle Neck', 'Long Sleeve', 'Gray', False, 3, 'sweater.png', 'Shirt')
+    ('Grey Turtle Neck', 'Long Sleeve', 'Gray', False, 3, 'sweater.png', 'Shirt'),
+    ('Skater Skirt', 'Skirt', 'Black', False, 3, 'skirt.png', 'Bottom'),
+    ('Black Dress', 'Short Dress', 'Black', False, 2, 'black_short_dress.PNG', 'Onepiece'),
+    ('Black Vest','Cardigan','Black',False,4,'black_vest.PNG','Sweater'),
+    ('Black Pant','Pant','Black',False,4,'black_pant_prof.PNG','Bottom'),
+    ('Alien T-Shirt','T-Shirt','Black',False,1,'blacktshirt.PNG','Shirt'),
+    ('Patterned Jumpsuit','Jump Suit','Multi-Color',True,3,'cool_jumpsuit.PNG','Onepiece'),
+    ('Orange Romper','Romper','Orange',False,2,'orange_romper.PNG','Onepiece'),
+    ('Colorado Pullover','Pullover','Gray',False,1,'pullover.png','Sweater'),
+    ('Flowery Romper','Romper','Multi-Color',True,2,'FloweryRomper.PNG','Onepiece'),
+    ('Pizza T-Shirt','T-Shirt','White',False,1,'pizzashirt.PNG','Shirt'),
+    ('Long Sleeve Shirt','Long Sleeve','Multi-Color',True,1,'striped_long_sleeve.PNG','Shirt'),
+    ('Black Pant','Pant','Black',False,1,'blackstylepant.PNG','Bottom')
 ;
 
 Getting the database working really depend on how you set up your XAMPP. To check if your database connection is correct, go to the MyCloset/includes/database_setup.php file to modify the username, password, and port as needed. 
