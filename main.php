@@ -113,6 +113,7 @@ if(isset($_POST['request-submit']))
       <input type="text" name="piece1" value=' .$p1. ' style="display:none;"/>
       <input type="text" name="piece2" value=' .$p2. ' style="display:none;"/>
       <input type="text" name="piece3" value=' .$p3. ' style="display:none;"/>
+      <input type = "text" name = "nameofoutfit" placeholder = "Outfit Name"></input>
       <input type="submit" name="test" id="test" value="RUN" />
       </form>';
     }
