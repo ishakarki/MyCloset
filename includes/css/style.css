@@ -157,6 +157,7 @@ img{
   object-fit: contain;
 }
 
+/*BOX FOR FAVORITE OUTFITS*/
 div.fav_outfits{
   margin: 220px;
   float: left;
@@ -165,6 +166,8 @@ div.fav_outfits{
   height: 300px;
 
 }
+
+/*FAVORIT OUTFIT IMAGES SECTION*/
 
 div.fav_outfits img {
   width: 100%;

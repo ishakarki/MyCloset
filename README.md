@@ -65,7 +65,7 @@ VALUES
 >CREATE TABLE IF NOT EXISTS clothing( idclothing INT NOT NULL AUTO_INCREMENT, nameofclothing TINYTEXT, typeofclothing TINYTEXT, color TINYTEXT, pattern TINYTEXT, occasion INT, file_title LONGTEXT, type_ TINYTEXT, PRIMARY KEY(idclothing)
 );
 
->CREATE TABLE IF NOT EXISTS outfits( idOutfit INT NOT NULL AUTO_INCREMENT, outfitname TINYTEXT, piece1 TINYTEXT, piece2 TINYTEXT, piece3 TINYTEXT, temperature INT, occasion INT, PRIMARY KEY(idOutfit));
+>CREATE TABLE IF NOT EXISTS outfits( idOutfit INT NOT NULL AUTO_INCREMENT, outfitname TINYTEXT, piece1 TINYTEXT, piece2 TINYTEXT, piece3 TINYTEXT, temperature TINYTEXT, occasion INT, PRIMARY KEY(idOutfit));
 
 For the user reference if do not want to manual upload the clothing:
 >INSERT INTO clothing(
