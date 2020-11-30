@@ -8,6 +8,7 @@ if(isset($_POST['test']))
     $p1 = $_POST['piece1'];
     $p2 = $_POST['piece2'];
     $p3 = $_POST['piece3'];
+<<<<<<< HEAD
 
     if($temperature >= 70)
     {
@@ -21,6 +22,8 @@ if(isset($_POST['test']))
     {
         $temperature = "Warm";
     }
+=======
+>>>>>>> bbfd22640841fd1eaedb32efa85b4aa215a2a94f
     require 'database_setup.php';
 
     $sql = "INSERT INTO outfits (outfitname, piece1, piece2, piece3, temperature, occasion) VALUES (?,?,?,?,?,?);";

@@ -8,7 +8,7 @@ include("includes/session.php")
   <div class="card text-center">
 
   <div class="card-body">
-    <h4 class="card-title">CREATE NEW OUTFIT</h4>
+    <h4 class="card-title">UPLOAD</h4>
     <div class="d-flex justify-content-center">
     <form action = <?=$_SERVER['PHP_SELF']?> method = "post">
   <!-- UPLOAD NAME OF THE PIECE OF CLOTHING -->
@@ -19,7 +19,7 @@ include("includes/session.php")
 
 <!-- CATEGORY FOR OCCASION -->
 <div class="form-group">
-      <select class="form-control" name="occasion_request">
+      <select class="form-control" name="occasion_request" required="">
         <option selected>Occasion</option>
         <option value = 4>Fancy</option>
         <option value = 3>Business</option>
@@ -28,7 +28,7 @@ include("includes/session.php")
       </select>
 </div>
 <!-- SUBMIT BUTTON -->
-  <button type="submit" class="btn btn-primary" name="request-submit">Generate!</button>
+  <button type="submit" class="btn btn-primary" name="request-submit">Submit</button>
 </form>
     </div>
     <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
@@ -50,6 +50,7 @@ include("includes/session.php")
 </div> -->
 
 <div class="mt-5 col-md-12">
+<!-- <input type="button" name="test" id="test" value="RUN" /><br/> -->
 
 <?php
 include('includes/readdata.php');
@@ -58,6 +59,10 @@ include('includes/outfitcreator.php');
 if(isset($_POST['request-submit']))
 {
     $temperature = $_POST['temperature'];
+    //>= 70 summer
+    //<30 winter
+    //between spring/fall
+
     $occasion_ = $_POST['occasion_request'];
     //check for empty input
     if(empty($temperature) || $occasion_ == "Occasion")
@@ -66,9 +71,14 @@ if(isset($_POST['request-submit']))
     }
 
     $creator = new OutfitCreator($mycloset);
+    
 
     $creator->searchForOptions($temperature, $occasion_);
     $ar = $creator->random_outfit();
+    if(empty($ar))
+    {
+      echo 'No outfit available for given conditions.';
+    }
 
     for($i = 0; $i < count($ar); $i++)
     {
@@ -79,7 +89,42 @@ if(isset($_POST['request-submit']))
         </div>';
     }
 
-   
+    if(!empty($ar))
+    {
+      // 3 max pieces in an outfit
+      $p1 = "NULL";
+      $p2 = "NULL";
+      $p3 = "NULL";
+
+  
+      for($i = 0; $i < count($ar); $i++)
+      {
+        if($i==0)
+        {
+          $p1 = $ar[$i]->get_file_title();
+        }
+        if($i==1)
+        {
+          $p2 = $ar[$i]->get_file_title();
+        }
+        if($i==2)
+        {
+          $p3 = $ar[$i]->get_file_title();
+        }
+      }
+
+
+      echo '<form method = "post" action = "includes/favorite_insert.php">
+      <input type="text" name="piece1" value=' .$p1. ' style="display:none;"/>
+      <input type="text" name="piece2" value=' .$p2. ' style="display:none;"/>
+      <input type="text" name="piece3" value=' .$p3. ' style="display:none;"/>
+      <input type = "text" name = "temp" value = ' .$temperature. 'style= display:none;"/>
+      <input type = "text" name = "occasion" value = ' .$occasion_. 'style= display:none;"/>
+      <input type = "text" name = "nameofoutfit" placeholder = "Outfit Name"></input>
+      <input type="submit" name="test" id="test" value="RUN" />
+      </form>';
+    }
+    
 }
 ?>
 
