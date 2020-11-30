@@ -11,7 +11,6 @@ if(isset($_POST['test']))
     $p1 = $_POST['piece1'];
     $p2 = $_POST['piece2'];
     $p3 = $_POST['piece3'];
-
     //check if the temperature input is larger than or equal to 70, then the outfit is for the hot weather
     if($temperature >= 70)
     {

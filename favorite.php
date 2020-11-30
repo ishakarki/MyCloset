@@ -13,16 +13,30 @@ else{
     mysqli_stmt_execute($stmt);
 
     $result = mysqli_stmt_get_result($stmt);
-
+    $occasion = "";
+   
     while($row = mysqli_fetch_assoc($result))
     {
+        if($row["occasion"] ==1)
+        {
+            $occasion = "A walk in the park type of casual";
+        }
+        elseif ($row["occasion"] ==2){
+            $occasion = "Casual";
+        }
+        elseif ($row["occasion"] ==3){
+            $occasion = "Business";
+        }
+        elseif ($row["occasion"] ==4){
+            $occasion = "Fancy";
+        }
         echo 
         '<div class="center">
             <div class = "fav_outfits">
                 <div class="text=center">
-                    <h6>'.$row["outfitname"].'</h6>
-                    <h6>'.$row["temperature"].'</h6>
-                    <h6>'.$row["occasion"].'</h6>
+                    <h6> Outfit: '.$row["outfitname"].'</h6>
+                    <h3> Temperature: '.$row["temperature"].'</h3>
+                    <h3> Occasion: '.$occasion.'</h3>
                 </div>
             </div>
             <div class = "fav_outfits">
