@@ -59,6 +59,10 @@ include('includes/outfitcreator.php');
 if(isset($_POST['request-submit']))
 {
     $temperature = $_POST['temperature'];
+    //>= 70 summer
+    //<30 winter
+    //between spring/fall
+
     $occasion_ = $_POST['occasion_request'];
     //check for empty input
     if(empty($temperature) || $occasion_ == "Occasion")
@@ -109,10 +113,13 @@ if(isset($_POST['request-submit']))
         }
       }
 
+
       echo '<form method = "post" action = "includes/favorite_insert.php">
       <input type="text" name="piece1" value=' .$p1. ' style="display:none;"/>
       <input type="text" name="piece2" value=' .$p2. ' style="display:none;"/>
       <input type="text" name="piece3" value=' .$p3. ' style="display:none;"/>
+      <input type = "text" name = "temp" value = ' .$temperature. 'style= display:none;"/>
+      <input type = "text" name = "occasion" value = ' .$occasion_. 'style= display:none;"/>
       <input type = "text" name = "nameofoutfit" placeholder = "Outfit Name"></input>
       <input type="submit" name="test" id="test" value="RUN" />
       </form>';
