@@ -159,7 +159,7 @@ img{
 
 /*BOX FOR FAVORITE OUTFITS*/
 div.fav_outfits{
-  margin: 220px;
+  margin: 50px;
   float: left;
   border: 4px solid #ccc;
   width: 300px;
@@ -167,7 +167,7 @@ div.fav_outfits{
 
 }
 
-/*FAVORIT OUTFIT IMAGES SECTION*/
+/*FAVORITE OUTFIT IMAGES SECTION*/
 
 div.fav_outfits img {
   width: 100%;
