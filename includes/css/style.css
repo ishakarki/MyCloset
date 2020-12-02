@@ -2,13 +2,83 @@
 
 /* HANDLE BACKGROUND COLOR */
 body{
-    background-color: rgb(248, 171, 186);
+  /* background-color: rgb(248, 171, 186); */
+  margin: 0;
+  background-color: darkgray;
+  font-family: 'Montserrat', sans-serif;
 }
 
-* {
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgb(248, 171, 186);
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  width: 35%;
+  height: 10%;
+  float: left;
+  margin-left: 0;
+}
+
+nav {
+  float:right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 5px;
+  padding-top: 25px;
+
+  position: relative;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: black;
+
+  position: absolute;
+  top: 0;
+
+  transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/* * {
     margin:0;
     padding:0;
-  }
+  } */
   /* TEXT SIZE AND COLOR */
   h1 {
     font-size:27em;
@@ -55,6 +125,8 @@ body{
   padding-bottom: 2rem;
 }
 
+
+
 /* ALIGN TEXT AT THE CENTER NO MATTER WHAT */
 .text-center {
     text-align: center!important;
@@ -74,10 +146,10 @@ body{
   margin-right: auto; */
   width: 100%;
 }
-
+/* 
 .container{
   position: relative;
-}
+} */
 
 /* TOP SLIDE SHOW */
 .slideshow_top{
@@ -136,14 +208,14 @@ body{
 } 
 
 /* SIZING IMAGES */
-img{
+/* img{
   width: 500px;
   height:500px; 
   object-fit: contain;
-}
+} */
 
 /*BOX PREVIEW*/
-.show_img{
+/* .show_img{
   width: 300px;
   min-height: 100px;
   border: 1px solid white;
@@ -153,14 +225,14 @@ img{
   justify-content: center;
   font-weight: bold;
   display: none;
-}
+} */
 
 /* DISPLAY PREVIEW IMAGE*/
-.view-image{
+/* .view-image{
   display: none;
   width: 100%;
   object-fit: contain;
-}
+} */
 
 /*BOX FOR FAVORITE OUTFITS*/
 div.fav_outfits{
@@ -179,3 +251,4 @@ div.fav_outfits img {
   width: 100%;
   height: auto;
 }
+
