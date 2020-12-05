@@ -32,7 +32,9 @@
         <li><a href = "fullcloset.php">Full Closet</a></li>
         <li><a href = "favorite.php">Favorites</a></li>
         <li><a href = "upload.php">Upload</a></li>
-        <li><a href = "includes/logout.php">Logout</a></li>
+        <button onclick="document.location='includes/logout.php'">LOGOUT</button>
+        <!-- <li><a href="includes/logout.php" class="btn btn-info" role="button">Link Button</a></li> -->
+        <!-- <li><button href="includes/logout.php" class="btn btn-danger navbar-btn">Logout</button></li> -->
       </ul>
     </nav>
   </div>

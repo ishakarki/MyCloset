@@ -42,10 +42,14 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 25px;
   padding-top: 25px;
 
   position: relative;
+}
+
+nav ul button {
+  margin-left: 25px;
 }
 
 nav a {
