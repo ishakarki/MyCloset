@@ -33,7 +33,7 @@ else{
         echo 
         '<div class="center">
             <div class = "fav_outfits">
-                <div class="text=center">
+                <div class="text-center" style="border-width: 5px;">
                     <h6> Outfit: '.$row["outfitname"].'</h6>
                     <h3> Temperature: '.$row["temperature"].'</h3>
                     <h3> Occasion: '.$occasion.'</h3>

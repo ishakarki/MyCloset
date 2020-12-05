@@ -105,9 +105,9 @@ nav a:hover::before {
 
   }
 
-  h4{
+  /* h4{
     color:white;
-  }
+  } */
 
   h7{
     color: red;
@@ -117,13 +117,20 @@ nav a:hover::before {
     color: green;
   }
 
+  h9{
+    font-size:2em;
+    color:white;
+    margin-bottom:40px;
+
+  }
+
   /* SIGN IN FORM DISPLAYED IN MAIN PAGE */
   
 .form-signin {
     padding-top: 90px;
-    padding-right: 50px;
+    padding-right: 90px;
     padding-bottom: 90px;
-    padding-left: 50px;
+    padding-left: 90px;
     display: inline-block;
     margin: 2 auto;
     background-color: black;

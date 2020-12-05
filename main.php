@@ -32,7 +32,9 @@ if (isset($_GET['saved']))
   </div>
 
   <div class="card-body">
-    <h4 class="card-title">UPLOAD</h4>
+    <h9 class="card-title">UPLOAD</h9>
+    <div class="mt-5 col-md-12"> 
+  </div>
     <div class="d-flex justify-content-center">
     <form action = <?=$_SERVER['PHP_SELF']?> method = "post">
   <!-- UPLOAD NAME OF THE PIECE OF CLOTHING -->

@@ -24,8 +24,9 @@
 
 <header>
   <div class = "container">
+  <a href="main.php">
     <img src = "includes/images/testlogo.png" alt = "logo" class = "logo">
-
+  </a>
     <nav>
       <ul>
         <li><a href = "main.php">Main</a></li>

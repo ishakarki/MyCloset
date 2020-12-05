@@ -9,7 +9,9 @@ include("includes/session.php")
     <div class="card-header" style="background-color: #C39EA0;">
   </div>
   <div class="card-body">
-    <h4 class="card-title">UPLOAD</h4>
+    <h9 class="card-title">UPLOAD</h9>
+    <div class="mt-5 col-md-12"> 
+  </div>
     <div class="d-flex justify-content-center">
     <form action = "includes/uploadclothes.php" method = "post" enctype="multipart/form-data">
     <!-- UPLOAD FILE -->
@@ -46,7 +48,7 @@ include("includes/session.php")
       <input type="file" name="file" id="file_">
       <div class="show_img" id="image_box">
           <img src="" alt="" class="view-image">
-          <span class= "img_box_text">Cloth</span>
+          <!-- <span class= "img_box_text">Cloth</span> -->
       </div>
   </div>
   <script>
