@@ -1,6 +1,8 @@
 <?php
 
-class Clothing{
+//https://www.tutorialspoint.com/php/php_design_patterns.htm
+
+abstract class Clothing{
     protected $name;
     protected $type;
     protected $color;
@@ -28,8 +30,15 @@ class Clothing{
     function get_pattern(){return $this->pattern;}
     function get_occasion(){return $this->occasion;}
     function get_file_title(){return $this->file_title;}
-    function set_temp($ty){}
+    abstract protected function set_temp($ty);
 
+}
+
+class ClothingFactory{
+    public static function create($na, $ty, $co, $pa, $oc, $ft)
+    {
+        return new Clothing ($na, $ty, $co, $pa, $oc, $ft);
+    }
 }
 
 class Bottom extends Clothing {
@@ -50,6 +59,17 @@ class Bottom extends Clothing {
         }
     }
 }
+
+//implementation of the factory design pattern for bottom
+
+class BottomFactory{
+    public static function create($na, $ty, $co, $pa, $oc, $ft)
+    {
+        return new Bottom ($na, $ty, $co, $pa, $oc, $ft);
+    }
+}
+
+
 
 class Shirt extends Clothing {
     // tshirt, long shirt, tanktop, blouse
@@ -72,6 +92,16 @@ class Shirt extends Clothing {
         {
             $this->temp = 5;
         }
+    }
+}
+
+//implementation of the factory design pattern for the shirt
+
+
+class ShirtFactory{
+    public static function create($na, $ty, $co, $pa, $oc, $ft)
+    {
+        return new Shirt ($na, $ty, $co, $pa, $oc, $ft);
     }
 }
 
@@ -100,6 +130,16 @@ class Sweater extends Clothing {
 
 }
 
+//implementation of the factory design pattern for the sweater
+
+
+class SweaterFactory{
+    public static function create($na, $ty, $co, $pa, $oc, $ft)
+    {
+        return new Sweater ($na, $ty, $co, $pa, $oc, $ft);
+    }
+}
+
 class Onepiece extends Clothing {
     // long dress, jumpsuit, short dress
 
@@ -118,4 +158,14 @@ class Onepiece extends Clothing {
         }
     }
     
+}
+
+//implementation of the factory design pattern for the one piece
+
+
+class OnepieceFactory{
+    public static function create($na, $ty, $co, $pa, $oc, $ft)
+    {
+        return new Onepiece ($na, $ty, $co, $pa, $oc, $ft);
+    }
 }

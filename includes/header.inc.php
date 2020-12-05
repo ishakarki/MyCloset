@@ -7,7 +7,7 @@
     <!-- bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="includes/css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
 
     <!-- jQuery, Popper.js, Bootstrap JS -->
   
@@ -32,7 +32,7 @@
         <li><a href = "fullcloset.php">Full Closet</a></li>
         <li><a href = "favorite.php">Favorites</a></li>
         <li><a href = "upload.php">Upload</a></li>
-        <button onclick="document.location='includes/logout.php'">LOGOUT</button>
+        <button onclick="document.location='includes/logout.php'" class = "logout">LOGOUT</button>
         <!-- <li><a href="includes/logout.php" class="btn btn-info" role="button">Link Button</a></li> -->
         <!-- <li><button href="includes/logout.php" class="btn btn-danger navbar-btn">Logout</button></li> -->
       </ul>

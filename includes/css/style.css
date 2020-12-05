@@ -4,8 +4,9 @@
 body{
   /* background-color: rgb(248, 171, 186); */
   margin: 0;
-  background-color: darkgray;
-  font-family: 'Montserrat', sans-serif;
+  background-color: #F8E5E5;
+  font-family: 'Oswald';
+  letter-spacing: 3px;
 }
 
 .container {
@@ -14,7 +15,7 @@ body{
 }
 
 header {
-  background-color: rgb(248, 171, 186);
+  background-color: #F8E5E5;
 }
 
 header::after {
@@ -104,6 +105,10 @@ nav a:hover::before {
 
   }
 
+  h4{
+    color:white;
+  }
+
   h7{
     color: red;
   }
@@ -116,11 +121,12 @@ nav a:hover::before {
   
 .form-signin {
     padding-top: 90px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 30px;
+    padding-right: 50px;
+    padding-bottom: 90px;
+    padding-left: 50px;
     display: inline-block;
     margin: 2 auto;
+    background-color: black;
 }
 
 /* NAVIGATION BAR */
@@ -138,8 +144,9 @@ nav a:hover::before {
 
 /* BUTTON COLOR */
 .btn.btn-lg.btn-primary.btn-block{
-  background-color:  rgb(185, 113, 127);
-  border-color:  rgb(185, 113, 127);
+  background-color: #FA255E;
+  border-color: black;
+  border-width: 3px;
 }
 
 /* CENTERING  */
@@ -254,5 +261,34 @@ div.fav_outfits{
 div.fav_outfits img {
   width: 100%;
   height: auto;
+}
+
+.logout{
+  background-color: #FA255E;
+  border-color: #FA255E;
+  /* border-radius: 6px; */
+  /* border-width: 10px; */
+
+  padding-top: 20px;
+    padding-right: 12px;
+    padding-bottom: 20px;
+    padding-left: 12px;
+
+  }
+
+.card-body{
+  background-color: black;
+}
+
+.btn.btn-primary{
+  /* background-color: #FA255E; */
+  border-color: black;
+  animation: fadecolor 3s infinite;
+
+}
+
+@keyframes fadecolor {
+  from {background-color: #FA255E;}
+  to {background-color: #C39EA0;}
 }
 

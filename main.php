@@ -91,7 +91,12 @@ if(isset($_POST['request-submit']))
     //check if the generated outfit is empty
     if(empty($ar))
     {
-      echo 'No outfit available for given conditions.';
+      echo '<h6 class="text-center">No outfit available for given conditions </h6>.';
+    }
+
+    else{
+      echo '<h5 class="text-center">Here is your curated outfit!</h5>.';
+
     }
 
     //present the outfit created
@@ -133,14 +138,14 @@ if(isset($_POST['request-submit']))
       }
 
       //ask the user if they wanted to name the outfit anything in particular, this form has all of the information of the outfit files for the user to save the outfit
-      echo '<form method = "post" action = "includes/favorite_insert.php">
+      echo '<form class = "form-signin" method = "post" action = "includes/favorite_insert.php">
       <input type="text" name="piece1" value=' .$p1. ' style="display:none;"/>
       <input type="text" name="piece2" value=' .$p2. ' style="display:none;"/>
       <input type="text" name="piece3" value=' .$p3. ' style="display:none;"/>
       <input type = "text" name = "temp" value = ' .$temperature. ' style= display:none;"/>
       <input type = "text" name = "occasion" value = ' .$occasion_. ' style= display:none;"/>
       <input type = "text" name = "nameofoutfit" placeholder = "Outfit Name"></input>
-      <input type="submit" name="test" id="test" value="RUN" />
+      <input type="submit" name="test" id="test" value="Save" />
       </form>';
     }
     
