@@ -28,6 +28,8 @@ if (isset($_GET['saved']))
 <div class="mt-5 col-md-12"> 
 <!-- PLACING THE FORM IN A CARD -->
   <div class="card text-center">
+  <div class="card-header" style="background-color: #C39EA0;">
+  </div>
 
   <div class="card-body">
     <h4 class="card-title">UPLOAD</h4>
@@ -56,7 +58,7 @@ if (isset($_GET['saved']))
     <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
-  <div class="card-footer text-muted">
+  <div class="card-footer text-muted" style="background-color:#C39EA0;">
   </div>
 </div>
 </div>
