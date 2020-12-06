@@ -14,6 +14,12 @@ body{
   margin: 0 auto;
 }
 
+.container_fc{
+  width: 80%;
+  content: center;
+  margin: auto;
+}
+
 header {
   background-color: #F8E5E5;
 }
@@ -169,16 +175,6 @@ nav a:hover::before {
   position: relative;
 } */
 
-/* TOP SLIDE SHOW */
-.slideshow_top{
-  display:none;
-}
-
-/* BOTTOM SLIDE SHOW */
-.slideshow_bottom{
-  display:none;
-}
-
 .cursor {
   cursor: pointer;
 }
@@ -272,14 +268,28 @@ div.fav_outfits img {
 
 div.full_closet{
   margin: 50px;
-  margin-bottom: 200px;
-  float: left;
+  /* margin-bottom: 200px; */
+  /* float: left; */
   border: 4px;
-  width: 300px;
-  height: 300px;
+  /* width: 300px; */
+  width: 50%;
+  padding: 5px;
+  height: auto;
 }
 
-div.full_closet.slideshow_top{
+.column{
+  float:left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: none;
+}
+
+/* div.full_closet.slideshow_top{
   width: 100%;
   height: auto;
 }
@@ -297,7 +307,7 @@ div.full_closet.slideshow_bottom{
 div.full_closet.slideshow_onepiece{
   width: 100%;
   height: auto;
-}
+} */
 
 .logout{
   background-color: #FA255E;

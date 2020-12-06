@@ -17,19 +17,22 @@ include("includes/session.php")
     else{
         //make the slide show for top
         echo 
-        '<div class="mt-5 col-md-12"> 
-            <div class="container">
-                <div class = "full_closet">
-                    <h5>top</h5> </div>';
+        '<div class="mt-5 col-md-12"> </div>
+        <div class = "container_fc">
+            <div class = "row">
+                <div class = "column">
+                    <h5>top</h5>
+                </div>';
         mysqli_stmt_execute($stmt_top);
         $result_top = mysqli_stmt_get_result($stmt_top);
-        echo '<div class = "full_closet"> ';
+        // echo '<div class = "full_closet" style="float:right;"> ';
+        echo '<div class = "column">';
         while($row_top = mysqli_fetch_assoc($result_top)){
             echo 
             '<div class="slideshow_top">
             <img src="includes/images/' .$row_top["file_title"].'" alt = "' .$row_top["nameofclothing"]. '"class="center"></div>';
         }
-        echo '</div>';
+        echo '</div></div></div>';
         //next and previous arrows allow user to navigate
         echo '<div class = "center"> 
         <svg width="3em" height="3em" viewBox="0 0 16 16" class="prev" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -54,18 +57,21 @@ include("includes/session.php")
     else{
         //make the slide show for sweater
         echo 
-        '<div class="mt-5 col-md-12"> 
-            <div class="container">
-                <div class = "full_closet">
-                    <h5>sweater</h5> </div>';
+        '<div class="mt-5 col-md-12"> </div>
+        <div class = "container_fc">
+                <div class = "row">
+                    <div class = "column">
+                        <h5>sweater</h5> 
+                    </div>';
         mysqli_stmt_execute($stmt_sweater);
         $result_sweater = mysqli_stmt_get_result($stmt_sweater);
-        echo '<div class = "full_closet">';
+        // echo '<div class = "full_closet" style="float:right;"> ';
+        echo '<div class = "column">';
         while($row_sweater = mysqli_fetch_assoc($result_sweater)){
             echo '<div class="slideshow_sweater">
             <img src="includes/images/' .$row_sweater["file_title"].'" alt = "' .$row_sweater["nameofclothing"]. '"class="center"></div>';
         }
-        echo '</div>';
+        echo '</div></div></div>';
         //next and previous arrows allow user to navigate
         echo '<div class = "center"> 
         <svg width="3em" height="3em" viewBox="0 0 16 16" class="prev" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -89,18 +95,22 @@ include("includes/session.php")
     //if there is no error
     else{
         //make the slide show for pant
-        echo '<div class="mt-5 col-md-12"> 
-        <div class="container">
-        <div class = "full_closet">
-        <h5>bottom</h5> </div>';
+        echo '
+        <div class="mt-5 col-md-12"> </div>
+        <div class = "container_fc">
+            <div class = "row">
+                <div class = "column">
+                    <h5>bottom</h5> 
+                </div>';
         mysqli_stmt_execute($stmt_bottom);
         $result_bottom = mysqli_stmt_get_result($stmt_bottom);
-        echo '<div class = "full_closet">';
+        // echo '<div class = "full_closet" style="float:right;">';
+        echo '<div class = "column">';
         while($row_bottom = mysqli_fetch_assoc($result_bottom)){
             echo '<div class="slideshow_bottom">
             <img src="includes/images/' .$row_bottom["file_title"].'" alt = "' .$row_bottom["nameofclothing"]. '"class="center"></div>';
         }
-        echo '</div>';
+        echo '</div> </div> </div>';
         //next and previous arrows allow user to navigate
         echo '<div class = "center"> 
         <svg width="3em" height="3em" viewBox="0 0 16 16" class="prev" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -127,18 +137,22 @@ include("includes/session.php")
     //if there is no error
     else{
         //make the slide show for onepiece
-        echo '<div class="mt-5 col-md-12"> 
-        <div class="container">
-        <div class = "full_closet">
-        <h5>one piece</h5> </div>';
+        echo '
+        <div class="mt-5 col-md-12"> </div>
+        <div class = "container_fc">
+            <div class = "row">
+                <div class = "column">
+                    <h5>one piece</h5> 
+                </div>';
         mysqli_stmt_execute($stmt_onepiece);
         $result_onepiece = mysqli_stmt_get_result($stmt_onepiece);
-        echo '<div class = "full_closet">';
+        // echo '<div class = "full_closet" style="float:right;">';
+        echo '<div class = "column">';
         while($row_onepiece = mysqli_fetch_assoc($result_onepiece)){
             echo '<div class="slideshow_onepiece">
             <img src="includes/images/' .$row_onepiece["file_title"].'" alt = "' .$row_onepiece["nameofclothing"]. '"class="center"></div>';
         }
-        echo '</div>';
+        echo '</div> </div> </div>';
         //next and previous arrows allow user to navigate
         echo '<div class = "center"> 
         <svg width="3em" height="3em" viewBox="0 0 16 16" class="prev" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
