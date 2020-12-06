@@ -7,56 +7,30 @@ class Closet {
     private $sweaters = array();
     private $onepieces = array();
 
+    private static $instance = null;
+
     // temporary arrays for the filtered clothes, will reset to empty
     public $filterbottoms = array();
     public $filtershirts = array();
     public $filtersweaters = array();
     public $filteronepieces = array();
 
+    private function __construct(){
+    }
+
+    public static function getInstance()
+    {
+        if(self::$instance == null)
+        {
+            self::$instance = new Closet();
+        }
+        return self::$instance;
+    }
+
     function insert_bottom($input){ array_push($this->bottoms,$input); }
     function insert_shirt($input){ array_push($this->shirts,$input); }
     function insert_sweater($input){ array_push($this->sweaters,$input); }
     function insert_onepiece($input){ array_push($this->onepieces,$input); }
-
-    function print_bottoms()
-    {
-        echo 'bottoms array has: <br>';
-        for($i = 0; $i < count($this->bottoms); $i++)
-        {
-            echo $this->bottoms[$i]->get_name(),' ',$this->bottoms[$i]->get_color(),' ',$this->bottoms[$i]->get_type(),'<br>';
-        }
-        echo '<br>';
-    }
-
-    function print_shirts()
-    {
-        echo 'shirts array has: <br>';
-        for($i = 0; $i < count($this->shirts); $i++)
-        {
-            echo $this->shirts[$i]->get_name(),' ',$this->shirts[$i]->get_color(),' ',$this->shirts[$i]->get_type(),'<br>';
-        }
-        echo '<br>';
-    }
-
-    function print_sweaters()
-    {
-        echo 'sweaters array has: <br>';
-        for($i = 0; $i < count($this->sweaters); $i++)
-        {
-            echo $this->sweaters[$i]->get_name(),' ',$this->sweaters[$i]->get_color(),' ',$this->sweaters[$i]->get_type(),'<br>';
-        }
-        echo '<br>';
-    }
-
-    function print_onepieces()
-    {
-        echo 'onepieces array has: <br>';
-        for($i = 0; $i < count($this->onepieces); $i++)
-        {
-            echo $this->onepieces[$i]->get_name(),' ',$this->onepieces[$i]->get_color(),' ',$this->onepieces[$i]->get_type(),'<br>';
-        }
-        echo '<br>';
-    }
 
     // template for returning arrays based on a condition
     function get_bottoms($occasion)

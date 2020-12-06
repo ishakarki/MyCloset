@@ -270,6 +270,35 @@ div.fav_outfits img {
   height: auto;
 }
 
+div.full_closet{
+  margin: 50px;
+  margin-bottom: 200px;
+  float: left;
+  border: 4px;
+  width: 300px;
+  height: 300px;
+}
+
+div.full_closet.slideshow_top{
+  width: 100%;
+  height: auto;
+}
+
+div.full_closet.slideshow_sweater{
+  width: 100%;
+  height: auto;
+}
+
+div.full_closet.slideshow_bottom{
+  width: 100%;
+  height: auto;
+}
+
+div.full_closet.slideshow_onepiece{
+  width: 100%;
+  height: auto;
+}
+
 .logout{
   background-color: #FA255E;
   border-color: #FA255E;

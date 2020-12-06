@@ -15,7 +15,8 @@ else{
     //execute the sql statement
     mysqli_stmt_execute($stmt);
     $result = mysqli_stmt_get_result($stmt);
-    $mycloset = new Closet();
+    // $mycloset = new Closet();
+    $mycloset = Closet::getInstance();
     //get every row in the database
     while($row = mysqli_fetch_assoc($result))
     {
