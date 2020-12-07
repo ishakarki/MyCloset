@@ -32,7 +32,7 @@ if (isset($_GET['saved']))
   </div>
 
   <div class="card-body">
-    <h9 class="card-title">UPLOAD</h9>
+    <h9 class="card-title">GENERATE OUTFIT</h9>
     <div class="mt-5 col-md-12"> 
   </div>
     <div class="d-flex justify-content-center">
