@@ -41,7 +41,7 @@
 
 <body class="text-center">
 
-    <img src="includes/images/closetlogo.png" alt="closet logo" style="width:400px;height:400px;">
+    <img src="includes/images/closetlogo.png" alt="closet logo" style="width:700px;height:400px;">
     <!-- WELCOME MESSAGE -->
     <h4> Welcome to My Closet! Please sign in. <h4>
     <!-- SIGN IN FORM -->

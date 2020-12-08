@@ -31,8 +31,8 @@ header::after {
 }
 
 .logo {
-  width: 35%;
-  height: 10%;
+  width: 25%;
+  height: 5%;
   float: left;
   margin-left: 0;
 }
@@ -49,7 +49,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-left: 25px;
+  margin-left: 35px;
   padding-top: 25px;
 
   position: relative;

@@ -25,7 +25,7 @@
 <header>
   <div class = "container">
   <a href="main.php">
-    <img src = "includes/images/testlogo.png" alt = "logo" class = "logo">
+    <img src = "includes/images/logo.png" alt = "logo" class = "logo">
   </a>
     <nav>
       <ul>
