@@ -142,14 +142,14 @@ if(isset($_POST['request-submit']))
       }
 
       //ask the user if they wanted to name the outfit anything in particular, this form has all of the information of the outfit files for the user to save the outfit
-      echo '<form class = "form-signin" method = "post" action = "includes/favorite_insert.php">
+      echo '<form class = "form-signin" method = "post" action = "includes/favorite_insert.php" style="float: right;">
       <input type="text" name="piece1" value=' .$p1. ' style="display:none;"/>
       <input type="text" name="piece2" value=' .$p2. ' style="display:none;"/>
       <input type="text" name="piece3" value=' .$p3. ' style="display:none;"/>
       <input type = "text" name = "temp" value = ' .$temperature. ' style= display:none;"/>
       <input type = "text" name = "occasion" value = ' .$occasion_. ' style= display:none;"/>
       <input type = "text" name = "nameofoutfit" placeholder = "Outfit Name"></input>
-      <input type="submit" name="test" id="test" value="Save" />
+      <input type="submit" name="test" id="test" value="Save" class="btn btn-lg btn-primary btn-block" />
       </form>';
     }
     

@@ -1,4 +1,5 @@
 <?php
+#Display the favorite outfit the user saved
 include("includes/session.php");
 
 include_once 'includes/database_setup.php';
@@ -61,42 +62,3 @@ else{
 
 }
 ?>
-
-
-
-
-
-<!-- <div class="center">
-<div class = "fav_outfits">
-    <img src= "includes/images/blue_jacket.PNG" alt="jacket">
-    <div class="text-center">
-        <h6>Hello!</h6>
-        <h6>Hello!</h6>
-    </div>
-</div>
-
-<div class = "fav_outfits">
-    <img src= "includes/images/blue_jacket.PNG" alt="jacket">
-</div>
-
-<div class = "fav_outfits">
-    <img src= "includes/images/blue_jacket.PNG" alt="jacket">
-</div>
-<div class = "fav_outfits">
-    <img src= "includes/images/blue_jacket.PNG" alt="jacket">
-</div>
-</div>
-
-<div>
-<div class = "fav_outfits">
-    <img src= "includes/images/blue_jacket.PNG" alt="jacket">
-</div>
-
-<div class = "fav_outfits">
-    <img src= "includes/images/blue_jacket.PNG" alt="jacket">
-</div>
-
-<div class = "fav_outfits">
-    <img src= "includes/images/blue_jacket.PNG" alt="jacket">
-</div>
-</div> -->
