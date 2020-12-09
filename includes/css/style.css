@@ -132,9 +132,12 @@ nav a:hover::before {
     padding-bottom: 90px;
     padding-left: 90px;
     display: inline-block;
+    /* justify-self: center; */
     margin: 2 auto;
     background-color: black;
 }
+
+
 
 /* NAVIGATION BAR */
 .navbar .navbar-expand-sm .bg-dark .navbar-dark
