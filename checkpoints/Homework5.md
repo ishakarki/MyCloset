@@ -36,4 +36,4 @@ None! Submission time :)
 - first ~20 rows of clothing data (total around 50+): 
 - ![screenshot of clothing table data](screenshots/clothing_data.png)
 - outfit table: 
-- ![screenshot of outfit table](screenshots/outfit_table.png)
+- ![screenshot of outfit table](screenshots/outfit.png)
