@@ -24,7 +24,7 @@ None! Submission time :)
 
 # Video Runthrough
 
-- link here!
+- [![link to youtube video](https://img.youtube.com/vi/https://youtu.be/OE3_XZbjqVg/0.jpg)](https://youtu.be/OE3_XZbjqVg)
 
 # Screenshots
 - accounts table in our database: 
