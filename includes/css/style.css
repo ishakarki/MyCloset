@@ -232,6 +232,7 @@ div.full_closet{
 .column{
   float:left;
   width: 50%;
+  height: 800px;
   padding: 10px;
 }
 
