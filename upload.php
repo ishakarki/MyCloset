@@ -6,10 +6,12 @@ include("includes/session.php")
 <div class="mt-5 col-md-12"> 
 <!-- PLACING THE FORM IN A CARD -->
   <div class="card text-center">
-    <div class="card-header">
+    <div class="card-header" style="background-color: #C39EA0;">
   </div>
   <div class="card-body">
-    <h4 class="card-title">UPLOAD</h4>
+    <h9 class="card-title">UPLOAD</h9>
+    <div class="mt-5 col-md-12"> 
+  </div>
     <div class="d-flex justify-content-center">
     <form action = "includes/uploadclothes.php" method = "post" enctype="multipart/form-data">
     <!-- UPLOAD FILE -->
@@ -42,9 +44,40 @@ include("includes/session.php")
           }
 				}
 			?>
-    <div class="form-group">
-      <input type="file" name="file">
+  <div class="form-group">
+      <input type="file" name="file" id="file_">
+      <div class="show_img" id="image_box">
+          <img src="" alt="" class="view-image">
+          <!-- <span class= "img_box_text">Cloth</span> -->
+      </div>
   </div>
+  <script>
+      const file_ = document.getElementById("file_");
+      const preview_box = document.getElementById("image_box");
+      const preview_img = preview_box.querySelector(".view-image");
+      const image_text = preview_box.querySelector(".img_box_text");
+      
+      file_.addEventListener("change", function()
+      {
+          const file = this.files[0];
+
+          if(file)
+          {
+            const file_show = new FileReader();
+            image_text.style.display = "none";
+
+            preview_img.style.display = "block";
+            preview_box.style.display="block";
+
+            file_show.addEventListener("load", function(){
+              console.log(this);
+              preview_img.setAttribute("src", this.result);
+            });
+
+            file_show.readAsDataURL(file);
+          }
+      });
+  </script>
   <!-- UPLOAD NAME OF THE PIECE OF CLOTHING -->
   <div class="form-group">
     <!-- <label for="cloth-title">Title</label> -->
@@ -143,7 +176,7 @@ include("includes/session.php")
     <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
-  <div class="card-footer text-muted">
+  <div class="card-footer text-muted" style="background-color:#C39EA0;">
   </div>
 </div>
 </div>

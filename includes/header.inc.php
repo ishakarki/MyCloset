@@ -7,6 +7,8 @@
     <!-- bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="includes/css/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+
     <!-- jQuery, Popper.js, Bootstrap JS -->
   
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -19,30 +21,22 @@
 
 <body>
 <!-- Navigation Bar-->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <ul class="navbar-nav">
-    <!-- Main Page Link -->
-    <li class="nav-item active">
-      <a class="nav-link" href="main.php">Main</a> 
-    </li>
-    <!-- Full closet link -->
-    <li class="nav-item active">
-      <a class="nav-link" href="fullcloset.php">Full Closet</a>
-    </li>
-    <!-- Favorite link -->
-    <li class="nav-item active">
-      <a class="nav-link" href="favorite.php">Favorites</a>
-    </li>
-    <!-- upload link -->
-    <li class="nav-item active">
-      <a class="nav-link" href="upload.php">Upload</a>
-    </li>
-    <li class="nav-item active">
-    <a class="nav-link" name = "logout" href="includes/logout.php">Logout</a>
-  </li>
-  </ul>
-  
-</nav>
 
-
-
+<header>
+  <div class = "container">
+  <a href="main.php">
+    <img src = "includes/images/logo.png" alt = "logo" class = "logo">
+  </a>
+    <nav>
+      <ul>
+        <li><a href = "main.php">Main</a></li>
+        <li><a href = "fullcloset.php">Full Closet</a></li>
+        <li><a href = "favorite.php">Favorites</a></li>
+        <li><a href = "upload.php">Upload</a></li>
+        <button onclick="document.location='includes/logout.php'" class = "logout">LOGOUT</button>
+        <!-- <li><a href="includes/logout.php" class="btn btn-info" role="button">Link Button</a></li> -->
+        <!-- <li><button href="includes/logout.php" class="btn btn-danger navbar-btn">Logout</button></li> -->
+      </ul>
+    </nav>
+  </div>
+</header>

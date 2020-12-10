@@ -2,13 +2,92 @@
 
 /* HANDLE BACKGROUND COLOR */
 body{
-    background-color: rgb(248, 171, 186);
+  /* background-color: rgb(248, 171, 186); */
+  margin: 0;
+  background-color: #F8E5E5;
+  font-family: 'Oswald';
+  letter-spacing: 3px;
 }
 
-* {
-    margin:0;
-    padding:0;
-  }
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+/*container for the full closet display*/
+.container_fc{
+  width: 80%;
+  content: center;
+  margin: auto;
+}
+
+/*header color (nav bar)*/
+header {
+  background-color: #F8E5E5;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/*size of logo*/
+.logo {
+  width: 25%;
+  height: 5%;
+  float: left;
+  margin-left: 0;
+}
+/*move nv bar text to the right*/
+nav {
+  float:right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 35px;
+  padding-top: 25px;
+
+  position: relative;
+}
+
+nav ul button {
+  margin-left: 25px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: black;
+
+  position: absolute;
+  top: 0;
+
+  transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+
   /* TEXT SIZE AND COLOR */
   h1 {
     font-size:27em;
@@ -24,6 +103,11 @@ body{
     font-size:10em;
     line-height:0.9em;
   }
+  h6{
+    font-size:2em;
+    line-height:0.9em;
+
+  }
 
   h7{
     color: red;
@@ -33,22 +117,35 @@ body{
     color: green;
   }
 
+  h9{
+    font-size:2em;
+    color:white;
+    margin-bottom:40px;
+
+  }
+
   /* SIGN IN FORM DISPLAYED IN MAIN PAGE */
   
 .form-signin {
     padding-top: 90px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 30px;
+    padding-right: 90px;
+    padding-bottom: 90px;
+    padding-left: 90px;
     display: inline-block;
+    /* justify-self: center; */
     margin: 2 auto;
+    background-color: black;
 }
+
+
 
 /* NAVIGATION BAR */
 .navbar .navbar-expand-sm .bg-dark .navbar-dark
 {
   padding-bottom: 2rem;
 }
+
+
 
 /* ALIGN TEXT AT THE CENTER NO MATTER WHAT */
 .text-center {
@@ -57,8 +154,9 @@ body{
 
 /* BUTTON COLOR */
 .btn.btn-lg.btn-primary.btn-block{
-  background-color:  rgb(185, 113, 127);
-  border-color:  rgb(185, 113, 127);
+  background-color: #FA255E;
+  border-color: black;
+  border-width: 3px;
 }
 
 /* CENTERING  */
@@ -70,37 +168,11 @@ body{
   width: 100%;
 }
 
-.container{
-  position: relative;
-}
-
-/* TOP SLIDE SHOW */
-.slideshow_top{
-  display:none;
-}
-
-/* BOTTOM SLIDE SHOW */
-.slideshow_bottom{
-  display:none;
-}
 
 .cursor {
   cursor: pointer;
 }
 
-/* Next & previous buttons */
-/* .prev,
-.next { */
-  /* cursor: pointer; */
-  /* position: absolute; */
-  /* top: 50%;
-  width: auto;
-  margin-top: -290px;
-  font-weight: bold; */
-  /* font-size: 30px; */
-  /* border-radius: 30 5px 15px 20; */
-
-/* } */
 
 /* Position the "next button" to the right*/
 .next {
@@ -130,11 +202,68 @@ body{
   display: none;
 } 
 
-/* SIZING IMAGES */
-img{
-  width: 500px;
-  height:500px; 
-  object-fit: contain;
+
+/*BOX FOR FAVORITE OUTFITS*/
+div.fav_outfits{
+  margin: 50px;
+  margin-bottom: 200px;
+  float: left;
+  border: 4px;
+  width: 300px;
+  height: 300px;
+
 }
 
+/*FAVORITE OUTFIT IMAGES SECTION*/
+
+div.fav_outfits img {
+  width: 100%;
+  height: auto;
+}
+/*FULL CLOSET DISPLAY SECTION*/
+div.full_closet{
+  margin: 50px;
+  border: 4px;
+  width: 50%;
+  padding: 5px;
+  height: auto;
+}
+
+.column{
+  float:left;
+  width: 50%;
+  height: 800px;
+  padding: 10px;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: none;
+}
+/*LOGOUT BUTTON*/
+.logout{
+  background-color: #FA255E;
+  border-color: #FA255E;
+  padding-top: 20px;
+    padding-right: 12px;
+    padding-bottom: 20px;
+    padding-left: 12px;
+
+  }
+
+.card-body{
+  background-color: black;
+}
+/*CHANGING COLOR BUTTON*/
+.btn.btn-primary{
+  border-color: black;
+  animation: fadecolor 3s infinite;
+
+}
+
+@keyframes fadecolor {
+  from {background-color: #FA255E;}
+  to {background-color: #C39EA0;}
+}
 
